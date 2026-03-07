@@ -1436,7 +1436,7 @@
           </div>
           <div class="form-group">
             <label>연락처</label>
-            <input type="tel" name="연락처" placeholder="010-0000-0000" required>
+            <input type="tel" name="연락처" id="phoneInput" placeholder="010-0000-0000" required maxlength="13">
           </div>
           <div class="form-group">
             <label>업종</label>
@@ -1544,6 +1544,23 @@
         }
       });
     });
+  
+    // Phone number auto-format (하이픈 자동 추가)
+    const phoneInput = document.getElementById('phoneInput');
+    if (phoneInput) {
+      phoneInput.addEventListener('input', function(e) {
+        let value = e.target.value.replace(/[^0-9]/g, '');
+        if (value.length > 11) value = value.slice(0, 11);
+        
+        if (value.length <= 3) {
+          e.target.value = value;
+        } else if (value.length <= 7) {
+          e.target.value = value.slice(0, 3) + '-' + value.slice(3);
+        } else {
+          e.target.value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7);
+        }
+      });
+    }
   </script>
 
 </body>
