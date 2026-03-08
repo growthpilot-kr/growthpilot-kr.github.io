@@ -1641,6 +1641,11 @@
         <p>간단한 정보를 남겨주시면 1~3 영업일 내에 연락드리겠습니다.</p>
         <form action="https://formspree.io/f/mbdzjdgw" method="POST">
           <input type="hidden" name="_next" value="https://growthpilot-kr.github.io/thanks.html">
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="utm_content" id="utm_content">
+          <input type="hidden" name="utm_term" id="utm_term">
           <div class="form-group">
             <label>작가명 (또는 브랜드명)</label>
             <input type="text" name="작가명" placeholder="예: 홍길동 / 스튜디오명" required>
@@ -1778,6 +1783,15 @@
         }, 500);
       });
     }
+
+    // UTM 파라미터를 URL에서 읽어서 hidden field에 저장
+    const urlParams = new URLSearchParams(window.location.search);
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(param => {
+      const el = document.getElementById(param);
+      if (el && urlParams.get(param)) {
+        el.value = urlParams.get(param);
+      }
+    });
 
     // Phone number auto-format (하이픈 자동 추가)
     const phoneInput = document.getElementById('phoneInput');
