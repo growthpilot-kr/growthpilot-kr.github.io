@@ -581,14 +581,33 @@
         }
       });
     });
-    // Meta Pixel + GA4 Lead event
+    // Meta Pixel + GA4 Lead event (AJAX 제출 → thanks.html 리다이렉트)
     const contactForm = document.querySelector('form[action*="formspree"]');
     if (contactForm) {
       contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        if (typeof fbq === 'function') fbq('track', 'Lead');
-        if (typeof gtag === 'function') gtag('event', 'generate_lead');
-        setTimeout(function() { contactForm.submit(); }, 500);
+        const formData = new FormData(contactForm);
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '신청 중...'; }
+        fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+          if (response.ok) {
+            if (typeof fbq === 'function') fbq('track', 'Lead');
+            if (typeof gtag === 'function') gtag('event', 'generate_lead');
+            setTimeout(function() {
+              window.location.href = 'https://growthpilot-kr.github.io/thanks.html';
+            }, 300);
+          } else {
+            alert('신청 중 오류가 발생했습니다. 다시 시도해주세요.');
+            if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = '무료 상담 신청하기 →'; }
+          }
+        }).catch(function() {
+          alert('네트워크 오류가 발생했습니다. 다시 시도해주세요.');
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = '무료 상담 신청하기 →'; }
+        });
       });
     }
     // UTM params
