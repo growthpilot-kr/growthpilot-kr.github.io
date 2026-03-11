@@ -1,0 +1,25 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap');</style></defs>
+  <rect width="1080" height="1080" fill="#1A1F2E"/>
+  <text x="60" y="70" font-family="Inter,sans-serif" font-size="24" font-weight="500" fill="#555">6/7</text>
+  <text x="90" y="200" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">What I set up</text>
+  <text x="90" y="280" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#3B82F6">for you</text>
+  <rect x="90" y="320" width="120" height="4" rx="2" fill="#3B82F6" opacity="0.4"/>
+  <circle cx="120" cy="430" r="18" fill="#3B82F6"/>
+  <text x="120" y="438" font-family="Inter,sans-serif" font-size="22" font-weight="700" fill="#FFF" text-anchor="middle">✓</text>
+  <text x="160" y="440" font-family="Inter,sans-serif" font-size="32" font-weight="500" fill="#FFFFFF">Naver Place registration</text>
+  <circle cx="120" cy="510" r="18" fill="#3B82F6"/>
+  <text x="120" y="518" font-family="Inter,sans-serif" font-size="22" font-weight="700" fill="#FFF" text-anchor="middle">✓</text>
+  <text x="160" y="520" font-family="Inter,sans-serif" font-size="32" font-weight="500" fill="#FFFFFF">Kakao Channel setup</text>
+  <circle cx="120" cy="590" r="18" fill="#3B82F6"/>
+  <text x="120" y="598" font-family="Inter,sans-serif" font-size="22" font-weight="700" fill="#FFF" text-anchor="middle">✓</text>
+  <text x="160" y="600" font-family="Inter,sans-serif" font-size="32" font-weight="500" fill="#FFFFFF">Instagram / Meta ad campaigns</text>
+  <circle cx="120" cy="670" r="18" fill="#3B82F6"/>
+  <text x="120" y="678" font-family="Inter,sans-serif" font-size="22" font-weight="700" fill="#FFF" text-anchor="middle">✓</text>
+  <text x="160" y="680" font-family="Inter,sans-serif" font-size="32" font-weight="500" fill="#FFFFFF">Pixel &amp; conversion tracking</text>
+  <circle cx="120" cy="750" r="18" fill="#3B82F6"/>
+  <text x="120" y="758" font-family="Inter,sans-serif" font-size="22" font-weight="700" fill="#FFF" text-anchor="middle">✓</text>
+  <text x="160" y="760" font-family="Inter,sans-serif" font-size="32" font-weight="500" fill="#FFFFFF">Performance dashboard</text>
+  <text x="90" y="880" font-family="Inter,sans-serif" font-size="28" font-weight="400" fill="#94A3B8">One-time setup. You own everything.</text>
+  <text x="540" y="1040" font-family="Inter,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">GrowthPilot</text>
+</svg>

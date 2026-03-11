@@ -1,0 +1,14 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap');</style></defs>
+  <rect width="1080" height="1080" fill="#1A1F2E"/>
+  <text x="60" y="70" font-family="Inter,sans-serif" font-size="24" font-weight="500" fill="#555">3/7</text>
+  <text x="90" y="150" font-family="Inter,sans-serif" font-size="28" font-weight="700" fill="#3B82F6" letter-spacing="2">POINT 01</text>
+  <text x="90" y="270" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">Koreans don't</text>
+  <text x="90" y="350" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">use Google.</text>
+  <rect x="90" y="385" width="120" height="4" rx="2" fill="#3B82F6" opacity="0.4"/>
+  <text x="120" y="500" font-family="Inter,sans-serif" font-size="34" font-weight="500" fill="#FFFFFF">→  Naver Place = Google Maps</text>
+  <text x="120" y="580" font-family="Inter,sans-serif" font-size="34" font-weight="500" fill="#FFFFFF">→  KakaoTalk = WhatsApp</text>
+  <text x="120" y="660" font-family="Inter,sans-serif" font-size="34" font-weight="500" fill="#FFFFFF">→  Danggeun = Local marketplace</text>
+  <text x="90" y="820" font-family="Inter,sans-serif" font-size="30" font-weight="600" fill="#94A3B8">Not on these? You're invisible.</text>
+  <text x="540" y="1040" font-family="Inter,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">GrowthPilot</text>
+</svg>

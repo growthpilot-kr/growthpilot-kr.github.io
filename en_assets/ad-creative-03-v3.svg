@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap');
+    </style>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="16" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="1080" height="1080" fill="#1A1F2E"/>
+
+  <!-- Subtle dot pattern on dark bg -->
+  <g opacity="0.06">
+    <circle cx="80" cy="80" r="2" fill="#FFFFFF"/>
+    <circle cx="200" cy="80" r="2" fill="#FFFFFF"/>
+    <circle cx="320" cy="80" r="2" fill="#FFFFFF"/>
+    <circle cx="440" cy="80" r="2" fill="#FFFFFF"/>
+    <circle cx="560" cy="80" r="2" fill="#FFFFFF"/>
+    <circle cx="680" cy="80" r="2" fill="#FFFFFF"/>
+    <circle cx="800" cy="80" r="2" fill="#FFFFFF"/>
+    <circle cx="920" cy="80" r="2" fill="#FFFFFF"/>
+    <circle cx="1000" cy="80" r="2" fill="#FFFFFF"/>
+    <circle cx="80" cy="200" r="2" fill="#FFFFFF"/>
+    <circle cx="200" cy="200" r="2" fill="#FFFFFF"/>
+    <circle cx="320" cy="200" r="2" fill="#FFFFFF"/>
+    <circle cx="440" cy="200" r="2" fill="#FFFFFF"/>
+    <circle cx="560" cy="200" r="2" fill="#FFFFFF"/>
+    <circle cx="680" cy="200" r="2" fill="#FFFFFF"/>
+    <circle cx="800" cy="200" r="2" fill="#FFFFFF"/>
+    <circle cx="920" cy="200" r="2" fill="#FFFFFF"/>
+    <circle cx="1000" cy="200" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Top label on dark bg -->
+  <text x="540" y="68" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="500" fill="#6B7280" letter-spacing="1.5" text-anchor="middle">FOR FOREIGN BUSINESS OWNERS IN KOREA</text>
+
+  <!-- White card / board -->
+  <rect x="64" y="100" width="952" height="820" rx="24" fill="#FFFFFF" filter="url(#cardShadow)"/>
+
+  <!-- Pin/clip decoration at top of card -->
+  <rect x="490" y="84" width="100" height="32" rx="6" fill="#3B82F6"/>
+  <rect x="510" y="88" width="60" height="8" rx="4" fill="#60A5FA"/>
+
+  <!-- Inside the white card -->
+  <!-- Sub text -->
+  <text x="540" y="250" font-family="Inter, -apple-system, sans-serif" font-size="40" font-weight="400" fill="#9CA3AF" text-anchor="middle">You boosted a post</text>
+  <text x="540" y="305" font-family="Inter, -apple-system, sans-serif" font-size="40" font-weight="400" fill="#9CA3AF" text-anchor="middle">on Instagram and got</text>
+
+  <!-- Bold punch line -->
+  <text x="540" y="460" font-family="Inter, -apple-system, sans-serif" font-size="96" font-weight="900" fill="#1A1A1A" letter-spacing="-3" text-anchor="middle">likes, but</text>
+  <text x="540" y="570" font-family="Inter, -apple-system, sans-serif" font-size="96" font-weight="900" fill="#1A1A1A" letter-spacing="-3" text-anchor="middle">no leads?</text>
+
+  <!-- Divider line -->
+  <rect x="460" y="620" width="160" height="3" rx="1.5" fill="#E5E7EB"/>
+
+  <!-- Tagline inside card -->
+  <text x="540" y="690" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#9CA3AF" text-anchor="middle">Real ad setup. Real Korean customers.</text>
+
+  <!-- CTA button inside card -->
+  <rect x="360" y="740" width="360" height="60" rx="30" fill="#1A1F2E"/>
+  <text x="540" y="779" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">Free Consultation →</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="960" width="1080" height="120" fill="#141820"/>
+  <text x="540" y="1032" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#FFFFFF" text-anchor="middle">GrowthPilot</text>
+</svg>

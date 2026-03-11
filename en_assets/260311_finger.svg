@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background - dark version for variety -->
+  <rect width="1080" height="1080" fill="#1A1A1A"/>
+
+  <!-- Top label -->
+  <text x="72" y="88" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#666666" letter-spacing="0.5">For foreign business owners in Korea</text>
+
+  <!-- Checklist style -->
+  <text x="72" y="300" font-family="Inter, -apple-system, sans-serif" font-size="40" font-weight="400" fill="#666666">✓  Naver Place registered</text>
+  <text x="72" y="370" font-family="Inter, -apple-system, sans-serif" font-size="40" font-weight="400" fill="#666666">✓  Kakao Channel set up</text>
+  <text x="72" y="440" font-family="Inter, -apple-system, sans-serif" font-size="40" font-weight="400" fill="#666666">✓  Instagram ads running</text>
+  <text x="72" y="510" font-family="Inter, -apple-system, sans-serif" font-size="40" font-weight="400" fill="#666666">✓  Tracking installed</text>
+
+  <!-- Bold punch -->
+  <text x="72" y="700" font-family="Inter, -apple-system, sans-serif" font-size="80" font-weight="900" fill="#FFFFFF" letter-spacing="-2">All done.</text>
+  <text x="72" y="800" font-family="Inter, -apple-system, sans-serif" font-size="80" font-weight="900" fill="#FFFFFF" letter-spacing="-2">You didn't lift</text>
+  <text x="72" y="900" font-family="Inter, -apple-system, sans-serif" font-size="80" font-weight="900" fill="#FFFFFF" letter-spacing="-2">a finger.</text>
+
+  <!-- Bottom tagline -->
+  <text x="72" y="1000" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#555555">One-time setup. Free consultation.</text>
+
+  <!-- Brand -->
+  <text x="860" y="1040" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#555555">GrowthPilot</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap');</style></defs>
+  <rect width="1080" height="1080" fill="#1A1F2E"/>
+  <text x="60" y="70" font-family="Inter,sans-serif" font-size="24" font-weight="500" fill="#555">6/7</text>
+  <circle cx="140" cy="200" r="45" fill="#3B82F6" opacity="0.15"/>
+  <text x="140" y="215" font-family="Inter,sans-serif" font-size="36" font-weight="900" fill="#3B82F6" text-anchor="middle">05</text>
+  <text x="90" y="330" font-family="Inter,sans-serif" font-size="60" font-weight="900" fill="#FFFFFF">Monthly</text>
+  <text x="90" y="405" font-family="Inter,sans-serif" font-size="60" font-weight="900" fill="#3B82F6">reporting.</text>
+  <rect x="90" y="440" width="100" height="4" rx="2" fill="#3B82F6" opacity="0.4"/>
+  <text x="90" y="540" font-family="Inter,sans-serif" font-size="34" font-weight="400" fill="#94A3B8">You get a clear report</text>
+  <text x="90" y="590" font-family="Inter,sans-serif" font-size="34" font-weight="400" fill="#94A3B8">showing what's working,</text>
+  <text x="90" y="640" font-family="Inter,sans-serif" font-size="34" font-weight="400" fill="#94A3B8">what's not, and what's next.</text>
+  <text x="90" y="780" font-family="Inter,sans-serif" font-size="30" font-weight="600" fill="#3B82F6">No guessing. Just data</text>
+  <text x="90" y="825" font-family="Inter,sans-serif" font-size="30" font-weight="600" fill="#3B82F6">and clear next steps.</text>
+  <text x="540" y="1040" font-family="Inter,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">GrowthPilot</text>
+</svg>

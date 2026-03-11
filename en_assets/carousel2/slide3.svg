@@ -1,0 +1,15 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap');</style></defs>
+  <rect width="1080" height="1080" fill="#1A1F2E"/>
+  <text x="60" y="70" font-family="Inter,sans-serif" font-size="24" font-weight="500" fill="#555">3/7</text>
+  <text x="90" y="180" font-family="Inter,sans-serif" font-size="28" font-weight="700" fill="#3B82F6" letter-spacing="2">MISTAKE 02</text>
+  <text x="90" y="300" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">Boosting posts</text>
+  <text x="90" y="380" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#3B82F6">= real ads.</text>
+  <rect x="90" y="420" width="100" height="4" rx="2" fill="#3B82F6" opacity="0.4"/>
+  <text x="90" y="520" font-family="Inter,sans-serif" font-size="34" font-weight="400" fill="#94A3B8">Boosting gets you views.</text>
+  <text x="90" y="570" font-family="Inter,sans-serif" font-size="34" font-weight="400" fill="#94A3B8">Not customers.</text>
+  <text x="90" y="700" font-family="Inter,sans-serif" font-size="36" font-weight="700" fill="#FFFFFF">You need conversion</text>
+  <text x="90" y="755" font-family="Inter,sans-serif" font-size="36" font-weight="700" fill="#FFFFFF">campaigns built in</text>
+  <text x="90" y="810" font-family="Inter,sans-serif" font-size="36" font-weight="700" fill="#FFFFFF">Meta Ads Manager.</text>
+  <text x="540" y="1040" font-family="Inter,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">GrowthPilot</text>
+</svg>

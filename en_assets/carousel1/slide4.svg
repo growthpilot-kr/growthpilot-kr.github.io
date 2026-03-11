@@ -1,0 +1,19 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap');</style></defs>
+  <rect width="1080" height="1080" fill="#1A1F2E"/>
+  <text x="60" y="70" font-family="Inter,sans-serif" font-size="24" font-weight="500" fill="#555">4/7</text>
+  <text x="90" y="150" font-family="Inter,sans-serif" font-size="28" font-weight="700" fill="#3B82F6" letter-spacing="2">POINT 02</text>
+  <text x="90" y="270" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">Set up your</text>
+  <text x="90" y="350" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">Korean presence.</text>
+  <rect x="90" y="385" width="120" height="4" rx="2" fill="#3B82F6" opacity="0.4"/>
+  <rect x="90" y="460" width="900" height="120" rx="16" fill="#2A3040"/>
+  <text x="130" y="510" font-family="Inter,sans-serif" font-size="28" font-weight="700" fill="#3B82F6">Naver Place</text>
+  <text x="440" y="510" font-family="Inter,sans-serif" font-size="26" font-weight="400" fill="#94A3B8">Registered + Korean descriptions</text>
+  <rect x="90" y="610" width="900" height="120" rx="16" fill="#2A3040"/>
+  <text x="130" y="660" font-family="Inter,sans-serif" font-size="28" font-weight="700" fill="#3B82F6">Kakao Channel</text>
+  <text x="440" y="660" font-family="Inter,sans-serif" font-size="26" font-weight="400" fill="#94A3B8">Connected to ads + auto-reply</text>
+  <rect x="90" y="760" width="900" height="120" rx="16" fill="#2A3040"/>
+  <text x="130" y="810" font-family="Inter,sans-serif" font-size="28" font-weight="700" fill="#3B82F6">Instagram</text>
+  <text x="440" y="810" font-family="Inter,sans-serif" font-size="26" font-weight="400" fill="#94A3B8">Korean hashtags + ad-ready</text>
+  <text x="540" y="1040" font-family="Inter,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">GrowthPilot</text>
+</svg>

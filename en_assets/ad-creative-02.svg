@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#FAFAF8"/>
+
+  <!-- Top label -->
+  <text x="72" y="88" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#AAAAAA" letter-spacing="0.5">For foreign business owners in Korea</text>
+
+  <!-- Main question - big bold -->
+  <text x="72" y="340" font-family="Inter, -apple-system, sans-serif" font-size="52" font-weight="500" fill="#888888" letter-spacing="-0.5">Great business, great reviews,</text>
+
+  <text x="72" y="480" font-family="Inter, -apple-system, sans-serif" font-size="96" font-weight="900" fill="#1A1A1A" letter-spacing="-3">but zero</text>
+  <text x="72" y="590" font-family="Inter, -apple-system, sans-serif" font-size="96" font-weight="900" fill="#1A1A1A" letter-spacing="-3">Korean</text>
+  <text x="72" y="700" font-family="Inter, -apple-system, sans-serif" font-size="96" font-weight="900" fill="#1A1A1A" letter-spacing="-3">customers?</text>
+
+  <!-- Bottom tagline -->
+  <text x="72" y="920" font-family="Inter, -apple-system, sans-serif" font-size="30" font-weight="400" fill="#999999">Naver · Kakao · Instagram ads — set up for you.</text>
+
+  <!-- Brand -->
+  <text x="860" y="1040" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#BBBBBB">GrowthPilot</text>
+</svg>

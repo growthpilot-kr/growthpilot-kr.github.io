@@ -1,0 +1,12 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap');</style></defs>
+  <rect width="1080" height="1080" fill="#1A1F2E"/>
+  <text x="60" y="70" font-family="Inter,sans-serif" font-size="24" font-weight="500" fill="#555">1/7</text>
+  <text x="540" y="260" font-family="Inter,sans-serif" font-size="26" font-weight="500" fill="#64748B" text-anchor="middle" letter-spacing="2">MARKETING GUIDE</text>
+  <text x="540" y="420" font-family="Inter,sans-serif" font-size="80" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">Running a business</text>
+  <text x="540" y="520" font-family="Inter,sans-serif" font-size="80" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">in Korea?</text>
+  <text x="540" y="660" font-family="Inter,sans-serif" font-size="52" font-weight="700" fill="#3B82F6" text-anchor="middle">But no Korean customers?</text>
+  <rect x="460" y="710" width="160" height="4" rx="2" fill="#3B82F6" opacity="0.4"/>
+  <text x="540" y="790" font-family="Inter,sans-serif" font-size="34" font-weight="400" fill="#94A3B8" text-anchor="middle">3 things you're probably missing.</text>
+  <text x="540" y="1040" font-family="Inter,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">GrowthPilot</text>
+</svg>

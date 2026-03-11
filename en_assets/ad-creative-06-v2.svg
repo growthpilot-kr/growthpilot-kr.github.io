@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap');
+    </style>
+    <filter id="paperShadow2">
+      <feDropShadow dx="2" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Desk / dark background -->
+  <rect width="1080" height="1080" fill="#2C2C2C"/>
+
+  <!-- Subtle wood grain texture lines -->
+  <g opacity="0.04" stroke="#FFFFFF" stroke-width="0.5">
+    <line x1="0" y1="100" x2="1080" y2="105"/>
+    <line x1="0" y1="250" x2="1080" y2="248"/>
+    <line x1="0" y1="400" x2="1080" y2="403"/>
+    <line x1="0" y1="550" x2="1080" y2="547"/>
+    <line x1="0" y1="700" x2="1080" y2="702"/>
+    <line x1="0" y1="850" x2="1080" y2="848"/>
+  </g>
+
+  <!-- Notebook paper - slightly rotated -->
+  <g transform="translate(540, 480) rotate(-1) translate(-460, -420)">
+    <!-- Paper -->
+    <rect x="0" y="0" width="920" height="840" rx="4" fill="#FFFFF8" filter="url(#paperShadow2)"/>
+
+    <!-- Red margin line -->
+    <line x1="100" y1="0" x2="100" y2="840" stroke="#FFCCCC" stroke-width="1.5"/>
+
+    <!-- Blue ruled lines -->
+    <g stroke="#D4E3F5" stroke-width="0.8">
+      <line x1="40" y1="100" x2="880" y2="100"/>
+      <line x1="40" y1="140" x2="880" y2="140"/>
+      <line x1="40" y1="180" x2="880" y2="180"/>
+      <line x1="40" y1="220" x2="880" y2="220"/>
+      <line x1="40" y1="260" x2="880" y2="260"/>
+      <line x1="40" y1="300" x2="880" y2="300"/>
+      <line x1="40" y1="340" x2="880" y2="340"/>
+      <line x1="40" y1="380" x2="880" y2="380"/>
+      <line x1="40" y1="420" x2="880" y2="420"/>
+      <line x1="40" y1="460" x2="880" y2="460"/>
+      <line x1="40" y1="500" x2="880" y2="500"/>
+      <line x1="40" y1="540" x2="880" y2="540"/>
+      <line x1="40" y1="580" x2="880" y2="580"/>
+      <line x1="40" y1="620" x2="880" y2="620"/>
+      <line x1="40" y1="660" x2="880" y2="660"/>
+      <line x1="40" y1="700" x2="880" y2="700"/>
+      <line x1="40" y1="740" x2="880" y2="740"/>
+      <line x1="40" y1="780" x2="880" y2="780"/>
+    </g>
+
+    <!-- Spiral binding holes -->
+    <g fill="#2C2C2C">
+      <circle cx="30" cy="80" r="8"/>
+      <circle cx="30" cy="200" r="8"/>
+      <circle cx="30" cy="320" r="8"/>
+      <circle cx="30" cy="440" r="8"/>
+      <circle cx="30" cy="560" r="8"/>
+      <circle cx="30" cy="680" r="8"/>
+      <circle cx="30" cy="800" r="8"/>
+    </g>
+    <!-- Spiral rings -->
+    <g fill="none" stroke="#888888" stroke-width="2.5">
+      <path d="M 10,72 C 10,56 50,56 50,72 C 50,88 10,88 10,72"/>
+      <path d="M 10,192 C 10,176 50,176 50,192 C 50,208 10,208 10,192"/>
+      <path d="M 10,312 C 10,296 50,296 50,312 C 50,328 10,328 10,312"/>
+      <path d="M 10,432 C 10,416 50,416 50,432 C 50,448 10,448 10,432"/>
+      <path d="M 10,552 C 10,536 50,536 50,552 C 50,568 10,568 10,552"/>
+      <path d="M 10,672 C 10,656 50,656 50,672 C 50,688 10,688 10,672"/>
+      <path d="M 10,792 C 10,776 50,776 50,792 C 50,808 10,808 10,792"/>
+    </g>
+
+    <!-- Content on notebook -->
+    <!-- Opening question -->
+    <text x="130" y="135" font-family="Inter, -apple-system, sans-serif" font-size="30" font-weight="400" fill="#999999">Opened a business in Korea?</text>
+
+    <!-- Bold overwhelm list — like a to-do that's too much -->
+    <text x="130" y="255" font-family="Inter, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#1A1A1A" letter-spacing="-1">Korean platforms.</text>
+    <text x="130" y="325" font-family="Inter, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#1A1A1A" letter-spacing="-1">Korean keywords.</text>
+    <text x="130" y="395" font-family="Inter, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#1A1A1A" letter-spacing="-1">Korean customers.</text>
+
+    <!-- Scribble underlines for emphasis -->
+    <path d="M 130,270 Q 320,280 530,268 Q 650,262 740,275" stroke="#FF6B6B" stroke-width="2.5" fill="none" opacity="0.5"/>
+    <path d="M 130,340 Q 310,350 500,338 Q 620,332 720,345" stroke="#FF6B6B" stroke-width="2.5" fill="none" opacity="0.5"/>
+    <path d="M 130,410 Q 330,420 520,408 Q 660,402 730,415" stroke="#FF6B6B" stroke-width="2.5" fill="none" opacity="0.5"/>
+
+    <!-- Overwhelm question -->
+    <text x="130" y="500" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#999999">Overwhelming, right?</text>
+
+    <!-- Resolution -->
+    <text x="130" y="580" font-family="Inter, -apple-system, sans-serif" font-size="34" font-weight="700" fill="#3B82F6">→ I'll take care of everything.</text>
+
+    <!-- Tagline -->
+    <text x="130" y="700" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#BBBBBB">One-time setup by a bilingual Korean marketer</text>
+  </g>
+
+  <!-- Pencil lying on desk - bottom left -->
+  <g transform="translate(100, 920) rotate(-10)">
+    <!-- Pencil body -->
+    <rect x="0" y="0" width="200" height="16" rx="2" fill="#F5C842"/>
+    <rect x="0" y="0" width="200" height="8" rx="2" fill="#E8B830"/>
+    <!-- Pencil tip -->
+    <polygon points="-20,8 0,0 0,16" fill="#F5DEB3"/>
+    <polygon points="-20,8 -12,5 -12,11" fill="#333333"/>
+    <!-- Eraser -->
+    <rect x="200" y="-1" width="30" height="18" rx="3" fill="#E8A0A0"/>
+    <rect x="196" y="-2" width="8" height="20" rx="1" fill="#C0C0C0"/>
+  </g>
+
+  <!-- Eraser shavings (small detail) -->
+  <g opacity="0.3">
+    <rect x="850" y="950" width="12" height="6" rx="3" fill="#E8A0A0" transform="rotate(15, 856, 953)"/>
+    <rect x="870" y="960" width="8" height="4" rx="2" fill="#E8A0A0" transform="rotate(-20, 874, 962)"/>
+    <rect x="840" y="965" width="10" height="5" rx="2.5" fill="#E8A0A0" transform="rotate(30, 845, 967)"/>
+  </g>
+
+  <!-- Brand at bottom -->
+  <text x="540" y="1050" font-family="Inter, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#666666" text-anchor="middle">GrowthPilot</text>
+</svg>

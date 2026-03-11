@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#FAFAF8"/>
+
+  <!-- Top label centered -->
+  <text x="540" y="88" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#AAAAAA" letter-spacing="0.5" text-anchor="middle">For foreign business owners in Korea</text>
+
+  <!-- Sub text -->
+  <text x="540" y="350" font-family="Inter, -apple-system, sans-serif" font-size="44" font-weight="400" fill="#999999" text-anchor="middle">You boosted a post</text>
+  <text x="540" y="410" font-family="Inter, -apple-system, sans-serif" font-size="44" font-weight="400" fill="#999999" text-anchor="middle">on Instagram and got</text>
+
+  <!-- Bold punch -->
+  <text x="540" y="560" font-family="Inter, -apple-system, sans-serif" font-size="100" font-weight="900" fill="#1A1A1A" letter-spacing="-3" text-anchor="middle">likes, but</text>
+  <text x="540" y="670" font-family="Inter, -apple-system, sans-serif" font-size="100" font-weight="900" fill="#1A1A1A" letter-spacing="-3" text-anchor="middle">no leads?</text>
+
+  <!-- Bottom tagline -->
+  <text x="540" y="890" font-family="Inter, -apple-system, sans-serif" font-size="30" font-weight="400" fill="#999999" text-anchor="middle">Real ad setup. Real Korean customers.</text>
+
+  <!-- Brand -->
+  <text x="540" y="1040" font-family="Inter, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#BBBBBB" text-anchor="middle">GrowthPilot</text>
+</svg>

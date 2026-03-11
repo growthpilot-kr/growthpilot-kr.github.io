@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap');
+    </style>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E3A5F"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Deep navy gradient background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern for tech/trust feel -->
+  <g opacity="0.04" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="180" x2="1080" y2="180"/>
+    <line x1="0" y1="360" x2="1080" y2="360"/>
+    <line x1="0" y1="540" x2="1080" y2="540"/>
+    <line x1="0" y1="720" x2="1080" y2="720"/>
+    <line x1="0" y1="900" x2="1080" y2="900"/>
+    <line x1="270" y1="0" x2="270" y2="1080"/>
+    <line x1="540" y1="0" x2="540" y2="1080"/>
+    <line x1="810" y1="0" x2="810" y2="1080"/>
+  </g>
+
+  <!-- Accent circle decoration top-right -->
+  <circle cx="920" cy="160" r="120" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.15"/>
+  <circle cx="920" cy="160" r="80" fill="none" stroke="#3B82F6" stroke-width="1" opacity="0.1"/>
+
+  <!-- Top label with accent bar -->
+  <rect x="72" y="72" width="4" height="28" rx="2" fill="#3B82F6"/>
+  <text x="88" y="94" font-family="Inter, -apple-system, sans-serif" font-size="24" font-weight="500" fill="#64748B" letter-spacing="1">FOR FOREIGN BUSINESS OWNERS IN KOREA</text>
+
+  <!-- Sub text -->
+  <text x="72" y="340" font-family="Inter, -apple-system, sans-serif" font-size="44" font-weight="400" fill="#94A3B8">You boosted a post</text>
+  <text x="72" y="400" font-family="Inter, -apple-system, sans-serif" font-size="44" font-weight="400" fill="#94A3B8">on Instagram and got</text>
+
+  <!-- Bold punch line -->
+  <text x="72" y="540" font-family="Inter, -apple-system, sans-serif" font-size="100" font-weight="900" fill="#FFFFFF" letter-spacing="-3">likes, but</text>
+  <text x="72" y="660" font-family="Inter, -apple-system, sans-serif" font-size="100" font-weight="900" fill="#FFFFFF" letter-spacing="-3">no leads?</text>
+
+  <!-- Accent line divider -->
+  <rect x="72" y="710" width="120" height="4" rx="2" fill="url(#accentLine)"/>
+
+  <!-- Bottom tagline -->
+  <text x="72" y="790" font-family="Inter, -apple-system, sans-serif" font-size="30" font-weight="400" fill="#64748B">Real ad setup. Real Korean customers.</text>
+
+  <!-- CTA-style badge -->
+  <rect x="72" y="870" width="320" height="56" rx="28" fill="#3B82F6"/>
+  <text x="232" y="906" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">Free Consultation →</text>
+
+  <!-- Brand -->
+  <text x="920" y="1040" font-family="Inter, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#475569" text-anchor="end">GrowthPilot</text>
+</svg>

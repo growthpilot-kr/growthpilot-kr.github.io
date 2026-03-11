@@ -1,0 +1,12 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap');</style></defs>
+  <rect width="1080" height="1080" fill="#1A1F2E"/>
+  <text x="540" y="280" font-family="Inter,sans-serif" font-size="34" font-weight="400" fill="#94A3B8" text-anchor="middle">That's it. All done.</text>
+  <text x="540" y="430" font-family="Inter,sans-serif" font-size="72" font-weight="900" fill="#FFFFFF" text-anchor="middle">You focus on</text>
+  <text x="540" y="520" font-family="Inter,sans-serif" font-size="72" font-weight="900" fill="#FFFFFF" text-anchor="middle">your business.</text>
+  <text x="540" y="620" font-family="Inter,sans-serif" font-size="72" font-weight="900" fill="#3B82F6" text-anchor="middle">I handle the rest.</text>
+  <rect x="460" y="660" width="160" height="4" rx="2" fill="#3B82F6" opacity="0.4"/>
+  <text x="540" y="760" font-family="Inter,sans-serif" font-size="34" font-weight="500" fill="#94A3B8" text-anchor="middle">Free consultation — no commitment.</text>
+  <text x="540" y="860" font-family="Inter,sans-serif" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle">DM or link in bio →</text>
+  <text x="540" y="1040" font-family="Inter,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">GrowthPilot</text>
+</svg>

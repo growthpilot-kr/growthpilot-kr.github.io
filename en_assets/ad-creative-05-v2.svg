@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap');
+    </style>
+    <filter id="paperShadow">
+      <feDropShadow dx="2" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Desk / dark background -->
+  <rect width="1080" height="1080" fill="#2C2C2C"/>
+
+  <!-- Subtle wood grain texture lines -->
+  <g opacity="0.04" stroke="#FFFFFF" stroke-width="0.5">
+    <line x1="0" y1="100" x2="1080" y2="105"/>
+    <line x1="0" y1="250" x2="1080" y2="248"/>
+    <line x1="0" y1="400" x2="1080" y2="403"/>
+    <line x1="0" y1="550" x2="1080" y2="547"/>
+    <line x1="0" y1="700" x2="1080" y2="702"/>
+    <line x1="0" y1="850" x2="1080" y2="848"/>
+  </g>
+
+  <!-- Notebook paper - slightly rotated for natural feel -->
+  <g transform="translate(540, 480) rotate(-1) translate(-460, -420)">
+    <!-- Paper -->
+    <rect x="0" y="0" width="920" height="840" rx="4" fill="#FFFFF8" filter="url(#paperShadow)"/>
+
+    <!-- Red margin line -->
+    <line x1="100" y1="0" x2="100" y2="840" stroke="#FFCCCC" stroke-width="1.5"/>
+
+    <!-- Blue ruled lines -->
+    <g stroke="#D4E3F5" stroke-width="0.8">
+      <line x1="40" y1="100" x2="880" y2="100"/>
+      <line x1="40" y1="140" x2="880" y2="140"/>
+      <line x1="40" y1="180" x2="880" y2="180"/>
+      <line x1="40" y1="220" x2="880" y2="220"/>
+      <line x1="40" y1="260" x2="880" y2="260"/>
+      <line x1="40" y1="300" x2="880" y2="300"/>
+      <line x1="40" y1="340" x2="880" y2="340"/>
+      <line x1="40" y1="380" x2="880" y2="380"/>
+      <line x1="40" y1="420" x2="880" y2="420"/>
+      <line x1="40" y1="460" x2="880" y2="460"/>
+      <line x1="40" y1="500" x2="880" y2="500"/>
+      <line x1="40" y1="540" x2="880" y2="540"/>
+      <line x1="40" y1="580" x2="880" y2="580"/>
+      <line x1="40" y1="620" x2="880" y2="620"/>
+      <line x1="40" y1="660" x2="880" y2="660"/>
+      <line x1="40" y1="700" x2="880" y2="700"/>
+      <line x1="40" y1="740" x2="880" y2="740"/>
+      <line x1="40" y1="780" x2="880" y2="780"/>
+    </g>
+
+    <!-- Spiral binding holes -->
+    <g fill="#2C2C2C">
+      <circle cx="30" cy="80" r="8"/>
+      <circle cx="30" cy="200" r="8"/>
+      <circle cx="30" cy="320" r="8"/>
+      <circle cx="30" cy="440" r="8"/>
+      <circle cx="30" cy="560" r="8"/>
+      <circle cx="30" cy="680" r="8"/>
+      <circle cx="30" cy="800" r="8"/>
+    </g>
+    <!-- Spiral rings -->
+    <g fill="none" stroke="#888888" stroke-width="2.5">
+      <path d="M 10,72 C 10,56 50,56 50,72 C 50,88 10,88 10,72"/>
+      <path d="M 10,192 C 10,176 50,176 50,192 C 50,208 10,208 10,192"/>
+      <path d="M 10,312 C 10,296 50,296 50,312 C 50,328 10,328 10,312"/>
+      <path d="M 10,432 C 10,416 50,416 50,432 C 50,448 10,448 10,432"/>
+      <path d="M 10,552 C 10,536 50,536 50,552 C 50,568 10,568 10,552"/>
+      <path d="M 10,672 C 10,656 50,656 50,672 C 50,688 10,688 10,672"/>
+      <path d="M 10,792 C 10,776 50,776 50,792 C 50,808 10,808 10,792"/>
+    </g>
+
+    <!-- Handwriting-style content on notebook -->
+    <!-- Empathy text -->
+    <text x="130" y="135" font-family="Inter, -apple-system, sans-serif" font-size="30" font-weight="400" fill="#999999">You came to Korea</text>
+    <text x="130" y="175" font-family="Inter, -apple-system, sans-serif" font-size="30" font-weight="400" fill="#999999">to run a business.</text>
+
+    <!-- Bold punch -->
+    <text x="130" y="295" font-family="Inter, -apple-system, sans-serif" font-size="58" font-weight="900" fill="#1A1A1A" letter-spacing="-1.5">Not to figure out</text>
+    <text x="130" y="370" font-family="Inter, -apple-system, sans-serif" font-size="58" font-weight="900" fill="#1A1A1A" letter-spacing="-1.5">Korean marketing.</text>
+
+    <!-- Underline scribble under "Korean marketing" -->
+    <path d="M 130,385 Q 300,395 480,382 Q 600,375 700,388" stroke="#3B82F6" stroke-width="3" fill="none" opacity="0.6"/>
+
+    <!-- List of overwhelm -->
+    <text x="130" y="470" font-family="Inter, -apple-system, sans-serif" font-size="24" font-weight="400" fill="#9CA3AF">Naver Place. Kakao Channel. Korean ads. Reviews.</text>
+
+    <!-- Resolution -->
+    <text x="130" y="545" font-family="Inter, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#3B82F6">→ I'll handle all of it.</text>
+
+    <!-- Tagline -->
+    <text x="130" y="700" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#BBBBBB">One-time setup · No monthly contract required</text>
+  </g>
+
+  <!-- Pencil lying on desk -->
+  <g transform="translate(780, 880) rotate(-25)">
+    <!-- Pencil body -->
+    <rect x="0" y="0" width="180" height="16" rx="2" fill="#F5C842"/>
+    <rect x="0" y="0" width="180" height="8" rx="2" fill="#E8B830"/>
+    <!-- Pencil tip -->
+    <polygon points="-20,8 0,0 0,16" fill="#F5DEB3"/>
+    <polygon points="-20,8 -12,5 -12,11" fill="#333333"/>
+    <!-- Eraser -->
+    <rect x="180" y="-1" width="30" height="18" rx="3" fill="#E8A0A0"/>
+    <rect x="176" y="-2" width="8" height="20" rx="1" fill="#C0C0C0"/>
+  </g>
+
+  <!-- Brand at bottom -->
+  <text x="540" y="1050" font-family="Inter, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#666666" text-anchor="middle">GrowthPilot</text>
+</svg>

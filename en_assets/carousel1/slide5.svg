@@ -1,0 +1,16 @@
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap');</style></defs>
+  <rect width="1080" height="1080" fill="#1A1F2E"/>
+  <text x="60" y="70" font-family="Inter,sans-serif" font-size="24" font-weight="500" fill="#555">5/7</text>
+  <text x="90" y="150" font-family="Inter,sans-serif" font-size="28" font-weight="700" fill="#3B82F6" letter-spacing="2">POINT 03</text>
+  <text x="90" y="270" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">Ads that actually</text>
+  <text x="90" y="350" font-family="Inter,sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">convert.</text>
+  <rect x="90" y="385" width="120" height="4" rx="2" fill="#3B82F6" opacity="0.4"/>
+  <text x="120" y="490" font-family="Inter,sans-serif" font-size="34" font-weight="600" fill="#EF4444">✗  Boosting posts → likes only</text>
+  <text x="120" y="570" font-family="Inter,sans-serif" font-size="34" font-weight="600" fill="#3B82F6">✓  Targeted ads → real customers</text>
+  <rect x="90" y="640" width="900" height="4" rx="2" fill="#2A3040"/>
+  <text x="120" y="720" font-family="Inter,sans-serif" font-size="30" font-weight="500" fill="#FFFFFF">→  Pixel tracking installed</text>
+  <text x="120" y="780" font-family="Inter,sans-serif" font-size="30" font-weight="500" fill="#FFFFFF">→  Korean audience targeting</text>
+  <text x="120" y="840" font-family="Inter,sans-serif" font-size="30" font-weight="500" fill="#FFFFFF">→  Weekly performance data</text>
+  <text x="540" y="1040" font-family="Inter,sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">GrowthPilot</text>
+</svg>
