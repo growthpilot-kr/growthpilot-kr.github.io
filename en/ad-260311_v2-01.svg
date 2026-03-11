@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&amp;display=swap');</style>
+  </defs>
+  <!-- Background - dark -->
+  <rect width="1080" height="1080" fill="#1A1A1A"/>
+  <!-- Top label -->
+  <text x="72" y="88" font-family="Inter, sans-serif" font-size="26" font-weight="400" fill="#666" letter-spacing="0.5">For foreign business owners in Korea</text>
+  <!-- Setup text -->
+  <text x="72" y="280" font-family="Inter, sans-serif" font-size="38" font-weight="400" fill="#666">Your Meta ads are running.</text>
+  <text x="72" y="340" font-family="Inter, sans-serif" font-size="38" font-weight="400" fill="#666">But your targeting says</text>
+  <!-- Punch -->
+  <text x="72" y="510" font-family="Inter, sans-serif" font-size="88" font-weight="900" fill="#FFFFFF" letter-spacing="-3">"Seoul,</text>
+  <text x="72" y="620" font-family="Inter, sans-serif" font-size="88" font-weight="900" fill="#FFFFFF" letter-spacing="-3">age 20-40,</text>
+  <text x="72" y="730" font-family="Inter, sans-serif" font-size="88" font-weight="900" fill="#FFFFFF" letter-spacing="-3">women."</text>
+  <!-- Bottom -->
+  <text x="72" y="880" font-family="Inter, sans-serif" font-size="34" font-weight="600" fill="#999">That's not targeting.</text>
+  <text x="72" y="930" font-family="Inter, sans-serif" font-size="34" font-weight="600" fill="#999">That's guessing.</text>
+  <text x="72" y="1040" font-family="Inter, sans-serif" font-size="26" font-weight="400" fill="#555">Free consultation →</text>
+  <text x="860" y="1040" font-family="Inter, sans-serif" font-size="26" font-weight="600" fill="#555">GrowthPilot</text>
+</svg>
