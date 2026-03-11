@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GrowthPilot — 스냅작가 전용 인스타 광고 세팅</title>
-  <meta name="description" content="스냅작가를 위한 인스타그램 광고 세팅. 벚꽃·웨딩 시즌 예약 문의 늘리고 싶다면. 한 번 세팅하면 혼자 돌릴 수 있습니다.">
-  <meta property="og:title" content="GrowthPilot — 스냅작가 전용 인스타 광고 세팅">
-  <meta property="og:description" content="벚꽃·웨딩 시즌, 예약 문의 늘리고 싶은 스냅작가를 위한 인스타 광고 세팅. 한 번만 맡기면 끝.">
+  <title>GrowthPilot — Korean Marketing for Foreign Business Owners</title>
+  <meta name="description" content="Running a business in Korea but struggling to reach Korean customers? A bilingual performance marketer helps you set up Naver, Kakao, Instagram & more.">
+  <meta property="og:title" content="GrowthPilot — Korean Marketing for Foreign Business Owners">
+  <meta property="og:description" content="A bilingual marketer who manages 200M+ KRW monthly ad budgets helps you reach Korean customers through Naver, Kakao, and Instagram.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://growthpilot-kr.github.io/">
+  <meta property="og:url" content="https://growthpilot-kr.github.io/en/">
   <meta property="og:image" content="https://growthpilot-kr.github.io/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -41,7 +41,7 @@
   /></noscript>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
@@ -63,7 +63,7 @@
     }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       color: var(--text-primary);
       background: var(--white);
       line-height: 1.7;
@@ -77,6 +77,9 @@
     .nav-inner { max-width:720px; margin:0 auto; padding:0 24px; height:60px; display:flex; align-items:center; justify-content:space-between; }
     .logo { font-size:17px; font-weight:700; color:var(--text-primary); letter-spacing:-0.02em; display:flex; align-items:center; gap:8px; }
     .logo img { height:28px; width:auto; }
+    .nav-right { display:flex; align-items:center; gap:16px; }
+    .lang-switch { font-size:13px; font-weight:500; color:var(--text-secondary); text-decoration:none; transition:color 0.2s; }
+    .lang-switch:hover { color:var(--text-primary); }
     .nav-cta { font-size:13px; font-weight:600; color:var(--white); background:var(--blue); padding:8px 20px; border-radius:100px; text-decoration:none; transition:background 0.2s; }
     .nav-cta:hover { background:var(--blue-dark); }
     /* ── Hero ── */
@@ -84,7 +87,7 @@
     .hero-label { display:inline-block; font-size:12px; font-weight:500; color:var(--text-secondary); background:var(--bg); padding:6px 16px; border-radius:100px; margin-bottom:28px; letter-spacing:0.04em; }
     .hero h1 { font-size:clamp(28px,6vw,42px); font-weight:800; line-height:1.3; letter-spacing:-0.03em; color:var(--text-primary); margin-bottom:20px; }
     .hero h1 .accent { text-decoration:underline; text-decoration-color:var(--border); text-underline-offset:6px; text-decoration-thickness:2px; }
-    .hero p { font-size:17px; color:var(--text-secondary); line-height:1.8; margin-bottom:24px; max-width:520px; font-weight:300; }
+    .hero p { font-size:17px; color:var(--text-secondary); line-height:1.8; margin-bottom:24px; max-width:540px; font-weight:300; }
     .hero-trust { display:flex; align-items:center; gap:24px; margin-bottom:32px; }
     .trust-badge { display:flex; flex-direction:column; gap:4px; }
     .trust-number { font-size:22px; font-weight:800; color:var(--text-primary); letter-spacing:-0.02em; }
@@ -96,32 +99,43 @@
     .btn-secondary { display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:500; color:var(--text-secondary); background:transparent; padding:14px 32px; border-radius:100px; text-decoration:none; border:1px solid var(--border); transition:all 0.2s; }
     .btn-secondary:hover { border-color:var(--text-tertiary); color:var(--text-primary); }
     .hero-note { margin-top:20px; font-size:13px; color:var(--text-tertiary); font-weight:400; }
-    /* ── Flow Image ── */
     /* ── Pain Points ── */
     .pain-section { background:var(--white); padding:0 0 48px; }
     .pain-list { display:flex; flex-direction:column; gap:12px; }
-    .pain-item { font-size:15px; color:var(--text-secondary); line-height:1.6; padding-left:28px; position:relative; font-weight:400; word-break:keep-all; }
+    .pain-item { font-size:15px; color:var(--text-secondary); line-height:1.6; padding-left:28px; position:relative; font-weight:400; }
     .pain-item::before { content:'😶'; position:absolute; left:0; top:0; font-size:14px; }
-    .pain-lead { font-size:20px; font-weight:700; letter-spacing:-0.02em; color:var(--text-primary); margin-bottom:20px; word-break:keep-all; }
+    .pain-lead { font-size:20px; font-weight:700; letter-spacing:-0.02em; color:var(--text-primary); margin-bottom:20px; }
+    /* ── Flow Diagram ── */
     .flow-section { background:var(--bg); padding:60px 0; }
     .flow-section .container { max-width:960px; }
-    .flow-image { width:100%; height:auto; border-radius:var(--radius-lg); }
+    .flow-diagram { display:flex; align-items:stretch; gap:0; }
+    .flow-step { flex:1; text-align:center; position:relative; }
+    .flow-step-inner { background:var(--white); border-radius:var(--radius-lg); padding:32px 20px; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+    .flow-step.active .flow-step-inner { background:var(--text-primary); color:var(--white); }
+    .flow-icon { font-size:32px; margin-bottom:12px; }
+    .flow-title { font-size:15px; font-weight:700; letter-spacing:-0.02em; margin-bottom:6px; }
+    .flow-step.active .flow-title { color:var(--white); }
+    .flow-items { font-size:13px; color:var(--text-tertiary); line-height:1.6; font-weight:300; }
+    .flow-step.active .flow-items { color:rgba(255,255,255,0.6); }
+    .flow-arrow { flex-shrink:0; display:flex; align-items:center; padding:0 8px; font-size:20px; color:var(--text-tertiary); font-weight:300; }
+    @media (max-width: 640px) {
+      .flow-diagram { flex-direction:column; gap:0; }
+      .flow-arrow { justify-content:center; padding:8px 0; transform:rotate(90deg); }
+      .flow-step-inner { padding:24px 16px; }
+    }
     /* ── Section Common ── */
     .section-label { font-size:11px; font-weight:500; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:12px; }
     .section-title { font-size:clamp(24px,5vw,32px); font-weight:700; letter-spacing:-0.02em; line-height:1.35; margin-bottom:16px; }
-    .section-desc { font-size:16px; color:var(--text-secondary); line-height:1.7; margin-bottom:48px; max-width:560px; font-weight:300; word-break:keep-all; }
+    .section-desc { font-size:16px; color:var(--text-secondary); line-height:1.7; margin-bottom:48px; max-width:560px; font-weight:300; }
     /* ── Steps Detail ── */
     .steps-detail { background:var(--white); }
     .steps-grid { display:flex; flex-direction:column; gap:40px; }
     .step-row { display:flex; gap:24px; align-items:flex-start; }
     .step-num { flex-shrink:0; width:36px; height:36px; border-radius:50%; background:var(--text-primary); color:var(--white); font-size:15px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-top:2px; }
     .step-body { flex:1; }
-    .step-title { font-size:18px; font-weight:700; letter-spacing:-0.02em; margin-bottom:8px; color:var(--text-primary); word-break:keep-all; }
-    .step-desc { font-size:15px; color:var(--text-secondary); line-height:1.8; font-weight:300; word-break:keep-all; }
+    .step-title { font-size:18px; font-weight:700; letter-spacing:-0.02em; margin-bottom:8px; color:var(--text-primary); }
+    .step-desc { font-size:15px; color:var(--text-secondary); line-height:1.8; font-weight:300; }
     .step-highlight { display:inline-block; font-size:13px; font-weight:500; color:var(--text-primary); background:var(--bg); padding:4px 12px; border-radius:100px; margin-top:10px; }
-    .step-extra { margin-top:40px; padding:24px; background:var(--bg); border-radius:var(--radius); text-align:center; }
-    .step-extra-label { font-size:13px; font-weight:600; color:var(--text-primary); margin-bottom:4px; }
-    .step-extra-desc { font-size:14px; color:var(--text-secondary); font-weight:300; word-break:keep-all; }
     @media (max-width: 640px) {
       .step-row { gap:16px; }
       .step-num { width:32px; height:32px; font-size:13px; }
@@ -132,8 +146,8 @@
     .why-grid { display:flex; flex-direction:column; gap:24px; }
     .why-card { background:var(--white); border-radius:var(--radius); padding:28px 24px; }
     .why-card-label { font-size:12px; font-weight:600; color:var(--text-tertiary); margin-bottom:8px; text-transform:uppercase; letter-spacing:0.06em; }
-    .why-card-title { font-size:17px; font-weight:700; color:var(--text-primary); letter-spacing:-0.02em; margin-bottom:8px; word-break:keep-all; }
-    .why-card-desc { font-size:14px; color:var(--text-secondary); line-height:1.7; font-weight:300; word-break:keep-all; }
+    .why-card-title { font-size:17px; font-weight:700; color:var(--text-primary); letter-spacing:-0.02em; margin-bottom:8px; }
+    .why-card-desc { font-size:14px; color:var(--text-secondary); line-height:1.7; font-weight:300; }
     /* ── Packages ── */
     .packages { background:var(--bg); }
     .package-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:stretch; }
@@ -176,6 +190,19 @@
     .final-cta .section-label { color:rgba(255,255,255,0.5); }
     .final-cta .section-title { color:var(--white); }
     .final-cta .section-desc { color:rgba(255,255,255,0.6); margin-left:auto; margin-right:auto; margin-bottom:36px; }
+    /* ── About ── */
+    .about-section { background:var(--white); }
+    .about-card { background:var(--bg); border-radius:var(--radius-lg); padding:40px 36px; }
+    .about-headline { font-size:18px; font-weight:700; color:var(--text-primary); letter-spacing:-0.02em; margin-bottom:16px; line-height:1.5; }
+    .about-intro { font-size:15px; color:var(--text-secondary); line-height:1.8; font-weight:300; margin-bottom:28px; }
+    .trust-points { display:flex; flex-direction:column; gap:16px; margin-bottom:28px; }
+    .trust-point { display:flex; gap:14px; align-items:flex-start; }
+    .trust-point-icon { flex-shrink:0; width:36px; height:36px; border-radius:50%; background:var(--white); display:flex; align-items:center; justify-content:center; font-size:16px; margin-top:2px; }
+    .trust-point-body { flex:1; }
+    .trust-point-title { font-size:15px; font-weight:600; color:var(--text-primary); margin-bottom:2px; }
+    .trust-point-desc { font-size:14px; color:var(--text-secondary); line-height:1.6; font-weight:300; }
+    .about-tags { display:flex; flex-wrap:wrap; gap:8px; }
+    .about-tag { font-size:13px; font-weight:500; color:var(--text-secondary); background:var(--white); padding:6px 14px; border-radius:100px; }
     /* ── Contact Form ── */
     .form-section { background:var(--bg); }
     .form-card { background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:48px 40px; max-width:480px; margin:0 auto; }
@@ -211,12 +238,8 @@
       .hero-cta-group a { text-align:center; justify-content:center; }
       .package-grid { grid-template-columns:1fr; gap:16px; }
       .about-card { padding:32px 24px; }
-      .about-stats { grid-template-columns:repeat(3,1fr); gap:8px; }
-      .stat { padding:16px 8px; }
-      .stat-number { font-size:20px; }
       .form-card { padding:32px 24px; }
       .floating-cta a { font-size:13px; padding:12px 24px; }
-      .flow-section { padding:40px 0; }
     }
     /* ── Animations ── */
     .fade-in { opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease; }
@@ -227,98 +250,125 @@
   <!-- Navigation -->
   <nav id="nav">
     <div class="nav-inner">
-      <div class="logo"><img src="assets/logo/GP_logo_line.png" alt="GrowthPilot"></div>
-      <a href="#contact" class="nav-cta">무료 상담 신청</a>
+      <div class="logo"><img src="../assets/logo/GP_logo_line.png" alt="GrowthPilot"></div>
+      <div class="nav-right">
+        <a href="../index.html" class="lang-switch">🇰🇷 한국어</a>
+        <a href="#contact" class="nav-cta">Free Consultation</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <div class="hero-label">벚꽃·웨딩 시즌 준비 — 스냅작가 전용</div>
-      <h1>사진은 자신 있는데,<br><span class="accent">예약 문의</span>는<br>왜 안 들어올까요?</h1>
-      <p>월 2억 광고 예산을 운영한 퍼포먼스 마케터가,<br>스냅 작가님 맞춤으로 인스타 광고를 세팅해드립니다.</p>
+      <div class="hero-label">For foreign business owners in Korea</div>
+      <h1>Running a business in Korea<br>but struggling to reach<br><span class="accent">Korean customers?</span></h1>
+      <p>A bilingual performance marketer who manages 200M+ KRW monthly ad budgets helps you set up Korean marketing channels — Naver, Kakao, Instagram, and more.</p>
       <div class="hero-trust">
         <div class="trust-badge">
-          <span class="trust-number">2억+</span>
-          <span class="trust-label">월 광고 예산 운영</span>
+          <span class="trust-number">₩200M+</span>
+          <span class="trust-label">Monthly ad budget</span>
         </div>
         <div class="trust-divider"></div>
         <div class="trust-badge">
-          <span class="trust-number">2년+</span>
-          <span class="trust-label">퍼포먼스 마케팅</span>
+          <span class="trust-number">6</span>
+          <span class="trust-label">Ad platforms managed</span>
         </div>
         <div class="trust-divider"></div>
         <div class="trust-badge">
-          <span class="trust-number">6개</span>
-          <span class="trust-label">광고 플랫폼 운영</span>
+          <span class="trust-number">Bilingual</span>
+          <span class="trust-label">Korean + English</span>
         </div>
       </div>
       <div class="hero-cta-group">
-        <a href="#contact" class="btn-primary">무료 상담 신청 →</a>
-        <a href="#packages" class="btn-secondary">어떤 서비스인지 보기</a>
+        <a href="#contact" class="btn-primary">Get a Free Consultation →</a>
+        <a href="#packages" class="btn-secondary">See what's included</a>
       </div>
-      <p class="hero-note">웨딩 · 졸업 · 벚꽃 · 프로필 · 돌잔치 스냅 작가님 대상</p>
+      <p class="hero-note">For cafes, restaurants, yoga studios, beauty shops, PT trainers, photographers & more</p>
     </div>
   </section>
 
   <!-- Pain Points -->
   <section class="pain-section">
     <div class="container">
-      <p class="pain-lead">혹시 이런 고민 하고 계신가요?</p>
+      <p class="pain-lead">Sound familiar?</p>
       <div class="pain-list">
-        <div class="pain-item">피드는 예쁜데, DM 문의는 안 옴</div>
-        <div class="pain-item">게시물 홍보 눌러봤는데 좋아요만 늘었음</div>
-        <div class="pain-item">광고? 어디서부터 뭘 해야 하는지 모름</div>
-        <div class="pain-item">대행사는 비싸고, 혼자 하기는 막막</div>
+        <div class="pain-item">You know Naver, Kakao, and Danggeun exist — but have no idea how to use them</div>
+        <div class="pain-item">You can run Meta ads, but Korean ad platforms feel impossible due to the language barrier</div>
+        <div class="pain-item">Your Instagram looks great, but Korean locals don't find you</div>
+        <div class="pain-item">You don't understand Korean consumer behavior — Naver search, KakaoTalk inquiries, blog reviews</div>
       </div>
     </div>
   </section>
 
-  <!-- Flow Image -->
+  <!-- Flow Diagram -->
   <section class="flow-section">
     <div class="container">
-      <img src="assets/pics/pic_1.png" alt="GrowthPilot 서비스 흐름: 지금 상태 → GrowthPilot 세팅 → 예약 문의 유입" class="flow-image fade-in">
+      <div class="flow-diagram fade-in">
+        <div class="flow-step">
+          <div class="flow-step-inner">
+            <div class="flow-icon">😕</div>
+            <div class="flow-title">You right now</div>
+            <div class="flow-items">Great at what you do<br>but invisible to Korean customers<br>and lost in Korean platforms</div>
+          </div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step active">
+          <div class="flow-step-inner">
+            <div class="flow-icon">⚡</div>
+            <div class="flow-title">I handle everything</div>
+            <div class="flow-items">All Korean channels set up<br>Ads launched & optimized<br>You just focus on your business</div>
+          </div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-step-inner">
+            <div class="flow-icon">📈</div>
+            <div class="flow-title">Korean customers come to you</div>
+            <div class="flow-items">Inquiries on KakaoTalk<br>Found on Naver search<br>Run it yourself — or let me manage it</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Steps Detail -->
   <section class="steps-detail" id="about">
     <div class="container">
-      <div class="section-label">진행 방식</div>
-      <h2 class="section-title fade-in">GrowthPilot이 해드리는 것</h2>
-      <p class="section-desc fade-in">그냥 광고 틀어드리는 게 아니라, 작가님 상황에 맞게 세팅하고 직접 운영할 수 있게 만들어드립니다.</p>
+      <div class="section-label">How it works</div>
+      <h2 class="section-title fade-in">What GrowthPilot does for you</h2>
+      <p class="section-desc fade-in">We don't just translate your ads. We localize your entire marketing presence so Korean customers can actually find and trust you.</p>
       <div class="steps-grid">
         <div class="step-row fade-in">
           <div class="step-num">1</div>
           <div class="step-body">
-            <div class="step-title">내 사진을 누가 봐야 예약이 될까?</div>
-            <div class="step-desc">지역, 관심사, 연령대 등 여러 조합을 직접 돌려보고, 작가님한테 실제로 문의가 오는 타겟을 찾아드려요. "서울 강남 웨딩 관심 25-34세" 같은 식으로, 데이터 보면서 가장 반응 좋은 조합을 잡아드립니다.</div>
-            <span class="step-highlight">맞춤 타겟 설정</span>
+            <div class="step-title">Set up Korean marketing channels</div>
+            <div class="step-desc">We create and configure your presence on Naver (Korea's #1 search engine), KakaoTalk (Korea's #1 messaging app), and Korean Instagram. This includes Naver Place registration, Kakao Channel setup, and Instagram business profile optimization for Korean audiences.</div>
+            <span class="step-highlight">Naver · Kakao · Instagram</span>
           </div>
         </div>
         <div class="step-row fade-in">
           <div class="step-num">2</div>
           <div class="step-body">
-            <div class="step-title">어떤 사진이 예약으로 이어질까?</div>
-            <div class="step-desc">감정이 담긴 자연스러운 컷, 촬영 비하인드, 고객 후기 등 작가님의 사진 중에서 여러 장을 골라 광고를 동시에 돌려봐요. "이 사진에 이 문구 조합이 문의가 제일 많이 온다"를 실제 데이터로 찾아드립니다. 감이 아니라 숫자로 확인하는 거예요.</div>
-            <span class="step-highlight">작가님 맞춤 광고 제작</span>
+            <div class="step-title">Optimize your profiles for Korean discovery</div>
+            <div class="step-desc">Koreans check Naver Place, read reviews, and message on KakaoTalk before visiting. We fill out your Naver Place and Kakao Channel profiles with proper Korean descriptions, categories, and keywords. You'll also get a guide on how Korean consumers discover local businesses.</div>
+            <span class="step-highlight">Naver Place + Kakao optimization</span>
           </div>
         </div>
         <div class="step-row fade-in">
           <div class="step-num">3</div>
           <div class="step-body">
-            <div class="step-title">클릭한 사람이 진짜 문의까지 오게</div>
-            <div class="step-desc">광고 클릭 → 프로필 방문 → DM 문의까지, 중간에 빠지는 곳 없이 연결해드려요. 픽셀이나 전환 추적 같은 기술적인 부분도 직접 세팅해드리니까 작가님은 신경 쓸 필요 없어요.</div>
-            <span class="step-highlight">전환 추적 개발 포함</span>
+            <div class="step-title">Launch targeted ad campaigns</div>
+            <div class="step-desc">We set up and run performance ads across Meta, Naver GFA, and Kakao Moment — targeting Korean users by location, interest, and behavior. Multiple ad creatives and audience segments are A/B tested to find what actually drives inquiries.</div>
+            <span class="step-highlight">Multi-platform ads</span>
           </div>
         </div>
         <div class="step-row fade-in">
           <div class="step-num">4</div>
           <div class="step-body">
-            <div class="step-title">다음부터는 혼자서도 할 수 있게</div>
-            <div class="step-desc">세팅이 끝나면, 광고 켜기/끄기, 예산 조절, 성과 확인하는 법까지 매뉴얼과 교육으로 알려드려요. 더 이상 누군가한테 매달 비용 내면서 맡길 필요 없어요.</div>
-            <span class="step-highlight">매뉴얼 + 교육 제공</span>
+            <div class="step-title">Track performance with real data</div>
+            <div class="step-desc">Pixel installation, conversion tracking, and analytics setup — so you know exactly which channel brings customers and how much each inquiry costs. No guessing, just numbers. We also provide a manual so you can manage everything independently after.</div>
+            <span class="step-highlight">Pixel + conversion tracking included</span>
           </div>
         </div>
       </div>
@@ -328,23 +378,23 @@
   <!-- Why It Works -->
   <section class="why-section">
     <div class="container">
-      <div class="section-label">왜 효과가 있나요?</div>
-      <h2 class="section-title fade-in">게시물 홍보 그 다음,<br>뭘 더 하면 문의가 올까요?</h2>
+      <div class="section-label">Why this works</div>
+      <h2 class="section-title fade-in">Korean marketing isn't just<br>about translating your ads</h2>
       <div class="why-grid">
         <div class="why-card fade-in">
-          <div class="why-card-label">노출 → 문의로</div>
-          <div class="why-card-title">게시물 홍보로 노출은 늘었는데, 문의까지는 안 오셨다면요.</div>
-          <div class="why-card-desc">게시물 홍보는 좋은 시작점이에요. 하지만 "노출"과 "문의"는 다른 목표예요. 광고 관리자에서 "문의" 목표로 한 단계 더 세팅하면, 인스타가 그냥 볼 사람이 아니라 실제로 예약할 가능성이 높은 사람에게 보여줘요.</div>
+          <div class="why-card-label">Search behavior</div>
+          <div class="why-card-title">Koreans don't Google — they Naver.</div>
+          <div class="why-card-desc">Over 60% of Korean local searches happen on Naver, not Google. If your business isn't registered on Naver Place, most Korean customers will never find you. We register and optimize your Naver presence so you show up where Koreans actually search.</div>
         </div>
         <div class="why-card fade-in">
-          <div class="why-card-label">감 vs 데이터</div>
-          <div class="why-card-title">어떤 사진이 될지 감으로 고르지 않아요. 여러 개를 돌려보고 숫자로 확인해요.</div>
-          <div class="why-card-desc">같은 작가님 사진이라도 어떤 건 문의 0건, 어떤 건 5건이 올 수 있어요. 한 장에 베팅하는 게 아니라 여러 조합을 동시에 테스트해서, 실제로 문의가 오는 조합을 데이터로 찾아내는 거예요.</div>
+          <div class="why-card-label">Communication</div>
+          <div class="why-card-title">Koreans message on KakaoTalk, not email or DMs.</div>
+          <div class="why-card-desc">When Korean customers want to book or ask a question, they expect a KakaoTalk channel. Without it, you're losing potential customers who won't bother with Instagram DMs or phone calls. We connect your ads directly to KakaoTalk inquiries.</div>
         </div>
         <div class="why-card fade-in">
-          <div class="why-card-label">클릭 vs 문의</div>
-          <div class="why-card-title">클릭만 많아도 문의가 안 올 수 있어요. 클릭한 사람이 문의까지 오게 만드는 게 핵심이에요.</div>
-          <div class="why-card-desc">광고를 클릭했는데 프로필에서 이탈하거나, DM 보내기 버튼을 못 찾으면 의미가 없어요. 전환 추적을 세팅하면 어디서 빠지는지 보이고, 그 빠지는 곳을 막아서 클릭 → 문의까지 연결해요.</div>
+          <div class="why-card-label">Trust signals</div>
+          <div class="why-card-title">Korean consumers check Naver reviews before visiting anywhere.</div>
+          <div class="why-card-desc">Before trying a new place, Koreans search for Naver blog reviews and check ratings — it's how trust works here. We register your business on Naver Place so you're findable. Blog reviews come naturally from your customers over time — but without Naver Place, there's nowhere for that trust to live.</div>
         </div>
       </div>
     </div>
@@ -353,72 +403,122 @@
   <!-- Packages -->
   <section class="packages" id="packages">
     <div class="container">
-      <div class="section-label">서비스 안내</div>
-      <h2 class="section-title fade-in">한 번 세팅하면,<br>이후엔 직접 운영할 수 있습니다</h2>
-      <p class="section-desc fade-in">광고 세팅부터 직접 운영하는 방법까지 모두 포함되어 있습니다. 월 비용 없이 1회로 끝납니다.</p>
+      <div class="section-label">Services</div>
+      <h2 class="section-title fade-in">Everything you need to<br>reach Korean customers</h2>
+      <p class="section-desc fade-in">One-time setup. No monthly fees. Includes hands-on channel setup, ad campaigns, and a guide so you can manage it all yourself after.</p>
       <div class="package-grid">
         <!-- Starter -->
         <div class="package-card fade-in">
           <div class="package-name">Starter</div>
-          <div class="package-title">Starter 패키지</div>
-          <div class="package-price-original">29만원</div>
-          <div class="package-price">19만원 <span class="package-discount-badge">런칭 할인</span></div>
-          <div class="package-price-note">1회 / 부가세 포함</div>
+          <div class="package-title">Starter Package</div>
+          <div class="package-price-original">₩290,000</div>
+          <div class="package-price">₩190,000 <span class="package-discount-badge">Launch offer</span></div>
+          <div class="package-price-note">One-time / Tax included</div>
           <div class="package-divider"></div>
-          <div class="package-section-label">광고 세팅</div>
+          <div class="package-section-label">Channel Setup</div>
           <ul class="package-features">
-            <li>광고 계정 만들기 + 기본 세팅</li>
-            <li>맞춤 타겟 2가지 조합 테스트</li>
-            <li>광고 소재 2개 제작 + 비교 테스트</li>
-            <li>전환 추적 세팅 (픽셀 포함)</li>
+            <li>Naver Place + Kakao Channel registration</li>
+            <li>Instagram business profile optimization</li>
+            <li>2 target audience combinations tested</li>
+            <li>2 ad creatives + A/B testing</li>
           </ul>
-          <div class="package-section-label">사후 관리</div>
+          <div class="package-section-label">Support</div>
           <ul class="package-features">
-            <li>2주간 성과 체크 + 조정</li>
-            <li>1회 결과 리뷰</li>
-            <li>혼자 돌리는 법 매뉴얼 제공</li>
+            <li>2 weeks of performance monitoring</li>
+            <li>1 results review session</li>
+            <li>Self-management guide (English)</li>
           </ul>
-          <a href="#contact" class="package-cta secondary">상담 신청하기</a>
+          <a href="#contact" class="package-cta secondary">Get started</a>
         </div>
         <!-- Growth -->
         <div class="package-card recommended fade-in">
-          <div class="package-badge">추천</div>
+          <div class="package-badge">Recommended</div>
           <div class="package-name">Growth</div>
-          <div class="package-title">Growth 패키지</div>
-          <div class="package-price-original">49만원</div>
-          <div class="package-price">35만원 <span class="package-discount-badge">런칭 할인</span></div>
-          <div class="package-price-note">1회 / 부가세 포함</div>
+          <div class="package-title">Growth Package</div>
+          <div class="package-price-original">₩490,000</div>
+          <div class="package-price">₩350,000 <span class="package-discount-badge">Launch offer</span></div>
+          <div class="package-price-note">One-time / Tax included</div>
           <div class="package-divider"></div>
-          <div class="package-section-label">광고 세팅</div>
+          <div class="package-section-label">Channel Setup</div>
           <ul class="package-features">
-            <li>광고 계정 만들기 + 기본 세팅</li>
-            <li>맞춤 타겟 3가지+ 조합 테스트</li>
-            <li>광고 소재 3개+ 제작 + 비교 테스트</li>
-            <li>전환 추적 세팅 (픽셀 포함)</li>
+            <li>Naver Place + Kakao Channel registration</li>
+            <li>Instagram business profile optimization</li>
+            <li>3+ target audience combinations tested</li>
+            <li>3+ ad creatives + A/B testing</li>
+            <li>Content localization consulting</li>
           </ul>
-          <div class="package-section-label">사후 관리</div>
+          <div class="package-section-label">Support</div>
           <ul class="package-features">
-            <li>4주간 밀착 관리 + 성과 조정</li>
-            <li>매주 1번 같이 결과 리뷰</li>
-            <li>성과 안 나오는 광고 교체</li>
-            <li>매뉴얼 + 심화 교육 (1:1)</li>
+            <li>4 weeks of hands-on management</li>
+            <li>Weekly results review sessions</li>
+            <li>Underperforming ads replaced</li>
+            <li>Detailed guide + 1:1 training (English)</li>
           </ul>
-          <div class="package-section-label">추가 포함</div>
+          <div class="package-section-label">Extras</div>
           <ul class="package-features">
-            <li>리타겟팅 캠페인 세팅</li>
-            <li>신규 · 재방문 고객 분리 운영</li>
+            <li>Retargeting campaign setup</li>
+            <li>Pixel + full conversion tracking</li>
           </ul>
-          <a href="#contact" class="package-cta primary">상담 신청하기 →</a>
+          <a href="#contact" class="package-cta primary">Get started →</a>
         </div>
       </div>
-      <!-- 월 관리 옵션 -->
-      <div class="fade-in" style="margin-top:24px; padding:28px 32px; background:var(--text-primary); border-radius:16px; text-align:center;">
-        <div style="font-size:11px; font-weight:600; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">추가 옵션</div>
-        <div style="font-size:20px; font-weight:700; color:#fff; margin-bottom:8px;">세팅 후에도 계속 맡기고 싶다면?</div>
-        <div style="font-size:15px; color:rgba(255,255,255,0.65); font-weight:300; line-height:1.7; max-width:480px; margin:0 auto 16px;">매주 성과 리뷰, 안 되는 소재 교체, 타겟 최적화까지 — 월 단위로 광고 운영을 대신 관리해드립니다. 상담 시 안내드려요.</div>
-        <a href="#contact" style="display:inline-block; font-size:14px; font-weight:600; color:#1A1A1A; background:#fff; padding:12px 28px; border-radius:100px; text-decoration:none;">월 관리 서비스 문의 →</a>
+      <!-- Monthly management add-on -->
+      <div class="fade-in" style="margin-top:24px; padding:28px 32px; background:var(--text-primary); border-radius:var(--radius-lg); text-align:center;">
+        <div style="font-size:11px; font-weight:600; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">Optional add-on</div>
+        <div style="font-size:20px; font-weight:700; color:var(--white); margin-bottom:8px;">Don't want to manage it yourself?</div>
+        <div style="font-size:15px; color:rgba(255,255,255,0.65); font-weight:300; line-height:1.7; max-width:480px; margin:0 auto 16px;">After the initial setup, I can keep managing your ads monthly — performance reviews every week, swap out underperforming creatives, optimize targeting, and handle everything in Korean so you don't have to.</div>
+        <a href="#contact" style="display:inline-block; font-size:14px; font-weight:600; color:var(--text-primary); background:var(--white); padding:12px 28px; border-radius:100px; text-decoration:none; transition:all 0.2s;">Ask about monthly management →</a>
       </div>
-      <p class="package-bottom-note fade-in">런칭 기념 할인은 <strong>4월 5일(일)</strong>까지 적용됩니다.</p>
+      <p class="package-bottom-note fade-in">Launch pricing available until <strong>April 5, 2026</strong>.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section">
+    <div class="container">
+      <div class="section-label">Why trust me</div>
+      <h2 class="section-title fade-in">I get what it's like to navigate<br>a foreign country's system.</h2>
+      <div class="about-card fade-in">
+        <p class="about-intro">I lived in Canada and know how frustrating it is when you can't figure out the local way of doing things. That experience is exactly why I built GrowthPilot — to be the bridge between your business and Korean customers. I lead OneTwo Speak, a Korean-English language exchange community I've been running for over 4 years, so working across languages and cultures is what I do every day.</p>
+        <div class="trust-points">
+          <div class="trust-point">
+            <div class="trust-point-icon">💬</div>
+            <div class="trust-point-body">
+              <div class="trust-point-title">Fluent English communication</div>
+              <div class="trust-point-desc">Lived in Canada. 4+ years leading a bilingual community. All consultations, guides, and training are in clear, natural English.</div>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon">📊</div>
+            <div class="trust-point-body">
+              <div class="trust-point-title">Real marketing expertise, not just translation</div>
+              <div class="trust-point-desc">Full-time performance marketer managing ₩200M+ monthly across Meta, Naver GFA, Kakao Moment, and Toss. Data-driven, not guesswork.</div>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon">🛠️</div>
+            <div class="trust-point-body">
+              <div class="trust-point-title">Technical setup included</div>
+              <div class="trust-point-desc">Developer background (Rails/React) means I handle pixel installation, conversion tracking, and landing pages directly — no extra cost or third party needed.</div>
+            </div>
+          </div>
+          <div class="trust-point">
+            <div class="trust-point-icon">🎓</div>
+            <div class="trust-point-body">
+              <div class="trust-point-title">Analysis-driven approach</div>
+              <div class="trust-point-desc">Master's in Data Science. Every decision — targeting, creatives, budget allocation — is backed by data, not gut feeling.</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-tags">
+          <span class="about-tag">Meta Ads</span>
+          <span class="about-tag">Naver GFA</span>
+          <span class="about-tag">Kakao Moment</span>
+          <span class="about-tag">Toss Ads</span>
+          <span class="about-tag">Fluent English</span>
+          <span class="about-tag">Native Korean</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -426,42 +526,42 @@
   <section class="faq" id="faq">
     <div class="container">
       <div class="section-label">FAQ</div>
-      <h2 class="section-title fade-in">자주 묻는 질문</h2>
+      <h2 class="section-title fade-in">Frequently asked questions</h2>
       <div class="faq-list fade-in">
         <div class="faq-item">
-          <button class="faq-question">광고비는 따로 드는 건가요?</button>
+          <button class="faq-question">Is the ad budget separate from the service fee?</button>
           <div class="faq-answer">
-            <p>네, 세팅 비용과 광고비는 별도예요. 광고비는 인스타에 직접 결제하시는 건데, 하루 5천원~1만원 정도면 충분히 시작할 수 있어요.</p>
+            <p>Yes, the setup fee and ad budget are separate. Ad spend goes directly to the platforms (Meta, Naver, etc.). You can start with as little as ₩5,000–10,000/day.</p>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">광고를 한 번도 해본 적 없는데 괜찮을까요?</button>
+          <button class="faq-question">I've never used Korean marketing platforms before. Is that okay?</button>
           <div class="faq-answer">
-            <p>오히려 그런 분들을 위한 서비스예요. 계정 만드는 것부터 광고 올리는 것까지 다 해드리고, 이후에 혼자 돌리는 법도 매뉴얼로 알려드려요.</p>
+            <p>That's exactly who this service is for. We handle everything from account creation to ad setup, all in Korean. You'll also get an English guide so you can manage things independently after.</p>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">대행사랑 뭐가 다른가요?</button>
+          <button class="faq-question">How is this different from a marketing agency?</button>
           <div class="faq-answer">
-            <p>대행사는 매달 비용이 나가요. GrowthPilot은 딱 한 번만 비용이 들고, 이후에는 작가님이 직접 광고를 켜고 끌 수 있어요.</p>
+            <p>Agencies charge monthly retainers. GrowthPilot is a one-time setup — we build the foundation and teach you to run it yourself. No ongoing dependency or monthly fees.</p>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">누가 운영하는 건가요?</button>
+          <button class="faq-question">Do I need to speak Korean?</button>
           <div class="faq-answer">
-            <p>현직 퍼포먼스 마케터가 운영해요. 광고를 대신 해주는 게 아니라, 작가님이 직접 할 수 있게 만들어드리는 게 목표예요.</p>
+            <p>Not at all. All communication is in English. We handle the Korean-language setup, content, and platform configuration. Your guide and training materials are all in English too.</p>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">어떤 스냅 작가님한테 맞나요?</button>
+          <button class="faq-question">What types of businesses does this work for?</button>
           <div class="faq-answer">
-            <p>웨딩, 졸업, 벚꽃, 프로필, 돌잔치 등 인스타로 작업물 올리고 예약 받으시는 작가님이라면 다 가능해요. 특히 "게시물 홍보"만 해보셨거나, 아예 처음이신 분한테 딱 맞아요.</p>
+            <p>Any foreign-owned local business targeting Korean customers — cafes, restaurants, yoga/pilates studios, beauty shops, personal trainers, photographers, and more. If Korean locals are your target customers, this is for you.</p>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">아직 인스타 피드가 부족한데 시작해도 되나요?</button>
+          <button class="faq-question">I already have a Korean friend helping me. Why do I need this?</button>
           <div class="faq-answer">
-            <p>피드에 작업물이 9장 이상이고 톤이 어느 정도 통일되어 있다면 바로 시작할 수 있어요. 아직 부족하다면 먼저 피드를 채우는 게 효과적이에요. 상담에서 현재 상태를 같이 보고 지금 시작할 수 있는지 알려드릴게요.</p>
+            <p>Having a Korean friend translate is different from strategic marketing setup. We combine native-level Korean with professional performance marketing expertise — audience targeting, A/B testing, conversion tracking, and multi-platform campaign management.</p>
           </div>
         </div>
       </div>
@@ -471,10 +571,10 @@
   <!-- Final CTA -->
   <section class="final-cta">
     <div class="container" style="text-align:center;">
-      <div class="section-label">시작하기</div>
-      <h2 class="section-title fade-in">인스타 광고,<br>생각보다 어렵지 않아요.</h2>
-      <p class="section-desc fade-in" style="margin-left:auto;margin-right:auto;">현재 상황 들어보고,<br>작가님한테 맞는 방법 알려드릴게요.</p>
-      <a href="#contact" class="btn-primary fade-in" style="font-size:16px;padding:16px 40px;">무료 상담 신청 →</a>
+      <div class="section-label">Get started</div>
+      <h2 class="section-title fade-in">Korean marketing<br>doesn't have to be overwhelming.</h2>
+      <p class="section-desc fade-in" style="margin-left:auto;margin-right:auto;">Tell us about your business,<br>and we'll figure out the best channels for you.</p>
+      <a href="#contact" class="btn-primary fade-in" style="font-size:16px;padding:16px 40px;">Free Consultation →</a>
     </div>
   </section>
 
@@ -482,47 +582,50 @@
   <section class="form-section" id="contact">
     <div class="container">
       <div class="form-card fade-in">
-        <h3>무료 상담 신청</h3>
-        <p>간단한 정보만 남겨주시면 1~3 영업일 내에 연락드릴게요.</p>
+        <h3>Free Consultation</h3>
+        <p>Fill out the form below and we'll get back to you within 1–3 business days.</p>
         <form action="https://formspree.io/f/mbdzjdgw" method="POST">
-          <input type="hidden" name="_next" value="https://growthpilot-kr.github.io/thanks.html">
+          <input type="hidden" name="_next" value="https://growthpilot-kr.github.io/en/thanks.html">
+          <input type="hidden" name="_source" value="en">
           <input type="hidden" name="utm_source" id="utm_source">
           <input type="hidden" name="utm_medium" id="utm_medium">
           <input type="hidden" name="utm_campaign" id="utm_campaign">
           <input type="hidden" name="utm_content" id="utm_content">
           <input type="hidden" name="utm_term" id="utm_term">
           <div class="form-group">
-            <label>활동명</label>
-            <input type="text" name="활동명" placeholder="이름 또는 브랜드명" required>
+            <label>Business / Brand Name</label>
+            <input type="text" name="business_name" placeholder="e.g. Sunrise Yoga Studio" required>
           </div>
           <div class="form-group">
-            <label>연락처</label>
-            <input type="tel" name="연락처" id="phoneInput" placeholder="010-0000-0000" required maxlength="13">
+            <label>Contact (Email or Phone)</label>
+            <input type="text" name="contact" placeholder="email@example.com or 010-0000-0000" required>
           </div>
           <div class="form-group">
-            <label>선호하는 연락 방식</label>
-            <select name="연락 방식">
-              <option value="문자">문자</option>
-              <option value="전화">전화</option>
+            <label>Preferred contact method</label>
+            <select name="contact_method">
+              <option value="Email">Email</option>
+              <option value="KakaoTalk">KakaoTalk</option>
+              <option value="Text">Text message</option>
+              <option value="Phone">Phone call</option>
             </select>
           </div>
           <div class="form-group">
-            <label>관심 있는 서비스</label>
-            <select name="관심 서비스">
-              <option value="무료 상담">무료 상담</option>
-              <option value="Starter 패키지">Starter 패키지 (19만원)</option>
-              <option value="Growth 패키지">Growth 패키지 (35만원)</option>
-              <option value="월 관리 서비스">월 관리 서비스</option>
-              <option value="아직 모르겠어요">아직 모르겠어요</option>
+            <label>Interested in</label>
+            <select name="service_interest">
+              <option value="Free consultation">Free consultation first</option>
+              <option value="Starter Package">Starter Package (₩190,000)</option>
+              <option value="Growth Package">Growth Package (₩350,000)</option>
+              <option value="Monthly Management">Monthly management (ongoing)</option>
+              <option value="Not sure yet">Not sure yet</option>
             </select>
           </div>
           <div class="form-group">
-            <label>궁금한 점 (선택)</label>
-            <textarea name="문의 내용" placeholder="현재 상황이나 궁금한 점이 있으시면 자유롭게 적어주세요."></textarea>
+            <label>Tell us about your business (optional)</label>
+            <textarea name="message" placeholder="What's your business? Where are you located? What marketing have you tried so far?"></textarea>
           </div>
-          <button type="submit" class="btn-primary form-submit">무료 상담 신청하기 →</button>
+          <button type="submit" class="btn-primary form-submit">Request Free Consultation →</button>
         </form>
-        <p class="form-note">문자 또는 전화로 편하게 진행돼요. 부담 없이 신청해주세요.</p>
+        <p class="form-note">No pressure. We'll just have a friendly chat about your situation.</p>
       </div>
     </div>
   </section>
@@ -531,9 +634,9 @@
   <footer>
     <div class="container">
       <div class="footer-logo">GrowthPilot</div>
-      <p>스냅작가 전용 인스타 광고 세팅</p>
-      <p style="margin-top:16px;">
-        <a href="mailto:growthpilot.kr@gmail.com">growthpilot.kr@gmail.com</a>
+      <p>Korean marketing for foreign business owners</p>
+      <p style="margin-top:12px;">
+        <a href="../index.html">🇰🇷 한국어 사이트</a> · <a href="mailto:growthpilot.kr@gmail.com">growthpilot.kr@gmail.com</a>
       </p>
       <p style="margin-top:12px;font-size:12px;">© 2026 GrowthPilot. All rights reserved.</p>
     </div>
@@ -541,7 +644,7 @@
 
   <!-- Floating CTA -->
   <div class="floating-cta" id="floatingCta">
-    <a href="#contact">무료 상담 신청 →</a>
+    <a href="#contact">Free Consultation →</a>
   </div>
 
   <script>
@@ -589,14 +692,14 @@
         }
       });
     });
-    // Meta Pixel + GA4 Lead event (AJAX 제출 → thanks.html 리다이렉트)
+    // Meta Pixel + GA4 Lead event
     const contactForm = document.querySelector('form[action*="formspree"]');
     if (contactForm) {
       contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         const formData = new FormData(contactForm);
         const submitBtn = contactForm.querySelector('button[type="submit"]');
-        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '신청 중...'; }
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Submitting...'; }
         fetch(contactForm.action, {
           method: 'POST',
           body: formData,
@@ -606,15 +709,15 @@
             if (typeof fbq === 'function') fbq('track', 'Lead');
             if (typeof gtag === 'function') gtag('event', 'generate_lead');
             setTimeout(function() {
-              window.location.href = 'https://growthpilot-kr.github.io/thanks.html';
+              window.location.href = 'https://growthpilot-kr.github.io/en/thanks.html';
             }, 300);
           } else {
-            alert('신청 중 오류가 발생했습니다. 다시 시도해주세요.');
-            if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = '무료 상담 신청하기 →'; }
+            alert('Something went wrong. Please try again.');
+            if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Request Free Consultation →'; }
           }
         }).catch(function() {
-          alert('네트워크 오류가 발생했습니다. 다시 시도해주세요.');
-          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = '무료 상담 신청하기 →'; }
+          alert('Network error. Please try again.');
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Request Free Consultation →'; }
         });
       });
     }
@@ -624,17 +727,6 @@
       const el = document.getElementById(param);
       if (el && urlParams.get(param)) el.value = urlParams.get(param);
     });
-    // Phone format
-    const phoneInput = document.getElementById('phoneInput');
-    if (phoneInput) {
-      phoneInput.addEventListener('input', function(e) {
-        let v = e.target.value.replace(/[^0-9]/g, '');
-        if (v.length > 11) v = v.slice(0, 11);
-        if (v.length <= 3) e.target.value = v;
-        else if (v.length <= 7) e.target.value = v.slice(0,3)+'-'+v.slice(3);
-        else e.target.value = v.slice(0,3)+'-'+v.slice(3,7)+'-'+v.slice(7);
-      });
-    }
   </script>
 </body>
 </html>
