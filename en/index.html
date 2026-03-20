@@ -138,6 +138,7 @@
 
     /* ── Process ── */
     .process-section { background:var(--bg); }
+    .process-section .container { max-width:680px; }
     .process-grid { display:flex; flex-direction:column; gap:24px; }
     .process-step { position:relative; padding-left:60px; padding-top:0; }
     .process-step-num { position:absolute; left:0; top:0; font-size:48px; font-weight:900; color:var(--border); letter-spacing:-0.04em; line-height:1; }
@@ -478,7 +479,7 @@
           <div class="package-title">2 Weeks</div>
           <div class="package-price-original">₩380,000</div>
           <div class="package-price">₩280,000 <span class="package-discount-badge">Launch discount</span></div>
-          <div class="package-price-note">One-time · includes VAT</div>
+          <div class="package-price-note">2-week setup · includes VAT</div>
           <div class="package-divider"></div>
           <ul class="package-features">
             <li>Deep-dive strategy consultation</li>
@@ -495,7 +496,7 @@
           <div class="package-title">4 Weeks</div>
           <div class="package-price-original">₩550,000</div>
           <div class="package-price">₩430,000 <span class="package-discount-badge">Launch discount</span></div>
-          <div class="package-price-note">One-time · includes VAT</div>
+          <div class="package-price-note">4-week setup · includes VAT</div>
           <div class="package-divider"></div>
           <ul class="package-features">
             <li>Everything in Starter</li>
@@ -510,7 +511,16 @@
       <!-- Monthly Management Box -->
       <div class="monthly-box fade-in">
         <div class="monthly-box-label">Ongoing Growth</div>
-        <div class="monthly-box-price">₩450,000/month</div>
+        <div style="display:flex; justify-content:center; gap:40px; flex-wrap:wrap; margin-bottom:12px;">
+          <div style="text-align:center;">
+            <div style="font-size:12px; color:rgba(255,255,255,0.4); margin-bottom:4px;">After Starter</div>
+            <div style="font-size:24px; font-weight:900; color:#fff;">₩390,000/mo</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-size:12px; color:rgba(255,255,255,0.4); margin-bottom:4px;">After Growth</div>
+            <div style="font-size:24px; font-weight:900; color:#fff;">₩330,000/mo <span style="font-size:11px; font-weight:600; color:#6ee7b7; margin-left:4px;">Discount</span></div>
+          </div>
+        </div>
         <div class="monthly-box-desc">Ad optimization is standard. Beyond that: content strategy evolution, audience refinement, business growth support, and scaling operations. Ongoing partnership for brands serious about growth in Korea.</div>
       </div>
 
@@ -527,7 +537,7 @@
         <div class="faq-item">
           <button class="faq-question">How is pricing structured?</button>
           <div class="faq-answer">
-            <p>Two options: (1) One-time packages — Starter (₩280K) or Growth (₩430K) for initial setup. (2) Monthly management (₩450K/month) for ongoing optimization and growth support. You only pay for ongoing management if you want it — no lock-in contracts.</p>
+            <p>Two options: (1) Setup packages — Starter (₩280K, 2 weeks) or Growth (₩430K, 4 weeks) for initial setup. (2) Monthly management (₩330K–390K/month, with a discount for Growth clients) for ongoing optimization and growth support. You only pay for ongoing management if you want it — no lock-in contracts.</p>
           </div>
         </div>
         <div class="faq-item">
