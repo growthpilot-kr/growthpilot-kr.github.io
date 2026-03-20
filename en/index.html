@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowthPilot — Your Korean Marketing Partner</title>
+  <meta name="description" content="Strategic social media management, community growth, and performance marketing for international brands in Korea. Bilingual. Data-driven. Built for depth, not scale.">
+  <meta property="og:title" content="GrowthPilot — Your Korean Marketing Partner">
+  <meta property="og:description" content="Strategic social media management, community growth, and performance marketing for international brands entering or growing in Korea.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://growthpilot-kr.github.io/en/">
+  <meta property="og:image" content="https://growthpilot-kr.github.io/en_assets/og-image-en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://growthpilot-kr.github.io/en_assets/og-image-en.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A1A1A'/><text x='50%25' y='55%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle' font-family='system-ui'>G</text></svg>">
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3CFM88CR0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L3CFM88CR0');
+  </script>
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2643044576081819');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2643044576081819&ev=PageView&noscript=1"
+  /></noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --white: #FFFFFF;
+      --bg: #FAFAF9;
+      --bg-warm: #F5F4F0;
+      --bg-dark: #0F0F0F;
+      --bg-dark-card: #1A1A1A;
+      --bg-dark-card-hover: #222222;
+      --text-primary: #0F0F0F;
+      --text-secondary: #555555;
+      --text-tertiary: #999999;
+      --accent: #0F0F0F;
+      --accent-hover: #2A2A2A;
+      --border: #E8E7E3;
+      --border-subtle: #F0EFE9;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-primary);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 32px; }
+    section { padding: 100px 0; }
+
+    /* ── Nav ── */
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(255,255,255,0.88); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border-bottom:1px solid rgba(0,0,0,0.04); transition:box-shadow 0.3s; }
+    nav.scrolled { box-shadow:0 1px 16px rgba(0,0,0,0.05); }
+    .nav-inner { max-width:1080px; margin:0 auto; padding:0 32px; height:64px; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-size:18px; font-weight:800; color:var(--text-primary); letter-spacing:-0.03em; display:flex; align-items:center; gap:10px; }
+    .logo img { height:28px; width:auto; }
+    .nav-right { display:flex; align-items:center; gap:20px; }
+    .lang-switch { font-size:13px; font-weight:500; color:var(--text-tertiary); text-decoration:none; transition:color 0.2s; }
+    .lang-switch:hover { color:var(--text-primary); }
+    .nav-cta { font-size:13px; font-weight:600; color:var(--white); background:var(--accent); padding:9px 24px; border-radius:100px; text-decoration:none; transition:all 0.2s; letter-spacing:-0.01em; }
+    .nav-cta:hover { background:var(--accent-hover); }
+
+    /* ── Hero ── */
+    .hero { padding:160px 0 100px; background:var(--white); text-align:center; }
+    .hero-overline { display:inline-block; font-size:12px; font-weight:600; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.14em; margin-bottom:28px; }
+    .hero h1 { font-size:clamp(34px,6.5vw,60px); font-weight:900; line-height:1.1; letter-spacing:-0.04em; color:var(--text-primary); margin-bottom:24px; max-width:800px; margin-left:auto; margin-right:auto; }
+    .hero h1 em { font-style:normal; color:var(--text-tertiary); }
+    .hero-sub { font-size:18px; color:var(--text-secondary); line-height:1.7; margin-bottom:40px; max-width:580px; margin-left:auto; margin-right:auto; font-weight:400; }
+    .hero-cta-group { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+    .btn-primary { display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:600; color:var(--white); background:var(--accent); padding:16px 36px; border-radius:100px; text-decoration:none; border:none; cursor:pointer; transition:all 0.25s; letter-spacing:-0.01em; }
+    .btn-primary:hover { background:var(--accent-hover); transform:translateY(-1px); box-shadow:0 8px 24px rgba(0,0,0,0.12); }
+    .btn-secondary { display:inline-flex; align-items:center; gap:8px; font-size:15px; font-weight:500; color:var(--text-secondary); background:transparent; padding:16px 36px; border-radius:100px; text-decoration:none; border:1px solid var(--border); transition:all 0.25s; }
+    .btn-secondary:hover { border-color:var(--text-tertiary); color:var(--text-primary); }
+
+    /* ── Problem ── */
+    .problem-section { background:var(--bg-dark); color:var(--white); padding:100px 0; }
+    .problem-section .section-label { color:rgba(255,255,255,0.35); }
+    .problem-header { text-align:center; margin-bottom:64px; }
+    .problem-title { font-size:clamp(24px,4vw,36px); font-weight:800; letter-spacing:-0.03em; line-height:1.25; color:var(--white); margin-bottom:16px; }
+    .problem-desc { font-size:17px; color:rgba(255,255,255,0.5); max-width:600px; margin:0 auto; line-height:1.7; font-weight:400; }
+    .problem-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .problem-card { background:var(--bg-dark-card); border-radius:var(--radius-lg); padding:32px 28px; border:1px solid rgba(255,255,255,0.06); transition:border-color 0.3s; }
+    .problem-card:hover { border-color:rgba(255,255,255,0.12); }
+    .problem-card-num { font-size:12px; font-weight:600; color:rgba(255,255,255,0.25); margin-bottom:12px; letter-spacing:0.08em; }
+    .problem-card-title { font-size:17px; font-weight:700; color:var(--white); margin-bottom:8px; letter-spacing:-0.01em; line-height:1.4; }
+    .problem-card-desc { font-size:14px; color:rgba(255,255,255,0.45); line-height:1.7; font-weight:400; }
+
+    /* ── Services ── */
+    .services-section { background:var(--white); }
+    .section-label { font-size:12px; font-weight:600; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.12em; margin-bottom:14px; }
+    .section-title { font-size:clamp(26px,4vw,40px); font-weight:800; letter-spacing:-0.03em; line-height:1.2; margin-bottom:16px; }
+    .section-desc { font-size:17px; color:var(--text-secondary); line-height:1.7; margin-bottom:56px; max-width:580px; font-weight:400; }
+    .services-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+    .service-card { background:var(--bg); border-radius:var(--radius-lg); padding:40px 36px; transition:transform 0.3s, box-shadow 0.3s; position:relative; overflow:hidden; }
+    .service-card:hover { transform:translateY(-2px); box-shadow:0 8px 32px rgba(0,0,0,0.06); }
+    .service-card.featured { background:var(--bg-dark); color:var(--white); grid-column:span 2; display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
+    .service-card.featured:hover { box-shadow:0 8px 32px rgba(0,0,0,0.15); }
+    .service-icon { font-size:28px; margin-bottom:20px; width:52px; height:52px; display:flex; align-items:center; justify-content:center; background:var(--white); border-radius:14px; }
+    .service-card.featured .service-icon { background:rgba(255,255,255,0.1); }
+    .service-name { font-size:20px; font-weight:700; letter-spacing:-0.02em; margin-bottom:10px; }
+    .service-desc { font-size:15px; line-height:1.7; font-weight:400; margin-bottom:16px; }
+    .service-card.featured .service-desc { color:rgba(255,255,255,0.6); }
+    .service-tags { display:flex; flex-wrap:wrap; gap:6px; }
+    .service-tag { font-size:12px; font-weight:500; padding:5px 12px; border-radius:100px; }
+    .service-card:not(.featured) .service-tag { color:var(--text-secondary); background:var(--white); }
+    .service-card.featured .service-tag { color:rgba(255,255,255,0.7); background:rgba(255,255,255,0.08); }
+    .service-featured-highlights { display:flex; flex-direction:column; gap:16px; }
+    .sfh-item { display:flex; gap:12px; align-items:flex-start; }
+    .sfh-icon { flex-shrink:0; width:32px; height:32px; border-radius:8px; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; font-size:14px; margin-top:2px; }
+    .sfh-text { font-size:14px; color:rgba(255,255,255,0.6); line-height:1.6; }
+    .sfh-text strong { color:var(--white); font-weight:600; }
+
+    /* ── Process ── */
+    .process-section { background:var(--bg); }
+    .process-grid { display:flex; flex-direction:column; gap:24px; }
+    .process-step { position:relative; padding-left:60px; padding-top:0; }
+    .process-step-num { position:absolute; left:0; top:0; font-size:48px; font-weight:900; color:var(--border); letter-spacing:-0.04em; line-height:1; }
+    .process-step-num.free { font-size:28px; width:40px; height:40px; border-radius:50%; background:transparent; border:2px solid var(--border); color:var(--text-primary); display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700; left:-10px; }
+    .process-divider { display:flex; align-items:center; gap:16px; padding:16px 0 16px 0; margin-left:0; }
+    .process-divider-line { flex:1; height:1px; background:var(--border); }
+    .process-divider-text { font-size:12px; font-weight:600; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.08em; white-space:nowrap; }
+    .process-title { font-size:16px; font-weight:700; color:var(--text-primary); margin-bottom:8px; letter-spacing:-0.01em; }
+    .process-desc { font-size:14px; color:var(--text-secondary); line-height:1.7; font-weight:400; margin-bottom:12px; }
+    .process-highlight { display:inline-block; font-size:12px; font-weight:500; color:var(--text-primary); background:var(--bg-warm); padding:4px 12px; border-radius:100px; }
+
+    /* ── Why Section ── */
+    .why-section { background:var(--white); }
+    .why-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:24px; }
+    .why-card { padding:32px 28px; border:1px solid var(--border); border-radius:var(--radius-lg); transition:border-color 0.3s; }
+    .why-card:hover { border-color:var(--text-tertiary); }
+    .why-icon { font-size:24px; margin-bottom:16px; }
+    .why-title { font-size:17px; font-weight:700; color:var(--text-primary); letter-spacing:-0.02em; margin-bottom:8px; }
+    .why-desc { font-size:14px; color:var(--text-secondary); line-height:1.7; font-weight:400; }
+
+    /* ── Why Story (Personal Prose) ── */
+    .why-story { max-width:680px; }
+    .why-story p { font-size:16px; color:var(--text-secondary); line-height:1.85; font-weight:400; margin-bottom:20px; }
+    .why-story p:last-child { margin-bottom:0; }
+    .why-story p:first-child::first-line { color:var(--text-primary); font-weight:500; }
+
+    /* ── Team Section ── */
+    .team-section { background:var(--bg); }
+    .team-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+    .team-single { max-width:640px; }
+    .team-card { background:var(--white); border-radius:var(--radius-lg); padding:40px 36px; border:1px solid var(--border); }
+    .team-icon-text { width:52px; height:52px; border-radius:50%; background:var(--bg-dark); color:var(--white); display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; margin-bottom:20px; letter-spacing:-0.02em; }
+    .team-role { font-size:12px; font-weight:600; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px; }
+    .team-name { font-size:20px; font-weight:700; color:var(--text-primary); margin-bottom:16px; letter-spacing:-0.02em; }
+    .team-desc { font-size:14px; color:var(--text-secondary); line-height:1.8; font-weight:400; }
+
+    /* ── Packages ── */
+    .packages { background:var(--white); }
+    .package-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:stretch; }
+    .package-card { background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:40px 36px; position:relative; display:flex; flex-direction:column; }
+    .package-card.recommended { border-color:var(--text-primary); box-shadow:0 4px 24px rgba(0,0,0,0.06); }
+    .package-badge { position:absolute; top:-12px; left:36px; font-size:11px; font-weight:600; color:var(--white); background:var(--accent); padding:5px 14px; border-radius:100px; letter-spacing:0.04em; }
+    .package-name { font-size:12px; font-weight:600; color:var(--text-tertiary); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px; }
+    .package-title { font-size:24px; font-weight:800; letter-spacing:-0.03em; margin-bottom:8px; }
+    .package-price-original { font-size:18px; font-weight:500; color:var(--text-tertiary); letter-spacing:-0.02em; text-decoration:line-through; margin-bottom:2px; }
+    .package-price { font-size:36px; font-weight:900; color:var(--text-primary); letter-spacing:-0.03em; margin-bottom:4px; }
+    .package-discount-badge { display:inline-block; font-size:11px; font-weight:600; color:#D94F00; background:#FFF3ED; padding:3px 10px; border-radius:100px; margin-left:8px; vertical-align:middle; }
+    .package-price-note { font-size:13px; color:var(--text-tertiary); margin-bottom:24px; font-weight:400; }
+    .package-divider { height:1px; background:var(--border); margin-bottom:24px; }
+    .package-features { list-style:none; margin-bottom:28px; flex-grow:1; }
+    .package-features li { font-size:14px; color:var(--text-secondary); padding:8px 0 8px 28px; position:relative; line-height:1.6; }
+    .package-features li::before { content:'✓'; position:absolute; left:2px; top:8px; font-size:12px; color:var(--text-primary); font-weight:600; }
+
+    /* ── Monthly Management ── */
+    .monthly-box { margin-top:48px; padding:40px; background:var(--bg-dark); border-radius:var(--radius-lg); text-align:center; color:var(--white); }
+    .monthly-box-label { font-size:12px; font-weight:600; color:rgba(255,255,255,0.35); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px; }
+    .monthly-box-price { font-size:40px; font-weight:900; color:var(--white); letter-spacing:-0.03em; margin-bottom:8px; }
+    .monthly-box-desc { font-size:15px; color:rgba(255,255,255,0.65); line-height:1.7; max-width:540px; margin:0 auto; font-weight:400; }
+
+    .package-bottom-note { text-align:center; font-size:14px; color:var(--text-secondary); margin-top:40px; font-weight:400; line-height:1.6; }
+    .package-bottom-note strong { font-weight:600; color:var(--text-primary); }
+
+    /* ── FAQ ── */
+    .faq { background:var(--white); }
+    .faq-list { display:flex; flex-direction:column; max-width:720px; }
+    .faq-item { border-bottom:1px solid var(--border); }
+    .faq-question { width:100%; background:none; border:none; padding:24px 0; font-size:16px; font-weight:600; color:var(--text-primary); text-align:left; cursor:pointer; display:flex; justify-content:space-between; align-items:center; font-family:inherit; letter-spacing:-0.01em; line-height:1.5; }
+    .faq-question::after { content:'+'; font-size:22px; font-weight:300; color:var(--text-tertiary); transition:transform 0.3s; flex-shrink:0; margin-left:16px; }
+    .faq-item.open .faq-question::after { transform:rotate(45deg); }
+    .faq-answer { max-height:0; overflow:hidden; transition:max-height 0.3s ease, padding 0.3s ease; }
+    .faq-item.open .faq-answer { max-height:400px; padding-bottom:24px; }
+    .faq-answer p { font-size:15px; color:var(--text-secondary); line-height:1.7; font-weight:400; }
+
+    /* ── Final CTA ── */
+    .final-cta { background:var(--bg-dark); color:var(--white); text-align:center; padding:120px 0; }
+    .final-cta .section-label { color:rgba(255,255,255,0.35); }
+    .final-cta .section-title { color:var(--white); margin-bottom:16px; }
+    .final-cta .section-desc { color:rgba(255,255,255,0.5); margin-left:auto; margin-right:auto; margin-bottom:40px; }
+    .btn-primary-light { display:inline-flex; align-items:center; gap:8px; font-size:16px; font-weight:600; color:var(--text-primary); background:var(--white); padding:18px 40px; border-radius:100px; text-decoration:none; border:none; cursor:pointer; transition:all 0.25s; letter-spacing:-0.01em; }
+    .btn-primary-light:hover { background:var(--bg); transform:translateY(-1px); box-shadow:0 8px 24px rgba(255,255,255,0.15); }
+
+    /* ── Contact Form ── */
+    .form-section { background:var(--bg); }
+    .form-card { background:var(--white); border:1px solid var(--border); border-radius:var(--radius-xl); padding:56px 48px; max-width:520px; margin:0 auto; }
+    .form-card h3 { font-size:26px; font-weight:800; letter-spacing:-0.03em; margin-bottom:8px; }
+    .form-card > p { font-size:15px; color:var(--text-secondary); margin-bottom:36px; font-weight:400; }
+    .form-group { margin-bottom:20px; }
+    .form-group label { display:block; font-size:13px; font-weight:600; color:var(--text-primary); margin-bottom:8px; }
+    .form-group input, .form-group select, .form-group textarea { width:100%; padding:14px 18px; font-size:15px; font-family:inherit; border:1px solid var(--border); border-radius:12px; background:var(--white); color:var(--text-primary); transition:border-color 0.2s; outline:none; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color:var(--text-primary); }
+    .form-group textarea { resize:vertical; min-height:100px; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color:var(--text-tertiary); }
+    .form-submit { width:100%; margin-top:8px; }
+    .form-note { text-align:center; margin-top:16px; font-size:13px; color:var(--text-tertiary); }
+
+    /* ── Footer ── */
+    footer { background:var(--white); border-top:1px solid var(--border); padding:48px 0; }
+    .footer-inner { display:flex; justify-content:space-between; align-items:center; }
+    .footer-logo { font-size:16px; font-weight:800; color:var(--text-primary); letter-spacing:-0.02em; margin-bottom:4px; }
+    .footer-tagline { font-size:13px; color:var(--text-tertiary); font-weight:400; }
+    .footer-right { display:flex; gap:24px; align-items:center; }
+    .footer-right a { font-size:13px; color:var(--text-tertiary); text-decoration:none; font-weight:400; transition:color 0.2s; }
+    .footer-right a:hover { color:var(--text-primary); }
+
+    /* ── Floating CTA ── */
+    .floating-cta { position:fixed; bottom:28px; left:50%; transform:translateX(-50%); z-index:99; opacity:0; pointer-events:none; transition:opacity 0.3s; }
+    .floating-cta.visible { opacity:1; pointer-events:auto; }
+    .floating-cta a { display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:var(--white); background:var(--accent); padding:14px 32px; border-radius:100px; text-decoration:none; box-shadow:0 4px 24px rgba(0,0,0,0.2); transition:all 0.25s; }
+    .floating-cta a:hover { background:var(--accent-hover); transform:translateY(-2px); box-shadow:0 8px 32px rgba(0,0,0,0.25); }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      .container { padding:0 24px; }
+      section { padding:72px 0; }
+      .hero { padding:120px 0 72px; }
+      .hero h1 { font-size:clamp(30px,8vw,48px); }
+      .hero-cta-group { flex-direction:column; align-items:center; }
+      .hero-cta-group a { width:100%; text-align:center; justify-content:center; }
+      .problem-grid { grid-template-columns:1fr; }
+      .services-grid { grid-template-columns:1fr; }
+      .process-step { padding-left:50px; }
+      .process-step-num { font-size:36px; }
+      .process-divider { padding:8px 0; }
+      .why-grid { grid-template-columns:1fr; }
+      .team-grid { grid-template-columns:1fr; }
+      .package-grid { grid-template-columns:1fr; }
+      .monthly-box { margin-top:24px; padding:32px 24px; }
+      .footer-inner { flex-direction:column; gap:16px; text-align:center; }
+      .floating-cta a { font-size:13px; padding:12px 28px; }
+    }
+
+    /* ── Animations ── */
+    .fade-in { opacity:0; transform:translateY(24px); transition:opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <div class="logo"><img src="../assets/logo/GP_logo_line.png" alt="GrowthPilot"></div>
+      <div class="nav-right">
+        <a href="../index.html" class="lang-switch">한국어</a>
+        <a href="#contact" class="nav-cta">Schedule a Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-overline">Your Korean Marketing Partner</div>
+      <h1>Grow your brand<br>in <em>Korea.</em></h1>
+      <p class="hero-sub">Social media strategy, paid advertising, influencer partnerships, and full localization — managed by a bilingual marketer who communicates with you in fluent English and executes everything in native Korean.</p>
+      <div class="hero-cta-group">
+        <a href="#contact" class="btn-primary">Schedule a Call →</a>
+        <a href="#services" class="btn-secondary">See How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section (Dark) -->
+  <section class="problem-section">
+    <div class="container">
+      <div class="problem-header">
+        <div class="section-label">The Problem</div>
+        <h2 class="problem-title fade-in">Korea's digital landscape<br>plays by different rules.</h2>
+        <p class="problem-desc fade-in">Your brand might be thriving globally — but in Korea, platforms, consumer behavior, and trust signals work completely differently. And finding a Korean marketing expert you can actually communicate with in English? Nearly impossible.</p>
+      </div>
+      <div class="problem-grid fade-in">
+        <div class="problem-card">
+          <div class="problem-card-num">01</div>
+          <div class="problem-card-title">Nobody does social media strategy</div>
+          <div class="problem-card-desc">Korean marketers gravitate toward performance ads. Finding someone who can build and nurture a social community — not just run campaigns — is the biggest gap in this market.</div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-num">02</div>
+          <div class="problem-card-title">Agencies sell cookie-cutter packages</div>
+          <div class="problem-card-desc">Social media is a living thing. It needs consistent care, real engagement, and adaptive strategy — not a templated monthly plan that treats every brand the same.</div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-num">03</div>
+          <div class="problem-card-title">Followers without engagement is useless</div>
+          <div class="problem-card-desc">You can have 10,000 followers and only 100 engaged. Korean brands often treat social accounts like digital brochures. That's not how community works.</div>
+        </div>
+        <div class="problem-card">
+          <div class="problem-card-num">04</div>
+          <div class="problem-card-title">The language barrier blocks everything</div>
+          <div class="problem-card-desc">Explaining your brand vision, giving creative feedback, discussing strategy — it all breaks down when you can't communicate naturally. You need someone who thinks in both languages.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title fade-in">Everything your brand needs<br>to grow in Korea.</h2>
+      <p class="section-desc fade-in">Social strategy, paid performance, influencer outreach, channel setup — we cover the full spectrum of Korean digital marketing, all in one place.</p>
+      <div class="services-grid">
+
+        <div class="service-card fade-in">
+          <div class="service-name">Social Media Management</div>
+          <div class="service-desc">Content strategy, calendars, community growth, and engagement optimization. We build a plan around growing an engaged Korean audience for your brand.</div>
+          <div class="service-tags">
+            <span class="service-tag">Content Strategy</span>
+            <span class="service-tag">Content Calendar</span>
+            <span class="service-tag">Community Growth</span>
+          </div>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-name">Paid Advertising</div>
+          <div class="service-desc">Performance campaigns across Meta, Naver GFA, Kakao Moment, and Toss. Paid strategy to grow your audience and amplify organic reach.</div>
+          <div class="service-tags">
+            <span class="service-tag">Meta Ads</span>
+            <span class="service-tag">Naver GFA</span>
+            <span class="service-tag">Kakao Moment</span>
+          </div>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-name">Influencer Outreach Support</div>
+          <div class="service-desc">We help you identify and reach out to Korean creators who fit your brand — from shortlisting candidates to drafting outreach messages.</div>
+          <div class="service-tags">
+            <span class="service-tag">Creator Research</span>
+            <span class="service-tag">Outreach Support</span>
+            <span class="service-tag">Brand Fit Analysis</span>
+          </div>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-name">Localization & Channel Setup</div>
+          <div class="service-desc">Korean market infrastructure — Naver Place, Kakao Channel, Instagram optimization, and content localization. The foundation to be discoverable.</div>
+          <div class="service-tags">
+            <span class="service-tag">Naver Place</span>
+            <span class="service-tag">KakaoTalk Channel</span>
+            <span class="service-tag">Content Localization</span>
+          </div>
+        </div>
+
+        <div class="service-card fade-in">
+          <div class="service-name">Technical Setup & Tracking</div>
+          <div class="service-desc">Pixel installation, conversion tracking, analytics dashboards, and landing page optimization — all handled in-house. No extra vendors needed.</div>
+          <div class="service-tags">
+            <span class="service-tag">Pixel Setup</span>
+            <span class="service-tag">GA4 / Analytics</span>
+            <span class="service-tag">Conversion Tracking</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title fade-in">A partnership, not a transaction.</h2>
+      <p class="section-desc fade-in">Five steps: from free discovery to ongoing growth. You only pay after you decide to move forward.</p>
+      <div class="process-grid fade-in">
+        <!-- Step 0: Free Discovery Call -->
+        <div class="process-step">
+          <div class="process-step-num free">0</div>
+          <div class="process-title">Free 10-Minute Discovery Call</div>
+          <div class="process-desc">Let's talk about your brand, target audience, current challenges, and goals for the Korean market. No pitch — just understanding if we're a fit.</div>
+          <span class="process-highlight">Free · No commitment</span>
+        </div>
+
+        <!-- Divider: Payment Point -->
+        <div class="process-divider">
+          <div class="process-divider-line"></div>
+          <div class="process-divider-text">Choose a Package & Pay</div>
+          <div class="process-divider-line"></div>
+        </div>
+
+        <!-- Step 1: Pre-Consultation Brief -->
+        <div class="process-step">
+          <div class="process-step-num">1</div>
+          <div class="process-title">Pre-Consultation Brief</div>
+          <div class="process-desc">You fill out a brief with your brand info, target market, goals, preferred channels, and current digital presence. This helps us maximize the strategy session.</div>
+          <span class="process-highlight">You complete · Client-led</span>
+        </div>
+
+        <!-- Step 2: 1-Hour Strategy Session -->
+        <div class="process-step">
+          <div class="process-step-num">2</div>
+          <div class="process-title">1-Hour Strategy Session</div>
+          <div class="process-desc">We analyze your brief, audit your current channels, identify gaps, and build a tailored strategy — content direction, platform priorities, audience targeting, and growth plan.</div>
+          <span class="process-highlight">Led by founder</span>
+        </div>
+
+        <!-- Step 3: Execution -->
+        <div class="process-step">
+          <div class="process-step-num">3</div>
+          <div class="process-title">Execution — Phased Rollout</div>
+          <div class="process-desc">We don't rush everything at once. Week 1 focuses on tracking infrastructure and account setup. Week 2 launches your primary platform campaign with initial creative. Week 3–4 layers in optimization, testing, and additional platforms as data comes in. Each phase builds on what we learn.</div>
+          <span class="process-highlight">Scope & pace vary by package</span>
+        </div>
+
+        <!-- Step 4: Growth Partnership -->
+        <div class="process-step">
+          <div class="process-step-num">4</div>
+          <div class="process-title">Growth Partnership (Ongoing)</div>
+          <div class="process-desc">Beyond ad optimization, we grow your business. As inquiries increase, we refine your offer, build conversion pipelines, and scale operations. We're not just running ads — we're building your market presence.</div>
+          <span class="process-highlight">Monthly management only</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why GrowthPilot (Personal Story) -->
+  <section class="why-section" id="why">
+    <div class="container">
+      <div class="section-label">Why GrowthPilot</div>
+      <h2 class="section-title fade-in">Not an agency.<br>Your dedicated Korea partner.</h2>
+      <div class="why-story fade-in">
+        <p>I've lived in Canada, led a bilingual community for 4+ years, and managed over ₩200M in monthly ad budgets across 6 platforms. I know what it's like to try to get things done in a market where everything works differently — the platforms, the consumer behavior, the trust signals.</p>
+        <p>That's exactly why I built GrowthPilot. Because I kept seeing international brands struggle with the same thing: they couldn't find someone in Korea who actually understood their vision, could communicate naturally in English, and still execute everything at a native level in Korean.</p>
+        <p>I'm not just a marketer. I write conversion tracking code. I build landing pages. I read raw data and make decisions from it. When you work with me, there's no account manager relay, no lost-in-translation brief. You talk to me directly, and I handle everything — strategy, execution, and technical setup — personally.</p>
+        <p>I work with a small number of brands deeply, not dozens superficially. No long-term lock-in contracts. I earn your trust month by month, and I want to be the kind of partner you can actually talk to.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="packages" id="packages">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title fade-in">Choose your package</h2>
+      <p class="section-desc fade-in">Start with a one-time setup, then decide if you want ongoing management. No long-term lock-in.</p>
+      <div class="package-grid fade-in">
+        <!-- Starter Package -->
+        <div class="package-card">
+          <div class="package-name">Starter</div>
+          <div class="package-title">2 Weeks</div>
+          <div class="package-price-original">₩380,000</div>
+          <div class="package-price">₩280,000 <span class="package-discount-badge">Launch discount</span></div>
+          <div class="package-price-note">One-time · includes VAT</div>
+          <div class="package-divider"></div>
+          <ul class="package-features">
+            <li>Deep-dive strategy consultation</li>
+            <li>Current state audit + direction</li>
+            <li>Primary platform ad setup (Meta or Naver)</li>
+            <li>2-week data analysis & initial report</li>
+          </ul>
+        </div>
+
+        <!-- Growth Package (Recommended) -->
+        <div class="package-card recommended">
+          <div class="package-badge">Recommended</div>
+          <div class="package-name">Growth</div>
+          <div class="package-title">4 Weeks</div>
+          <div class="package-price-original">₩550,000</div>
+          <div class="package-price">₩430,000 <span class="package-discount-badge">Launch discount</span></div>
+          <div class="package-price-note">One-time · includes VAT</div>
+          <div class="package-divider"></div>
+          <ul class="package-features">
+            <li>Everything in Starter</li>
+            <li>Second platform expansion (week 3+)</li>
+            <li>Creative testing & targeting optimization</li>
+            <li>Underperforming ads replaced & scaled</li>
+            <li>Operations guide (how to manage ongoing)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Monthly Management Box -->
+      <div class="monthly-box fade-in">
+        <div class="monthly-box-label">Ongoing Growth</div>
+        <div class="monthly-box-price">₩450,000/month</div>
+        <div class="monthly-box-desc">Ad optimization is standard. Beyond that: content strategy evolution, audience refinement, business growth support, and scaling operations. Ongoing partnership for brands serious about growth in Korea.</div>
+      </div>
+
+      <p class="package-bottom-note fade-in">Launch pricing available until <strong>April 5</strong>.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title fade-in">Common questions</h2>
+      <div class="faq-list fade-in">
+        <div class="faq-item">
+          <button class="faq-question">How is pricing structured?</button>
+          <div class="faq-answer">
+            <p>Two options: (1) One-time packages — Starter (₩280K) or Growth (₩430K) for initial setup. (2) Monthly management (₩450K/month) for ongoing optimization and growth support. You only pay for ongoing management if you want it — no lock-in contracts.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Who will I be working with?</button>
+          <div class="faq-answer">
+            <p>Directly with the Founder. Strategy, technical setup, data analysis, execution — one person handles everything from start to finish. No account managers, no handoffs. The same person you talk to on the first call is the one running your campaigns.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Do you require long-term contracts?</button>
+          <div class="faq-answer">
+            <p>No. One-time packages are exactly that — one-time. Monthly management is month-to-month, no lock-in. We earn your continued partnership through results.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What types of brands do you work with?</button>
+          <div class="faq-answer">
+            <p>International brands looking to enter or grow in the Korean market — consumer brands, F&B, lifestyle, beauty, pet, fashion, and more. If Korean consumers are your target, we can help. We do not currently work with education businesses targeting minors (e.g. tutoring academies, test prep services).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can you manage our social media or just run ads?</button>
+          <div class="faq-answer">
+            <p>Both — and social media management is actually our core strength. We handle content strategy, content calendars, community engagement, and growth planning alongside paid campaigns. Most clients come to us because they can't find someone in Korea who does social strategy well.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">We already have a Korean agency. How are you different?</button>
+          <div class="faq-answer">
+            <p>With GrowthPilot, you work directly with the person managing your campaigns — in English. No layers, no account managers, no briefs lost in translation. Faster decisions, better alignment, and the kind of deep attention agencies can't provide when juggling dozens of clients.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Do we need to produce our own content?</button>
+          <div class="faq-answer">
+            <p>We handle strategy, planning, and direction — telling you exactly what content to create, when, and why. Your team produces the raw materials (photos, videos), and we take care of the rest: scheduling, captions, localization, and community management.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Can you issue official invoices?</button>
+          <div class="faq-answer">
+            <p>Yes. GrowthPilot is a registered Korean business. We can issue Korean tax invoices (세금계산서) and official receipts for all services. Just let us know after payment and we'll handle it right away.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is the ad budget separate from the service fee?</button>
+          <div class="faq-answer">
+            <p>Yes. Ad spend goes directly to the platforms (Meta, Naver, Kakao, etc.). We manage the strategy, setup, and optimization — you control the budget.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="section-label">Get Started</div>
+      <h2 class="section-title fade-in">Ready to grow your<br>brand in Korea?</h2>
+      <p class="section-desc fade-in">Tell us about your brand and what you're looking for.<br>We'll figure out the right approach together.</p>
+      <a href="#contact" class="btn-primary-light fade-in">Schedule a Call →</a>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="form-section" id="contact">
+    <div class="container">
+      <div class="form-card fade-in">
+        <h3>Let's Talk</h3>
+        <p>Tell us about your brand. We'll reach out within 1–2 business days.</p>
+        <form action="https://formspree.io/f/mbdzjdgw" method="POST">
+          <input type="hidden" name="_next" value="https://growthpilot-kr.github.io/en/thanks.html">
+          <input type="hidden" name="_source" value="en">
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="utm_content" id="utm_content">
+          <input type="hidden" name="utm_term" id="utm_term">
+          <div class="form-group">
+            <label>Company / Brand Name</label>
+            <input type="text" name="business_name" placeholder="e.g. GrowthLab, PilotHaus" required>
+          </div>
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="your_name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="contact" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label>What are you looking for?</label>
+            <select name="service_interest">
+              <option value="Social media management">Social media management</option>
+              <option value="Paid advertising">Paid advertising</option>
+              <option value="Full-service marketing">Full-service (social + ads + strategy)</option>
+              <option value="Influencer partnerships">Influencer partnerships</option>
+              <option value="Market entry / channel setup">Market entry / channel setup</option>
+              <option value="Not sure yet">Not sure yet — let's discuss</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Tell us about your brand and goals (optional)</label>
+            <textarea name="message" placeholder="What does your brand do? What are your biggest challenges in the Korean market?"></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Send Inquiry →</button>
+        </form>
+        <p class="form-note">No commitment. We start with a conversation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="footer-logo">GrowthPilot</div>
+          <div class="footer-tagline">Korean marketing for international brands</div>
+        </div>
+        <div class="footer-right">
+          <a href="../index.html">한국어</a>
+          <a href="mailto:growthpilot.kr@gmail.com">growthpilot.kr@gmail.com</a>
+          <span style="font-size:12px;color:var(--text-tertiary);">© 2026 GrowthPilot</span>
+        </div>
+      </div>
+      <div style="margin-top:24px;text-align:center;font-size:12px;color:var(--text-tertiary);line-height:1.8;">
+        GrowthPilot · Registered Business No. 864-09-03078
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <div class="floating-cta" id="floatingCta">
+    <a href="#contact">Schedule a Call →</a>
+  </div>
+
+  <script>
+    // Navbar scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    });
+    // Floating CTA
+    const floatingCta = document.getElementById('floatingCta');
+    const heroSection = document.querySelector('.hero');
+    const contactSection = document.getElementById('contact');
+    function updateFloatingCta() {
+      const heroBottom = heroSection.getBoundingClientRect().bottom;
+      const contactTop = contactSection.getBoundingClientRect().top;
+      floatingCta.classList.toggle('visible', heroBottom < 0 && contactTop > window.innerHeight);
+    }
+    window.addEventListener('scroll', updateFloatingCta);
+    // FAQ
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+    // Fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+        }
+      });
+    });
+    // Meta Pixel + GA4 Lead event
+    const contactForm = document.querySelector('form[action*="formspree"]');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(contactForm);
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Submitting...'; }
+        fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+          if (response.ok) {
+            if (typeof fbq === 'function') fbq('track', 'Lead');
+            if (typeof gtag === 'function') gtag('event', 'generate_lead');
+            setTimeout(function() {
+              window.location.href = 'https://growthpilot-kr.github.io/en/thanks.html';
+            }, 300);
+          } else {
+            alert('Something went wrong. Please try again.');
+            if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Send Inquiry →'; }
+          }
+        }).catch(function() {
+          alert('Network error. Please try again.');
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Send Inquiry →'; }
+        });
+      });
+    }
+    // UTM params
+    const urlParams = new URLSearchParams(window.location.search);
+    ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(param => {
+      const el = document.getElementById(param);
+      if (el && urlParams.get(param)) el.value = urlParams.get(param);
+    });
+  </script>
+</body>
+</html>
