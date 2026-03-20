@@ -111,6 +111,7 @@
 
     /* ── Steps Detail ── */
     .steps-detail { background:var(--white); }
+    .steps-detail .container { max-width:600px; }
     .steps-grid { display:flex; flex-direction:column; gap:40px; }
     .step-row { display:flex; gap:24px; align-items:flex-start; }
     .step-num { flex-shrink:0; width:36px; height:36px; border-radius:50%; background:var(--text-primary); color:var(--white); font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-top:2px; }
@@ -168,8 +169,18 @@
     .package-bottom-note { text-align:center; font-size:14px; color:var(--text-secondary); margin-top:32px; font-weight:300; line-height:1.6; }
     .package-bottom-note strong { font-weight:600; color:var(--text-primary); }
 
+    /* ── Package Flow ── */
+    .package-flow { margin-top:0; }
+    .flow-step-label { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
+    .flow-step-num { width:28px; height:28px; border-radius:50%; background:var(--text-primary); color:var(--white); font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .flow-step-text { font-size:13px; font-weight:600; color:var(--text-primary); letter-spacing:-0.01em; }
+    .flow-connector { display:flex; flex-direction:column; align-items:center; padding:20px 0; }
+    .flow-connector-line { width:2px; height:24px; background:linear-gradient(to bottom, var(--border), var(--text-primary)); }
+    .flow-connector-arrow { font-size:16px; color:var(--text-primary); margin-top:-2px; }
+    .flow-connector-text { font-size:12px; font-weight:500; color:var(--text-tertiary); margin-top:4px; }
+
     /* ── Monthly Management ── */
-    .monthly-box { margin-top:24px; padding:28px 32px; background:var(--text-primary); border-radius:16px; text-align:center; }
+    .monthly-box { padding:28px 32px; background:var(--text-primary); border-radius:16px; text-align:center; }
 
     /* ── FAQ ── */
     .faq { background:var(--white); }
@@ -374,13 +385,13 @@
         </div>
         <div class="why-card fade-in">
           <div class="why-card-label">감 vs 데이터</div>
-          <div class="why-card-title">어떤 사진이 될지 감으로 고르지 않아요. 여러 개를 돌려보고 숫자로 확인해요.</div>
+          <div class="why-card-title">어떤 사진이 좋을지 감으로 고르지 않아요. 여러 개를 돌려보고 숫자로 확인해요.</div>
           <div class="why-card-desc">같은 작가님 사진이라도 어떤 건 문의 0건, 어떤 건 5건이 올 수 있어요. 한 장에 베팅하는 게 아니라 여러 조합을 동시에 테스트해서, 실제로 문의가 오는 조합을 데이터로 찾아내는 거예요.</div>
         </div>
         <div class="why-card fade-in">
           <div class="why-card-label">클릭 vs 문의</div>
           <div class="why-card-title">클릭만 많아도 문의가 안 올 수 있어요. 클릭한 사람이 문의까지 오게 만드는 게 핵심이에요.</div>
-          <div class="why-card-desc">광고를 클릭했는데 프로필에서 이탈하거나, DM 보내기 버튼을 못 찾으면 의미가 없어요. 전환 추적을 세팅하면 어디서 빠지는지 보이고, 그 빠지는 곳을 막아서 클릭 → 문의까지 연결해요.</div>
+          <div class="why-card-desc">광고를 클릭했는데 프로필에서 이탈하거나, DM 보내기 버튼을 못 찾으면 의미가 없어요. 전환 추적을 세팅하면 어디서 이탈할지 보이고, 그 이탈 지점을 막아서 클릭 → 문의까지 연결해요.</div>
         </div>
       </div>
     </div>
@@ -412,7 +423,14 @@
     <div class="container">
       <div class="section-label">서비스 안내</div>
       <h2 class="section-title fade-in">작가님 상황에 맞는<br>패키지를 선택하세요</h2>
-      <p class="section-desc fade-in">먼저 맛보고 싶다면 스타터, 바로 시작하고 싶다면 그로스. 이후 월 관리로 편하게 맡기실 수 있어요.</p>
+      <p class="section-desc fade-in">패키지로 기반을 만들고, 이후 월 관리 구독으로 꾸준히 성장하세요.</p>
+
+      <div class="package-flow">
+        <div class="flow-step-label fade-in">
+          <div class="flow-step-num">1</div>
+          <div class="flow-step-text">먼저, 패키지로 마케팅 기반을 세팅해요</div>
+        </div>
+      </div>
       <div class="package-grid">
         <!-- Starter -->
         <div class="package-card fade-in">
@@ -420,12 +438,12 @@
           <div class="package-title">스타터 패키지</div>
           <div class="package-price-original">33만원</div>
           <div class="package-price">23만원 <span class="package-discount-badge">런칭 할인</span></div>
-          <div class="package-price-note">1회 · 2주 · 부가세 포함</div>
+          <div class="package-price-note">2주 완성 · 부가세 포함</div>
           <div class="package-divider"></div>
           <ul class="package-features">
             <li>상담실장 심층 상담</li>
             <li>현황 진단 + 기본 방향 제시</li>
-            <li>광고 기본 세팅 (1회)</li>
+            <li>광고 기본 세팅</li>
             <li>2주차 데이터 기반 초기 분석</li>
           </ul>
         </div>
@@ -436,7 +454,7 @@
           <div class="package-title">그로스 패키지</div>
           <div class="package-price-original">49만원</div>
           <div class="package-price">38만원 <span class="package-discount-badge">런칭 할인</span></div>
-          <div class="package-price-note">1회 · 4주 · 부가세 포함</div>
+          <div class="package-price-note">4주 완성 · 부가세 포함</div>
           <div class="package-divider"></div>
           <ul class="package-features">
             <li>스타터 전체 포함</li>
@@ -448,6 +466,15 @@
       </div>
 
       <!-- 월 관리 -->
+      <div class="flow-connector fade-in">
+        <div class="flow-connector-line"></div>
+        <div class="flow-connector-arrow">↓</div>
+        <div class="flow-connector-text">패키지 완료 후</div>
+      </div>
+      <div class="flow-step-label fade-in" style="margin-bottom:16px;">
+        <div class="flow-step-num">2</div>
+        <div class="flow-step-text">이후, 월 관리 구독으로 꾸준히 성장해요</div>
+      </div>
       <div class="monthly-box fade-in">
         <div style="font-size:11px; font-weight:600; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">월 관리 구독</div>
         <div style="font-size:20px; font-weight:700; color:#fff; margin-bottom:4px;">월 39만원</div>
