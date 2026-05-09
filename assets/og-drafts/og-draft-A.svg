@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <style>
+      .bg{fill:#000000}
+      .accent{fill:#8B2E1C}
+      .paper{fill:#F5F1E8}
+      .mute{fill:rgba(245,241,232,0.55)}
+      .h1{font-family:'Noto Sans KR','Pretendard',sans-serif;font-weight:800;letter-spacing:-2px}
+      .ital{font-family:'Times New Roman',serif;font-style:italic;font-weight:400;letter-spacing:-1.5px}
+      .mono{font-family:'JetBrains Mono','Menlo',monospace;letter-spacing:3px}
+      .body{font-family:'Noto Sans KR','Pretendard',sans-serif;font-weight:400}
+    </style>
+  </defs>
+
+  <!-- 배경 검정 -->
+  <rect width="1200" height="630" class="bg"/>
+
+  <!-- 좌상단 라벨 -->
+  <text x="80" y="100" class="mono paper" font-size="14" opacity="0.55">GROWTHPILOT — DIAGNOSE &amp; SOLVE</text>
+
+  <!-- 메인 카피 -->
+  <text x="80" y="270" class="ital paper" font-size="78">외주가 아니라,</text>
+  <text x="80" y="370" class="h1 paper" font-size="78">매주 함께 일하는</text>
+  <text x="80" y="450" class="h1" fill="#FBE8D8" font-size="78">마케팅 동료.</text>
+
+  <!-- 좌하단 서브 -->
+  <text x="80" y="540" class="body paper" font-size="22" opacity="0.7">광고 + DM 자동화 통합 운영 · 1인샵 · 시술업</text>
+  <text x="80" y="575" class="mono accent" font-size="14" font-weight="700">growthpilot.co.kr</text>
+
+  <!-- 우측 상단 RECOMMENDED 뱃지 (선택적 강조) -->
+  <rect x="990" y="80" width="130" height="30" rx="15" class="accent"/>
+  <text x="1055" y="100" class="mono paper" font-size="11" font-weight="700" text-anchor="middle">RECOMMENDED</text>
+
+  <!-- 우하단 마스코트 자리 (placeholder) — 실제로는 마스코트 PNG가 들어갈 자리 -->
+  <circle cx="1010" cy="430" r="120" fill="#F5F1E8" opacity="0.05"/>
+  <text x="1010" y="425" class="body paper" font-size="13" opacity="0.4" text-anchor="middle">[마스코트 자리]</text>
+  <text x="1010" y="448" class="body paper" font-size="13" opacity="0.4" text-anchor="middle">sayhi.png</text>
+</svg>
