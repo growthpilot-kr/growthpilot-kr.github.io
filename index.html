@@ -213,26 +213,128 @@
   .footer-copy{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink-muted);letter-spacing:0.1em;margin-top:6px;opacity:0.7}
 
   @media (max-width:768px){
-    .hero{padding:110px 0 40px}
-    .stage{grid-template-columns:1fr;gap:16px;padding:24px}
-    .stage-num{font-size:40px}
-    .stage-tag{justify-self:start}
-    .compare-row{grid-template-columns:1fr}
-    .compare-row.head{display:none}
-    .compare-cell{border-right:0;border-bottom:1px solid var(--border);padding:16px 18px}
-    .compare-cell.label{background:var(--ink);color:var(--paper);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:10px 18px}
-    .compare-cell.gp{border-left:0;border-top:0}
-    .compare-cell.gp::before{content:"GP";display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;background:var(--accent);color:var(--paper);padding:3px 8px;border-radius:100px;margin-right:10px;letter-spacing:0.1em}
-    .compare-cell.others::before{content:"광고 대행사";display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;background:var(--ink-muted);color:var(--paper);padding:3px 8px;border-radius:100px;margin-right:10px;letter-spacing:0.1em}
-    .compare-cell.others.freelance::before{content:"외주"}
-    .timeline{grid-template-columns:1fr}
-    .timeline-day{border-right:0;border-bottom:1px solid var(--border)}
-    .timeline-day:last-child{border-bottom:0}
-    .industry-inner{grid-template-columns:1fr;gap:32px;text-align:center}
-    .industry-tags{justify-content:center}
-    .price-options{grid-template-columns:1fr}
+    .container{padding:0 18px}
+
+    /* Nav */
+    .nav-inner{height:56px;padding:0 18px}
+    .nav-logo{font-size:17px}
+    .nav-cta{font-size:12px;padding:8px 14px}
+
+    /* Section heads */
+    .section-head{margin-bottom:36px}
+    .section-head h2{font-size:24px;line-height:1.25}
+    .section-head .mono{font-size:10px;margin-bottom:12px}
+
+    /* Hero */
+    .hero{padding:100px 0 40px}
+    .hero-mascot{max-width:140px;margin-bottom:24px}
+    .hero h1{font-size:48px;margin-bottom:24px}
+    .hero p{font-size:14px;margin-bottom:24px}
+    .hero-arrow{font-size:10px;margin-top:32px}
+
+    /* Stages — PC 3-column 유지 */
+    .diagnose{padding:60px 0}
+    .stage{grid-template-columns:50px 1fr auto;gap:14px;padding:20px 16px;border-radius:10px}
+    .stages{gap:12px}
+    .stage:hover{transform:none}
+    .stage-num{font-size:36px}
+    .stage-body h3{font-size:14.5px;line-height:1.3;margin-bottom:6px}
+    .stage-quote{font-size:12.5px;line-height:1.5;margin-bottom:6px}
+    .stage-action{font-size:11px;line-height:1.5}
+    .stage-tag{font-size:9px;padding:4px 7px;letter-spacing:0.04em;justify-self:end;white-space:nowrap}
+
+    /* Interlude */
+    .interlude{padding:50px 0}
+    .interlude img{max-width:120px;margin-bottom:18px}
+    .interlude p{font-size:18px}
+
+    /* Compare table — PC 4-column 유지, 컴팩트화 */
+    .diff{padding:60px 0}
+    .diff-intro{font-size:13px;margin:-12px auto 32px;padding:0 4px}
+    .compare{border-radius:8px}
+    .compare-row{grid-template-columns:0.65fr 1.25fr 1fr 1fr}
+    .compare-row.head{display:grid}
+    .compare-row.head>div{font-size:9px;padding:14px 4px;gap:3px;letter-spacing:0.04em;line-height:1.2}
+    .compare-row.head .gp .badge{font-size:7px;padding:2px 5px;letter-spacing:0.04em;margin-top:3px}
+    .compare-cell{padding:11px 7px;font-size:10.5px;line-height:1.4;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .compare-cell:last-child{border-right:0}
+    .compare-cell.label{font-size:9.5px;padding:11px 5px;letter-spacing:-0.02em;background:var(--paper-deep);color:var(--ink);font-weight:700;text-transform:none}
+    .compare-cell.gp{border-left:0;border-top:0;justify-content:center;text-align:center;font-weight:600}
+
+    /* Diff conclusion */
+    .diff-conclusion{margin-top:32px;padding:28px 20px;border-radius:10px}
+    .diff-conclusion p{font-size:17px;line-height:1.5}
+
+    /* Cadence — 4 → 2x2 grid */
+    .cadence{padding:60px 0}
+    .cadence-intro{font-size:13.5px;margin:-12px auto 32px}
+    .timeline{grid-template-columns:1fr 1fr;border-radius:10px}
+    .timeline-day{padding:20px 16px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .timeline-day:nth-child(2n){border-right:0}
+    .timeline-day:nth-last-child(-n+2){border-bottom:0}
+    .timeline-when{font-size:9.5px;margin-bottom:10px}
+    .timeline-who{font-size:10px}
+    .timeline-what{font-size:13.5px;line-height:1.35}
+    .timeline-detail{font-size:11.5px;line-height:1.5}
+    .cadence-note{padding:18px 20px;font-size:12.5px;border-radius:10px;line-height:1.55}
+
+    /* Industry — 2-column 유지 */
+    .industry{padding:50px 0}
+    .industry-inner{grid-template-columns:0.7fr 1.3fr;gap:24px;text-align:left}
+    .industry-mascot img{max-width:120px}
+    .industry h2{font-size:19px;margin-bottom:10px}
+    .industry p{font-size:13px;margin-bottom:14px}
+    .industry-tags{justify-content:flex-start;gap:6px}
+    .industry-tag{font-size:11px;padding:5px 9px;border-radius:5px}
+
+    /* Pricing */
+    .pricing{padding:60px 0}
+    .price-card{padding:32px 24px;border-radius:14px}
+    .price-tag{font-size:10px;margin-bottom:14px}
+    .price-name{font-size:26px;margin-bottom:8px}
+    .price-sub{font-size:13.5px;margin-bottom:24px}
+    .price-amount .num{font-size:42px}
+    .price-amount .unit{font-size:13px}
+    .price-extra{font-size:11.5px;margin-bottom:28px;padding-bottom:24px}
+    .price-list{gap:10px;margin-bottom:28px}
+    .price-list li{font-size:13.5px}
+    .price-cta{font-size:14px;padding:14px 24px}
+    .price-options{grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+    .price-option{padding:18px 16px;border-radius:10px}
+    .price-option-label{font-size:9px;margin-bottom:10px;letter-spacing:0.1em}
+    .price-option-name{font-size:14.5px;margin-bottom:6px;line-height:1.3}
+    .price-option-amount{font-size:18px;line-height:1.2}
+    .price-option-amount span{font-size:10.5px;display:block;margin-left:0;margin-top:4px}
+    .price-option-desc{font-size:11px;line-height:1.5;margin-top:6px}
+
+    /* FAQ */
+    .faq{padding:60px 0}
+    .faq-q{font-size:14px;padding:18px 20px;gap:12px}
+    .faq-q::after{font-size:20px}
+    .faq-a{font-size:13px;padding:0 20px 20px;line-height:1.7}
+
+    /* Closing */
+    .closing{padding:80px 0}
     .closing-video-wrap video,.closing-video-wrap img{max-width:200px}
-    .form-grid{grid-template-columns:1fr}
+    .closing-video-wrap{margin-bottom:32px}
+    .closing h2{font-size:30px;margin-bottom:18px}
+    .closing p{font-size:14px;margin-bottom:28px}
+
+    /* Form — 2-column 유지 */
+    .form-grid{grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+    .form-field{gap:6px}
+    .form-field-full{margin-bottom:18px}
+    .form-label{font-size:9.5px;letter-spacing:0.06em}
+    .form-field input,.form-field select,.form-field textarea{font-size:14px;padding:11px 14px;border-radius:8px}
+    .form-field select{background-position:right 14px center;padding-right:36px}
+    .form-submit{font-size:14px;padding:15px 28px}
+    .form-note{font-size:11px}
+
+    /* Footer */
+    footer{padding:36px 18px 48px}
+    .footer-tag{font-size:13px}
+    .footer-links{font-size:12px;gap:12px}
+    .footer-copy{font-size:9.5px}
   }
 </style>
 </head>
