@@ -1,0 +1,9 @@
+@others/
+.DS_Store
+
+# Drafts & internal notes — local only, do not deploy
+draft-*.html
+pipeline*.html
+landing.html
+index-old-photographer.html
+GP_피봇_브리핑.md
