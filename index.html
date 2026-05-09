@@ -743,15 +743,40 @@
     if (el && urlParams.get(param)) el.value = urlParams.get(param);
   });
 
-  // Form submit → Meta Pixel Lead + GA4 generate_lead
+  // Form submit → AJAX 제출 + 트래킹 + thanks.html 직접 리다이렉트
+  // (Formspree 무료 플랜에서 custom redirect 안 되는 거 우회)
   const contactForm = document.querySelector('form[action*="formspree"]');
   if (contactForm) {
-    contactForm.addEventListener('submit', function() {
+    contactForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '제출 중...'; }
+
+      // Pixel + GA 이벤트
       if (typeof fbq === 'function') fbq('track', 'Lead');
       if (typeof gtag === 'function') gtag('event', 'generate_lead', {
         event_category: 'contact',
         event_label: 'free_consultation'
       });
+
+      try {
+        const formData = new FormData(contactForm);
+        const res = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          window.location.href = 'https://growthpilot.co.kr/thanks.html';
+        } else {
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+          alert('제출에 문제가 발생했어요. 잠시 후 다시 시도해주세요.');
+        }
+      } catch (err) {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        alert('네트워크 문제로 제출이 실패했어요. 잠시 후 다시 시도해주세요.');
+      }
     });
   }
 
