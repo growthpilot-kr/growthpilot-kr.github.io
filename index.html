@@ -336,6 +336,57 @@
     .footer-links{font-size:12px;gap:12px}
     .footer-copy{font-size:9.5px}
   }
+
+  /* === Hero Rotator (new) === */
+  .hero-rotator{position:relative;height:60px;max-width:680px;margin:0 auto 40px;font-size:17px;color:var(--ink-soft)}
+  .hero-rotator span{position:absolute;inset:0;text-align:center;word-break:keep-all;font-family:'Fraunces','Noto Sans KR',serif;font-style:italic;font-weight:400;opacity:0;line-height:1.5;animation:rotateText 18s infinite}
+  .hero-rotator span:nth-child(1){animation-delay:0s}
+  .hero-rotator span:nth-child(2){animation-delay:3s}
+  .hero-rotator span:nth-child(3){animation-delay:6s}
+  .hero-rotator span:nth-child(4){animation-delay:9s}
+  .hero-rotator span:nth-child(5){animation-delay:12s}
+  .hero-rotator span:nth-child(6){animation-delay:15s}
+  @keyframes rotateText{
+    0%{opacity:0;transform:translateY(15px)}
+    3%{opacity:1;transform:translateY(0)}
+    14%{opacity:1;transform:translateY(0)}
+    17%{opacity:0;transform:translateY(-15px)}
+    100%{opacity:0;transform:translateY(-15px)}
+  }
+  @media (max-width:640px){
+    .hero-rotator{font-size:15px;height:90px;margin-bottom:32px}
+    .hero-rotator span{padding:0 12px}
+  }
+
+  /* === Self Check (new) === */
+  .self-check{padding:100px 0;background:var(--paper-deep);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .check-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .check-item{display:flex;gap:20px;align-items:flex-start;background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:22px 26px;cursor:pointer;transition:all 0.2s;position:relative}
+  .check-item:hover{border-color:var(--ink);transform:translateX(4px)}
+  .check-item .check-input{position:absolute;opacity:0;pointer-events:none}
+  .check-box{flex-shrink:0;width:24px;height:24px;border:2px solid var(--ink-muted);border-radius:6px;background:var(--paper);position:relative;transition:all 0.2s;margin-top:2px}
+  .check-input:checked + .check-box{background:var(--accent);border-color:var(--accent)}
+  .check-input:checked + .check-box::after{content:"✓";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--paper);font-weight:700;font-size:15px}
+  .check-content{flex:1}
+  .check-q{font-size:16px;font-weight:700;color:var(--ink);line-height:1.5;word-break:keep-all;margin-bottom:6px;letter-spacing:-0.01em}
+  .check-a{font-size:13px;color:var(--ink-muted);line-height:1.55;word-break:keep-all}
+  .check-input:checked ~ .check-content .check-q{color:var(--accent)}
+
+  .check-result{max-width:680px;margin:40px auto 0;background:var(--ink);color:var(--paper);border-radius:14px;padding:40px 36px;text-align:center}
+  .result-count{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-soft);letter-spacing:0.12em;margin-bottom:16px;text-transform:uppercase}
+  .result-count #checked-count{display:inline-block;font-size:40px;font-weight:600;color:var(--paper);font-family:'Fraunces',serif;font-style:italic;line-height:1;margin-right:4px;vertical-align:middle}
+  .result-msg{font-family:'Fraunces','Noto Sans KR',serif;font-style:italic;font-size:22px;line-height:1.5;color:var(--paper);margin-bottom:28px;word-break:keep-all;max-width:520px;margin-left:auto;margin-right:auto}
+  .check-cta{display:inline-block;font-size:15px;font-weight:600;color:var(--ink);background:var(--paper);padding:15px 36px;border-radius:100px;text-decoration:none;transition:all 0.2s}
+  .check-cta:hover{background:var(--accent);color:var(--paper)}
+  @media (max-width:640px){
+    .self-check{padding:64px 0}
+    .check-item{padding:18px 20px;gap:14px}
+    .check-q{font-size:14.5px}
+    .check-a{font-size:12.5px}
+    .check-result{padding:32px 24px;margin-top:28px}
+    .result-count #checked-count{font-size:32px}
+    .result-msg{font-size:18px}
+  }
 </style>
 </head>
 <body>
@@ -350,57 +401,87 @@
 <section class="hero">
   <div class="container">
     <img src="./assets/mascot/pointing.png" alt="GP 마스코트" class="hero-mascot">
-    <div class="hero-eyebrow">DIAGNOSE & SOLVE · GROWTHPILOT</div>
-    <h1>지금, <strong>어디서 막혀있나요?</strong></h1>
-    <p>광고 외주가 아니라, 매주 같이 결정하는 마케팅 동료. 광고부터 DM 응답까지, 사장님이 시술 중에도 멈추지 않게.</p>
-    <div class="hero-arrow">↓ 단계 진단 ↓</div>
+    <div class="hero-eyebrow">1인샵·시술업 전용 마케팅 운영</div>
+    <h1>광고비만 나가고<br><strong>문의는 0건이셨다면?</strong></h1>
+    <div class="hero-rotator" aria-live="polite">
+      <span>광고 목표가 '트래픽 / 좋아요'로 돼있진 않으세요?</span>
+      <span>광고 한 번 켜두고 한 달째 그대로 두셨나요?</span>
+      <span>사진 한 장만 계속 광고로 돌리고 계세요?</span>
+      <span>DM 와도 시술 중이라 답장 못 하시죠?</span>
+      <span>광고 클릭은 들어오는데 예약은 안 늘었나요?</span>
+      <span>대행사 보고서, PDF 한 장으로 끝나셨나요?</span>
+    </div>
+    <a href="#self-check" class="hero-arrow">↓ 셀프 체크 ↓</a>
   </div>
 </section>
 
-<!-- Diagnose: 3 stages -->
-<section class="diagnose">
+<!-- Self Check: 문의 안 오는 이유 셀프 체크 -->
+<section class="self-check" id="self-check">
   <div class="container">
     <div class="section-head">
-      <div class="mono">DIAGNOSE YOUR STAGE</div>
-      <h2>네 가지 단계 중<br>어디서 멈춰계신가요?</h2>
+      <div class="mono">SELF CHECK</div>
+      <h2>문의가 왜 안 오는지,<br><em>혼자 체크해보세요</em></h2>
     </div>
-    <div class="stages">
-      <div class="stage">
-        <div class="stage-num">01</div>
-        <div class="stage-body">
-          <h3>아무도 안 와요 — 노출 / 유입</h3>
-          <div class="stage-quote">"인스타에 올려도 반응이 없어요."</div>
-          <div class="stage-action">→ Meta 광고 송출 + 타겟 설계 + 소재 3종 동시 운영</div>
+    <div class="check-list">
+      <label class="check-item">
+        <input type="checkbox" class="check-input">
+        <span class="check-box"></span>
+        <div class="check-content">
+          <div class="check-q">광고 목표가 '트래픽' 또는 '좋아요'로 설정돼 있다</div>
+          <div class="check-a">→ 폼 전환 목표가 아니라서 클릭만 늘고 실제 문의는 안 옵니다.</div>
         </div>
-        <div class="stage-tag">광고 / 트래픽</div>
-      </div>
-      <div class="stage">
-        <div class="stage-num">02</div>
-        <div class="stage-body">
-          <h3>오는데 응답을 못 해요 — DM 자동화</h3>
-          <div class="stage-quote">"낮에 시술 중이라 DM을 못 봐요."</div>
-          <div class="stage-action">→ DM 자동 인사말 + FAQ 자동응답 + 댓글 키워드 트리거</div>
+      </label>
+
+      <label class="check-item">
+        <input type="checkbox" class="check-input">
+        <span class="check-box"></span>
+        <div class="check-content">
+          <div class="check-q">광고 한 번 켜두고 2주 이상 그대로 두고 있다</div>
+          <div class="check-a">→ 같은 사람한테 반복 노출되면서 효과가 점점 떨어져요. 매주 변형 필요.</div>
         </div>
-        <div class="stage-tag">자동화</div>
-      </div>
-      <div class="stage">
-        <div class="stage-num">03</div>
-        <div class="stage-body">
-          <h3>보여줄 게 없어요 — 크리에이티브</h3>
-          <div class="stage-quote">"광고는 돌리고 싶은데 쓸 만한 사진·영상이 없어요."</div>
-          <div class="stage-action">→ 직접 출장 촬영 (서울 한정) + 광고 최적화 소재 제작</div>
+      </label>
+
+      <label class="check-item">
+        <input type="checkbox" class="check-input">
+        <span class="check-box"></span>
+        <div class="check-content">
+          <div class="check-q">사진 한 장 / 영상 한 개로만 계속 광고를 돌리고 있다</div>
+          <div class="check-a">→ 알고리즘이 비교할 소재가 없어서 어떤 게 잘 되는지 학습을 못 합니다.</div>
         </div>
-        <div class="stage-tag">크리에이티브</div>
-      </div>
-      <div class="stage">
-        <div class="stage-num">04</div>
-        <div class="stage-body">
-          <h3>잘 되는지 모르겠어요 — 운영 / 변형</h3>
-          <div class="stage-quote">"광고가 잘 되는지 안 되는지 알 수가 없어요."</div>
-          <div class="stage-action">→ 매주 데이터 점검 + 변형안 제안 + 카톡으로 함께 결정</div>
+      </label>
+
+      <label class="check-item">
+        <input type="checkbox" class="check-input">
+        <span class="check-box"></span>
+        <div class="check-content">
+          <div class="check-q">DM이 와도 시술 중이라 답장이 늦거나 못 한다</div>
+          <div class="check-a">→ 광고로 들어온 손님이 응답 기다리다 다른 가게로 빠져요.</div>
         </div>
-        <div class="stage-tag">운영 · 리포팅</div>
-      </div>
+      </label>
+
+      <label class="check-item">
+        <input type="checkbox" class="check-input">
+        <span class="check-box"></span>
+        <div class="check-content">
+          <div class="check-q">광고 클릭은 들어오는데 폼·예약 전환은 거의 없다</div>
+          <div class="check-a">→ 랜딩 페이지가 광고에서 기대한 메시지랑 안 맞는 경우가 많아요.</div>
+        </div>
+      </label>
+
+      <label class="check-item">
+        <input type="checkbox" class="check-input">
+        <span class="check-box"></span>
+        <div class="check-content">
+          <div class="check-q">대행사 광고 계정·데이터, 직접 들여다본 지 오래됐다</div>
+          <div class="check-a">→ 광고가 살아있는지 죽었는지, 어디서 새는지 파악이 안 됩니다.</div>
+        </div>
+      </label>
+    </div>
+
+    <div class="check-result">
+      <div class="result-count"><span id="checked-count">0</span>개 / 6개 체크됨</div>
+      <p class="result-msg" id="result-msg">하나씩 솔직하게 체크해보세요. 어디서 새는지 보입니다.</p>
+      <a href="#start" class="check-cta">무료 진단 받기 →</a>
     </div>
   </div>
 </section>
@@ -409,7 +490,7 @@
 <section class="interlude">
   <div class="container">
     <img src="./assets/mascot/sayhi.png" alt="GP 마스코트">
-    <p>"본인 단계만 찾아오시면, 다음은 같이 가요."</p>
+    <p>"체크되신 게 있으셨다면, 다음은 같이 가요."</p>
   </div>
 </section>
 
@@ -824,6 +905,33 @@
       }
     });
   }
+
+  // ===== Self-Check counter =====
+  (function(){
+    var inputs = document.querySelectorAll('.check-input');
+    var countEl = document.getElementById('checked-count');
+    var msgEl = document.getElementById('result-msg');
+    if (!inputs.length || !countEl || !msgEl) return;
+
+    var messages = {
+      0: '하나씩 솔직하게 체크해보세요. 어디서 새는지 보입니다.',
+      1: '하나 정도면 광고 점검만으로 손볼 수 있어요.',
+      2: '두 항목이라면 광고 + 자동화 점검이 필요해 보여요.',
+      3: 'GP가 매주 같이 정리해드리면 빠르게 풀려요.',
+      4: '광고 + DM + 운영 통합 점검이 필요한 단계예요.',
+      5: '지금 바로 무료 진단 받으시는 걸 추천드려요.',
+      6: '모두 해당되시면, 매주 함께 봐드릴 동료가 필요한 시점입니다.'
+    };
+
+    function updateCount(){
+      var count = 0;
+      inputs.forEach(function(i){ if (i.checked) count++; });
+      countEl.textContent = count;
+      msgEl.textContent = messages[count];
+    }
+
+    inputs.forEach(function(i){ i.addEventListener('change', updateCount); });
+  })();
 </script>
 </body>
 </html>
