@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrowthPilot — 사진관·메이크업샵 마케팅 운영</title>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3CFM88CR0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3CFM88CR0');
+</script>
+<!-- Meta Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2643044576081819');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2643044576081819&ev=PageView&noscript=1"
+/></noscript>
+
+<meta name="description" content="사진관·메이크업샵을 위한 매주 운영 마케팅 파트너. 광고 + DM 자동화를 매주 카톡으로 같이 결정합니다.">
+<meta property="og:title" content="GrowthPilot — 사진관·메이크업샵 마케팅 운영">
+<meta property="og:description" content="혼자 인스타 광고 돌려도 효과 없으셨다면. 잘못 알고 있던 광고 세팅부터 잡아드립니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://growthpilot.co.kr/">
+<meta property="og:image" content="https://growthpilot.co.kr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111'/><text x='50%25' y='55%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-style='italic'>G</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Noto+Serif+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --bg:#FAF8F4; --bg-deep:#F2EFE8; --bg-card:#FFFFFF;
+    --ink:#0F0E0C; --ink-soft:#3A3733; --ink-mute:#7C7872;
+    --line:#1C1A17; --line-soft:#D9D4C7;
+    --accent:#A12313; --accent-soft:#F6E4DC;
+    --black:#000; --white:#FFF;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter','Noto Sans KR',-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;-webkit-font-smoothing:antialiased;font-weight:400}
+  .serif{font-family:'Fraunces','Noto Serif KR',Georgia,serif}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:0}
+  .container{max-width:1100px;margin:0 auto;padding:0 36px}
+  .container-narrow{max-width:780px;margin:0 auto;padding:0 36px}
+  img,video{max-width:100%;display:block}
+  a{color:inherit}
+
+  /* Top bar / Masthead */
+  .masthead{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--line)}
+  .masthead-inner{max-width:1100px;margin:0 auto;padding:0 36px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .masthead-left{display:flex;align-items:baseline;gap:14px}
+  .mast-logo{font-family:'Fraunces','Noto Serif KR',serif;font-weight:600;font-size:22px;color:var(--ink);text-decoration:none;letter-spacing:-0.02em;font-variation-settings:"opsz" 144}
+  .mast-edition{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--ink-mute);letter-spacing:0.08em;text-transform:uppercase;border-left:1px solid var(--line-soft);padding-left:14px}
+  .mast-cta{font-size:13px;font-weight:600;color:var(--bg);background:var(--ink);padding:9px 20px;text-decoration:none;letter-spacing:-0.01em}
+  .mast-cta:hover{background:var(--accent)}
+
+  /* HERO — newspaper front page */
+  .hero{padding:80px 0 70px;border-bottom:1px solid var(--line)}
+  .hero-kicker{display:flex;align-items:center;gap:16px;margin-bottom:36px}
+  .kicker-rule{flex:1;height:1px;background:var(--line)}
+  .kicker-text{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--ink);letter-spacing:0.18em;text-transform:uppercase;font-weight:600}
+  .hero h1{font-family:'Fraunces','Noto Serif KR',serif;font-weight:400;font-size:clamp(44px,7.4vw,96px);line-height:0.98;letter-spacing:-0.045em;color:var(--ink);margin-bottom:28px;word-break:keep-all;font-variation-settings:"opsz" 144}
+  .hero h1 em{font-style:italic;font-weight:300;color:var(--accent)}
+  .hero-deck{max-width:680px;font-family:'Fraunces','Noto Serif KR',serif;font-weight:300;font-size:clamp(18px,2.2vw,22px);line-height:1.55;color:var(--ink-soft);margin-bottom:36px;word-break:keep-all;font-variation-settings:"opsz" 14}
+  .hero-deck strong{font-weight:600;color:var(--ink)}
+  .hero-byline{display:flex;align-items:center;gap:14px;margin-bottom:36px;font-size:13px;color:var(--ink-mute)}
+  .hero-byline .dot{width:4px;height:4px;border-radius:50%;background:var(--ink-mute)}
+  .hero-cta-group{display:flex;gap:14px;flex-wrap:wrap}
+  .btn-primary{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--bg);background:var(--ink);padding:16px 32px;text-decoration:none;letter-spacing:0.01em;transition:background 0.2s}
+  .btn-primary:hover{background:var(--accent)}
+  .btn-secondary{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--ink);background:transparent;padding:15px 30px;text-decoration:none;border:1px solid var(--ink);transition:all 0.2s}
+  .btn-secondary:hover{background:var(--ink);color:var(--bg)}
+
+  /* SECTION COMMON */
+  .section{padding:96px 0;border-bottom:1px solid var(--line)}
+  .section-light{background:var(--bg)}
+  .section-deep{background:var(--bg-deep)}
+  .section-dark{background:var(--ink);color:var(--bg);border-bottom:0}
+  .section-num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--ink-mute);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:18px;display:flex;align-items:center;gap:12px}
+  .section-num::before{content:"";display:inline-block;width:24px;height:1px;background:var(--ink)}
+  .section h2{font-family:'Fraunces','Noto Serif KR',serif;font-weight:400;font-size:clamp(34px,5vw,60px);line-height:1.05;letter-spacing:-0.035em;color:var(--ink);margin-bottom:24px;max-width:780px;word-break:keep-all;font-variation-settings:"opsz" 96}
+  .section h2 em{font-style:italic;font-weight:300;color:var(--accent)}
+  .section-dark h2{color:var(--bg)}
+  .section-lead{font-family:'Fraunces','Noto Serif KR',serif;font-weight:300;font-size:clamp(17px,2vw,20px);line-height:1.6;color:var(--ink-soft);max-width:620px;margin-bottom:56px;word-break:keep-all;font-variation-settings:"opsz" 14}
+  .section-dark .section-lead{color:rgba(255,255,255,0.75)}
+
+  /* PAIN section — newspaper bullet column */
+  .pain{padding:60px 0;background:var(--bg);border-bottom:1px solid var(--line)}
+  .pain-rule-label{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:20px;font-weight:600}
+  .pain-list{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pain-row{padding:22px 0;border-bottom:1px solid var(--line-soft);font-size:16px;color:var(--ink);font-family:'Fraunces','Noto Serif KR',serif;font-weight:400;line-height:1.5;font-variation-settings:"opsz" 14;word-break:keep-all;padding-right:32px}
+  .pain-row:nth-child(odd){padding-left:0;border-right:1px solid var(--line-soft);padding-right:32px}
+  .pain-row:nth-child(even){padding-left:32px}
+  .pain-row:nth-last-child(-n+2){border-bottom:0}
+  .pain-row-num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--accent);font-weight:600;letter-spacing:0.06em;margin-right:14px;vertical-align:1px}
+
+  /* REVIEW — magazine feature */
+  .review-section{padding:120px 0;background:var(--bg-deep);border-bottom:1px solid var(--line)}
+  .review-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:flex-start;max-width:1100px;margin:0 auto;padding:0 36px}
+  .review-left .section-num{margin-bottom:22px}
+  .review-headline{font-family:'Fraunces','Noto Serif KR',serif;font-weight:400;font-size:clamp(30px,4.4vw,52px);line-height:1.04;letter-spacing:-0.03em;color:var(--ink);margin-bottom:32px;word-break:keep-all;font-variation-settings:"opsz" 96}
+  .review-headline em{font-style:italic;font-weight:300;color:var(--accent)}
+  .review-pullquote{position:relative;padding:24px 0 32px;border-top:2px solid var(--ink);border-bottom:1px solid var(--line-soft);margin-bottom:24px}
+  .review-pullquote::before{content:"\201C";position:absolute;left:-8px;top:-44px;font-family:'Fraunces',serif;font-size:120px;color:var(--accent);line-height:1;opacity:0.18;font-weight:700}
+  .review-pullquote p{font-family:'Fraunces','Noto Serif KR',serif;font-weight:400;font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.5;color:var(--ink);word-break:keep-all;font-variation-settings:"opsz" 36}
+  .review-pullquote p .hl{font-style:normal;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:0 4px}
+  .review-attr{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--ink);letter-spacing:0.04em;line-height:1.7;text-transform:uppercase;font-weight:600}
+  .review-attr span{display:block;color:var(--ink-mute);font-weight:500;font-size:11px;text-transform:none;letter-spacing:0.02em;margin-top:4px}
+  .review-stats{display:flex;gap:36px;margin-top:36px;padding-top:32px;border-top:1px solid var(--line-soft)}
+  .review-stat-num{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:36px;color:var(--accent);line-height:1;letter-spacing:-0.02em;font-variation-settings:"opsz" 96}
+  .review-stat-label{font-size:12px;color:var(--ink-soft);line-height:1.5;margin-top:8px;word-break:keep-all;max-width:140px}
+
+  .review-right{position:relative}
+  .review-right img{width:100%;border:1px solid var(--line);box-shadow:0 12px 40px rgba(15,14,12,0.12)}
+  .review-cap{margin-top:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;color:var(--ink-mute);letter-spacing:0.06em;line-height:1.6;text-transform:uppercase}
+  .review-cap strong{color:var(--ink);font-weight:600}
+
+  /* HOW — numbered editorial steps */
+  .how-grid{display:grid;grid-template-columns:1fr;max-width:880px;margin:0 auto;border-top:1px solid var(--line)}
+  .how-row{display:grid;grid-template-columns:80px 1fr 1fr;gap:32px;padding:36px 0;border-bottom:1px solid var(--line)}
+  .how-row-num{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:64px;color:var(--ink);line-height:0.9;letter-spacing:-0.04em;font-variation-settings:"opsz" 144}
+  .how-row-title{font-family:'Fraunces','Noto Serif KR',serif;font-weight:500;font-size:22px;letter-spacing:-0.02em;line-height:1.3;color:var(--ink);word-break:keep-all;font-variation-settings:"opsz" 36}
+  .how-row-desc{font-size:14.5px;color:var(--ink-soft);line-height:1.7;word-break:keep-all}
+
+  /* WHY — three column editorial */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--bg);border-bottom:1px solid var(--bg)}
+  .why-col{padding:32px;border-right:1px solid rgba(255,255,255,0.12)}
+  .why-col:last-child{border-right:0}
+  .why-col-num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--accent-soft);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:20px}
+  .why-col h3{font-family:'Fraunces','Noto Serif KR',serif;font-weight:500;font-size:24px;line-height:1.3;letter-spacing:-0.02em;color:var(--bg);margin-bottom:14px;word-break:keep-all;font-variation-settings:"opsz" 36}
+  .why-col p{font-size:14.5px;color:rgba(255,255,255,0.7);line-height:1.7;font-weight:400;word-break:keep-all}
+
+  /* INDUSTRY */
+  .industry-block{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:flex-start;max-width:1000px;margin:0 auto}
+  .industry-main{}
+  .industry-main h3{font-family:'Fraunces','Noto Serif KR',serif;font-weight:400;font-size:clamp(28px,3.8vw,40px);line-height:1.1;letter-spacing:-0.03em;color:var(--ink);margin-bottom:20px;word-break:keep-all;font-variation-settings:"opsz" 96}
+  .industry-main h3 em{font-style:italic;font-weight:300;color:var(--accent)}
+  .industry-main p{font-size:15.5px;color:var(--ink-soft);line-height:1.75;word-break:keep-all;margin-bottom:24px}
+  .industry-side{padding-top:8px}
+  .industry-side-label{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;color:var(--ink-mute);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--line-soft)}
+  .industry-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .industry-list li{font-family:'Fraunces','Noto Serif KR',serif;font-weight:400;font-size:17px;line-height:1.4;color:var(--ink-soft);font-variation-settings:"opsz" 14;word-break:keep-all;display:flex;align-items:baseline;gap:14px}
+  .industry-list li::before{content:"";display:inline-block;width:8px;height:1px;background:var(--ink-mute);flex-shrink:0;transform:translateY(-4px)}
+  .industry-list li.main{color:var(--ink);font-weight:600}
+  .industry-list li.main::before{background:var(--accent);width:14px;height:2px}
+
+  /* PRICING — magazine-style */
+  .pricing-wrap{max-width:760px;margin:0 auto}
+  .pricing-card{background:var(--bg);border:1px solid var(--line);padding:56px 48px;position:relative}
+  .pricing-tag{position:absolute;top:0;left:48px;transform:translateY(-50%);background:var(--ink);color:var(--bg);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;padding:6px 16px}
+  .pricing-card h3{font-family:'Fraunces','Noto Serif KR',serif;font-weight:500;font-size:36px;letter-spacing:-0.03em;line-height:1.1;color:var(--ink);margin-bottom:14px;font-variation-settings:"opsz" 96}
+  .pricing-card .price-sub{font-size:15px;color:var(--ink-soft);line-height:1.7;margin-bottom:36px;word-break:keep-all;max-width:480px}
+  .price-line{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:14px}
+  .price-num{font-family:'Fraunces',serif;font-weight:400;font-size:72px;letter-spacing:-0.04em;line-height:1;color:var(--ink);font-variation-settings:"opsz" 144}
+  .price-unit{font-size:14px;color:var(--ink-mute)}
+  .price-fine{font-size:12px;color:var(--ink-mute);margin-bottom:32px;letter-spacing:0.02em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .price-include-label{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;color:var(--ink-mute);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;margin-bottom:18px}
+  .price-include{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:40px}
+  .price-include li{font-size:14.5px;color:var(--ink);line-height:1.55;padding-left:22px;position:relative;word-break:keep-all}
+  .price-include li::before{content:"—";position:absolute;left:0;color:var(--accent);font-weight:600}
+  .pricing-cta{display:block;width:100%;text-align:center;font-size:15px;font-weight:600;color:var(--bg);background:var(--ink);padding:18px 32px;text-decoration:none;transition:background 0.2s;letter-spacing:0.01em}
+  .pricing-cta:hover{background:var(--accent)}
+  .pricing-foot{margin-top:24px;text-align:center;font-size:12.5px;color:var(--ink-mute);word-break:keep-all}
+
+  /* CLOSING — dark editorial */
+  .closing-inner{max-width:760px;margin:0 auto;text-align:left}
+  .closing-mast{display:flex;align-items:center;gap:16px;margin-bottom:32px}
+  .closing-mast .rule{flex:1;height:1px;background:rgba(255,255,255,0.3)}
+  .closing-mast .lbl{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:rgba(255,255,255,0.6);letter-spacing:0.18em;text-transform:uppercase;font-weight:600}
+  .closing h2{font-family:'Fraunces','Noto Serif KR',serif;font-weight:400;font-size:clamp(36px,5.5vw,64px);line-height:1.02;letter-spacing:-0.035em;color:var(--bg);margin-bottom:24px;word-break:keep-all;font-variation-settings:"opsz" 144}
+  .closing h2 em{font-style:italic;font-weight:300;color:var(--accent-soft)}
+  .closing p.deck{font-family:'Fraunces','Noto Serif KR',serif;font-weight:300;font-size:18px;line-height:1.55;color:rgba(255,255,255,0.7);margin-bottom:48px;max-width:520px;word-break:keep-all;font-variation-settings:"opsz" 14}
+
+  .lead-form{margin-top:8px}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+  .form-field{display:flex;flex-direction:column;gap:8px}
+  .form-field-full{margin-bottom:24px}
+  .form-label{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;font-weight:600;color:rgba(255,255,255,0.55);letter-spacing:0.14em;text-transform:uppercase}
+  .form-field input,.form-field select,.form-field textarea{width:100%;padding:14px 16px;background:transparent;border:1px solid rgba(255,255,255,0.25);color:var(--bg);font-family:inherit;font-size:15px;outline:none;transition:border-color 0.2s,background 0.2s;border-radius:0}
+  .form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--bg);background:rgba(255,255,255,0.05)}
+  .form-field input::placeholder,.form-field textarea::placeholder{color:rgba(255,255,255,0.3)}
+  .form-field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23FAF8F4' d='M5 6L0 0h10z' opacity='.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:38px}
+  .form-field select option{background:var(--ink);color:var(--bg)}
+  .form-field textarea{resize:vertical;min-height:90px}
+  .form-submit{display:block;width:100%;padding:18px 32px;font-size:15px;font-weight:600;background:var(--bg);color:var(--ink);border:0;cursor:pointer;transition:all 0.2s;font-family:inherit;letter-spacing:0.01em}
+  .form-submit:hover{background:var(--accent);color:var(--bg)}
+  .form-note{margin-top:18px;font-size:12px;color:rgba(255,255,255,0.45);text-align:left;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:0.02em}
+
+  /* FAQ */
+  .faq-section{padding:96px 0;background:var(--bg)}
+  .faq-list{max-width:880px;margin:48px auto 0;border-top:1px solid var(--line)}
+  .faq-item{border-bottom:1px solid var(--line-soft)}
+  .faq-q{padding:28px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:32px;list-style:none;font-family:'Fraunces','Noto Serif KR',serif;font-weight:500;font-size:19px;color:var(--ink);word-break:keep-all;line-height:1.4;font-variation-settings:"opsz" 36;letter-spacing:-0.01em}
+  .faq-q::-webkit-details-marker{display:none}
+  .faq-q::after{content:"+";font-family:'Fraunces',serif;font-size:24px;font-weight:300;color:var(--ink-mute);transition:transform 0.2s,color 0.2s;flex-shrink:0;line-height:1}
+  details[open] .faq-q::after{transform:rotate(45deg);color:var(--accent)}
+  details[open] .faq-q{color:var(--accent)}
+  .faq-a{padding:0 0 28px;font-size:15px;color:var(--ink-soft);line-height:1.8;word-break:keep-all;max-width:780px}
+
+  /* Footer */
+  footer{padding:64px 36px 56px;text-align:left;background:var(--ink);color:rgba(255,255,255,0.6);border-top:1px solid var(--line)}
+  .footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:flex-end}
+  .footer-logo{font-family:'Fraunces',serif;font-weight:600;font-size:20px;color:var(--bg);margin-bottom:8px;letter-spacing:-0.02em}
+  .footer-tag{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:14px;color:rgba(255,255,255,0.55)}
+  .footer-links{display:flex;gap:16px;align-items:center;font-size:12.5px;flex-wrap:wrap}
+  .footer-links a{color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.2s}
+  .footer-links a:hover{color:var(--bg)}
+  .footer-links .sep{opacity:0.4}
+  .footer-copy{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;color:rgba(255,255,255,0.35);letter-spacing:0.1em;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1)}
+
+  /* Sticky bottom CTA */
+  .sticky-cta{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:99;opacity:0;pointer-events:none;transition:opacity 0.3s}
+  .sticky-cta.visible{opacity:1;pointer-events:auto}
+  .sticky-cta a{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--bg);background:var(--ink);padding:13px 28px;text-decoration:none;box-shadow:0 8px 24px rgba(15,14,12,0.25);letter-spacing:0.01em}
+
+  @media (max-width:880px){
+    .container,.container-narrow{padding:0 22px}
+    .masthead-inner{padding:0 22px;height:54px}
+    .mast-logo{font-size:19px}
+    .mast-edition{display:none}
+    .mast-cta{font-size:12px;padding:8px 14px}
+
+    .hero{padding:48px 0 56px}
+    .hero h1{font-size:clamp(34px,9vw,52px)}
+    .hero-deck{font-size:16px;margin-bottom:28px}
+    .hero-byline{flex-wrap:wrap;font-size:12px;gap:10px}
+    .hero-cta-group{flex-direction:column;align-items:stretch}
+    .btn-primary,.btn-secondary{justify-content:center}
+
+    .section{padding:64px 0}
+    .section h2{font-size:30px}
+    .section-lead{font-size:15px;margin-bottom:36px}
+
+    .pain-list{grid-template-columns:1fr}
+    .pain-row,.pain-row:nth-child(odd),.pain-row:nth-child(even){padding:18px 0;padding-left:0;border-right:0;border-bottom:1px solid var(--line-soft)}
+    .pain-row:last-child{border-bottom:0}
+
+    .review-section{padding:64px 0}
+    .review-grid{grid-template-columns:1fr;gap:36px;padding:0 22px}
+    .review-headline{font-size:26px;margin-bottom:24px}
+    .review-pullquote p{font-size:18px}
+    .review-pullquote::before{font-size:80px;top:-30px}
+    .review-stats{flex-direction:column;gap:20px}
+    .review-stat-num{font-size:30px}
+
+    .how-grid{margin:0}
+    .how-row{grid-template-columns:48px 1fr;gap:18px;padding:24px 0}
+    .how-row-num{font-size:42px}
+    .how-row-title{font-size:18px;margin-bottom:8px;grid-column:2}
+    .how-row-desc{font-size:13.5px;grid-column:2}
+
+    .why-grid{grid-template-columns:1fr;border:0}
+    .why-col{padding:24px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,0.12)}
+    .why-col:last-child{border-bottom:0}
+    .why-col h3{font-size:20px}
+    .why-col p{font-size:13.5px}
+
+    .industry-block{grid-template-columns:1fr;gap:32px}
+    .industry-main h3{font-size:24px}
+    .industry-main p{font-size:14px}
+
+    .pricing-card{padding:36px 24px}
+    .pricing-tag{left:24px;font-size:10px;padding:5px 12px}
+    .pricing-card h3{font-size:24px}
+    .pricing-card .price-sub{font-size:14px;margin-bottom:28px}
+    .price-num{font-size:52px}
+    .price-include li{font-size:13.5px}
+
+    .closing-inner{max-width:none}
+    .closing h2{font-size:32px}
+    .closing p.deck{font-size:15px;margin-bottom:32px}
+    .form-grid{grid-template-columns:1fr;gap:14px}
+
+    .faq-section{padding:64px 0}
+    .faq-q{font-size:16px;padding:22px 0;gap:18px}
+    .faq-a{font-size:14px;padding:0 0 22px}
+
+    .footer-inner{grid-template-columns:1fr;gap:18px}
+  }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-left">
+      <a href="#" class="mast-logo">GrowthPilot</a>
+      <span class="mast-edition">Vol. 03 · 사진관·메이크업샵</span>
+    </div>
+    <a href="#start" class="mast-cta">문의하기</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container-narrow">
+    <div class="hero-kicker">
+      <span class="kicker-text">No. 01 — 문제정의</span>
+      <span class="kicker-rule"></span>
+    </div>
+    <h1>인스타 광고만<br>돌리면 될 줄<br><em>알았다.</em></h1>
+    <p class="hero-deck">
+      혼자 인스타 광고 돌려도 별 효과가 없으셨다면, <strong>잘못 알고 있는 부분</strong>이 분명히 있습니다. 광고 + DM 자동화를 매주 같이 살피는 GP가 그걸 잡아드립니다.
+    </p>
+    <div class="hero-byline">
+      <span>By GrowthPilot Editorial</span>
+      <span class="dot"></span>
+      <span>사진관 · 메이크업샵 케이스 누적</span>
+      <span class="dot"></span>
+      <span>2026 Vol. 03</span>
+    </div>
+    <div class="hero-cta-group">
+      <a href="#start" class="btn-primary">문의하기 →</a>
+      <a href="#review" class="btn-secondary">실제 후기 읽기</a>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN — newspaper style -->
+<section class="pain">
+  <div class="container-narrow">
+    <div class="pain-rule-label">— 이런 적, 있으셨다면 —</div>
+    <div class="pain-list">
+      <div class="pain-row"><span class="pain-row-num">01</span>인스타 광고 돌려도 별 효과 없이 돈만 나간다</div>
+      <div class="pain-row"><span class="pain-row-num">02</span>네이버 플레이스 1년 계약했는데 헛돈 쓴 느낌</div>
+      <div class="pain-row"><span class="pain-row-num">03</span>광고가 잘 되는지 부진한지 봐줄 사람이 없다</div>
+      <div class="pain-row"><span class="pain-row-num">04</span>DM 와도 시술 중이라 답장 못 하고 놓친다</div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEW — magazine feature -->
+<section class="review-section" id="review">
+  <div class="review-grid">
+    <div class="review-left">
+      <div class="section-num">No. 02 — 사례연구</div>
+      <h2 class="review-headline">두 달 만에,<br><em>결과가 더 좋아졌다.</em></h2>
+
+      <div class="review-pullquote">
+        <p>"제가 <span class="hl">잘못 알고 있던 여러 문제점을 잡아주셔서</span> 그런 걸까요? 문의가 정말 마구마구 들어오기 시작했어요. 결론은 <span class="hl">첫 달보다 두 번째 달 결과가 더 좋았어요.</span>"</p>
+      </div>
+
+      <div class="review-attr">
+        강남역 프로필 스튜디오 대표
+        <span>작가 10년차 · 1인 스튜디오 운영 · GP 3개월차 · 상호명 비공개 요청</span>
+      </div>
+
+      <div class="review-stats">
+        <div>
+          <div class="review-stat-num">"마구마구"</div>
+          <div class="review-stat-label">광고 시작 후 문의 유입량 자체가 늘었다고 평가</div>
+        </div>
+        <div>
+          <div class="review-stat-num">M2 &gt; M1</div>
+          <div class="review-stat-label">첫 달보다 둘째 달 결과가 더 좋게 나왔다고 평가</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-right">
+      <img src="./assets/review/customer-review.png" alt="강남역 프로필 스튜디오 대표님 카카오톡 후기 전문">
+      <div class="review-cap"><strong>FIG. 01.</strong> 실제 카카오톡 후기 전문 — 상호명 비공개 요청에 따라 가린 채 게재합니다.</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-light" id="how">
+  <div class="container-narrow">
+    <div class="section-num">No. 03 — 진행 방식</div>
+    <h2>시작은 화상 미팅 한 번,<br><em>그 다음은 비동기로.</em></h2>
+    <p class="section-lead">시술 중에는 어렵잖아요. 첫 방향만 같이 잡고, 그 다음은 카톡으로 진행됩니다. 후기에 나오는 "잘못 알고 있던 부분"이 보통 첫 미팅에서 잡힙니다.</p>
+
+    <div class="how-grid">
+      <div class="how-row">
+        <div class="how-row-num">1</div>
+        <div class="how-row-title">문의 폼 작성</div>
+        <div class="how-row-desc">하단 폼에 이름·연락처·간단한 업장 정보를 남겨주시면, 24~48시간 내에 카톡으로 회신드립니다.</div>
+      </div>
+      <div class="how-row">
+        <div class="how-row-num">2</div>
+        <div class="how-row-title">화상 미팅 1회 (30~40분)</div>
+        <div class="how-row-desc">시술 끝난 저녁에. 현재 광고 상태·예약 흐름·잘못 세팅된 부분을 같이 봅니다. 후기에 나오는 "잘못 알고 있던 부분"이 여기서 잡힙니다.</div>
+      </div>
+      <div class="how-row">
+        <div class="how-row-num">3</div>
+        <div class="how-row-title">광고 · DM 자동화 통합 세팅</div>
+        <div class="how-row-desc">광고 캠페인 3종 동시. DM 자동 인사말 + FAQ 응답 8개, 댓글 키워드 트리거. 시술 중에도 응답 누락이 안 나도록 묶어드립니다.</div>
+      </div>
+      <div class="how-row">
+        <div class="how-row-num">4</div>
+        <div class="how-row-title">매주 카톡으로 같이 결정</div>
+        <div class="how-row-desc">잘 된 광고 / 부진한 광고를 한 페이지로 정리해 카톡으로 보내드립니다. 다음 주 변형안을 같이 정합니다. 의무 약정 없음.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY — dark editorial -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-num" style="color:rgba(255,255,255,0.55)">No. 04 — 외주와의 차이</div>
+    <h2>외주는 한 번이고,<br><em>운영은 매주입니다.</em></h2>
+    <p class="section-lead">"광고 대신 세팅해주는 거면 외주랑 뭐가 달라요?" 자주 듣는 질문입니다. 답은 세 가지.</p>
+
+    <div class="why-grid">
+      <div class="why-col">
+        <div class="why-col-num">01 — 통합</div>
+        <h3>광고만이 아니라 DM·댓글까지 함께</h3>
+        <p>외주는 보통 광고만 송출하고 끝납니다. GP는 광고로 들어온 DM이 새지 않도록 자동 인사말·FAQ 응답·댓글 키워드 트리거까지 묶어 운영합니다. 시술 중이어도 응답 누락 0건이 목표입니다.</p>
+      </div>
+      <div class="why-col">
+        <div class="why-col-num">02 — 주기</div>
+        <h3>한 달 세팅 후 방치하지 않습니다</h3>
+        <p>같은 사진·같은 카피로 한 달을 돌리면 알고리즘이 같은 사람한테 반복 노출하면서 효과가 떨어집니다. 1주 단위로 데이터 보고 → 변형안 제안 → 카톡 컨펌 → 적용. 4주 사이클로 반복합니다.</p>
+      </div>
+      <div class="why-col">
+        <div class="why-col-num">03 — 소유</div>
+        <h3>광고 계정·데이터는 사장님 소유</h3>
+        <p>GP는 운영 권한만 받고, 계약이 끝나면 모든 권한과 데이터(자동화 세팅·광고 히스토리·운영 기록)를 사장님께 인계합니다. 데이터를 인질로 잡는 일은 없습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRY pivot -->
+<section class="section section-deep">
+  <div class="container">
+    <div class="industry-block">
+      <div class="industry-main">
+        <div class="section-num">No. 05 — 타겟</div>
+        <h3>이번엔 <em>사진관·메이크업샵</em>이 메인입니다.</h3>
+        <p>이 두 업종에서 케이스가 가장 많이 쌓였습니다. 두 업종의 광고·DM 흐름을 잘 알기 때문에 첫 미팅에서 잡아낼 수 있는 "잘못 알고 있던 부분"도 그만큼 많습니다.</p>
+        <p>인스타·DM 기반으로 예약·문의가 일어나는 구조라면 다른 업종도 받습니다. 다만 첫 미팅에서 GP가 잘 도울 수 있을지 솔직히 말씀드립니다.</p>
+      </div>
+      <aside class="industry-side">
+        <div class="industry-side-label">— 대상 업종</div>
+        <ul class="industry-list">
+          <li class="main">사진관 · 프로필 스튜디오</li>
+          <li class="main">메이크업샵</li>
+          <li>헤어</li>
+          <li>네일</li>
+          <li>에스테틱 · 피부관리</li>
+          <li>PT · 필라테스</li>
+          <li>한의원 · 클리닉</li>
+          <li>1인 전문가</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section section-light" id="packages">
+  <div class="container-narrow">
+    <div class="section-num">No. 06 — 가격</div>
+    <h2>한 가지로 <em>충분합니다.</em></h2>
+    <p class="section-lead">후기에 나오는 "전체적으로 관리해주는 상품"입니다.</p>
+
+    <div class="pricing-wrap">
+      <div class="pricing-card">
+        <div class="pricing-tag">Core Package</div>
+        <h3>광고 + DM 자동화 통합 운영</h3>
+        <p class="price-sub">사장님이 시술 중에도 멈추지 않는 마케팅. 광고는 매주 변형하고, DM은 자동으로 답하고, 데이터는 매주 카톡으로 함께 봅니다.</p>
+
+        <div class="price-line">
+          <span class="price-num">₩49만</span>
+          <span class="price-unit">/ 월 · 광고비 별도</span>
+        </div>
+        <div class="price-fine">VAT 포함 · 4주 사이클 · 의무 약정 없음 · 일주일 전 통보로 종료</div>
+
+        <div class="price-include-label">— 운영 범위</div>
+        <ul class="price-include">
+          <li>Meta(인스타·페이스북) 광고 캠페인 운영 — 소재 3종 동시</li>
+          <li>1주 단위 데이터 점검 + 변형 적용</li>
+          <li>DM 자동 인사말 + FAQ 자동응답 8개 세팅</li>
+          <li>댓글 자동화 (키워드 트리거)</li>
+          <li>매주 카톡 리포트 + 변형안 제안</li>
+          <li>첫 세팅 화상 미팅 1회 + 월간 전략 미팅 1회</li>
+          <li>광고 계정 사장님 명의 보장</li>
+        </ul>
+
+        <a href="#start" class="pricing-cta">이 패키지로 문의하기 →</a>
+      </div>
+      <p class="pricing-foot">광고비는 사장님 카드로 Meta에 직접 결제하시며, GP는 대납하지 않습니다 (자금 투명성 정책).</p>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING + FORM -->
+<section class="section section-dark" id="start">
+  <div class="container-narrow">
+    <div class="closing-inner">
+      <div class="closing-mast">
+        <span class="lbl">No. 07 — 시작하기</span>
+        <span class="rule"></span>
+      </div>
+      <h2>외주가 아니라,<br><em>매주 함께 일할 동료를</em><br>찾으셨다면.</h2>
+      <p class="deck">이름과 간단한 정보 남겨주시면, 평균 24~48시간 내 카톡 또는 메일로 연락드릴게요.</p>
+
+      <form class="lead-form" id="contact-form" action="https://formspree.io/f/xqenyyzk" method="POST">
+        <input type="hidden" name="_next" value="https://growthpilot.co.kr/thanks.html">
+        <input type="hidden" name="_subject" value="[GP Landing v2-Editorial] 신규 문의">
+        <input type="hidden" name="utm_source" id="utm_source">
+        <input type="hidden" name="utm_medium" id="utm_medium">
+        <input type="hidden" name="utm_campaign" id="utm_campaign">
+        <input type="hidden" name="utm_content" id="utm_content">
+        <input type="hidden" name="utm_term" id="utm_term">
+        <input type="hidden" name="lp_variant" value="v2-editorial">
+        <div class="form-grid">
+          <label class="form-field">
+            <span class="form-label">이름</span>
+            <input type="text" name="이름" required placeholder="홍길동">
+          </label>
+          <label class="form-field">
+            <span class="form-label">휴대폰</span>
+            <input type="tel" name="휴대폰" id="phoneInput" required placeholder="010-0000-0000" maxlength="13">
+          </label>
+          <label class="form-field">
+            <span class="form-label">이메일 (선택)</span>
+            <input type="email" name="이메일" placeholder="example@email.com">
+          </label>
+          <label class="form-field">
+            <span class="form-label">인스타 (선택)</span>
+            <input type="text" name="인스타" id="instagramInput" value="@" placeholder="@계정명">
+          </label>
+          <label class="form-field">
+            <span class="form-label">업종 (선택)</span>
+            <select name="업종">
+              <option value="">선택</option>
+              <option>사진관 · 프로필 스튜디오</option>
+              <option>메이크업샵</option>
+              <option>헤어</option>
+              <option>네일</option>
+              <option>에스테틱·피부관리</option>
+              <option>PT·필라테스</option>
+              <option>한의원·클리닉</option>
+              <option>1인 전문가</option>
+              <option>기타</option>
+            </select>
+          </label>
+          <label class="form-field">
+            <span class="form-label">지역 (선택)</span>
+            <select name="지역">
+              <option value="">선택</option>
+              <option>서울</option>
+              <option>경기·인천</option>
+              <option>그 외 지역</option>
+            </select>
+          </label>
+        </div>
+        <label class="form-field form-field-full">
+          <span class="form-label">간단히 알려주세요 (선택)</span>
+          <textarea name="문의 내용" rows="3" placeholder="현재 상황 / 막혀있는 부분 / 궁금한 점"></textarea>
+        </label>
+        <button type="submit" class="form-submit">제출하고 연락받기 →</button>
+        <div class="form-note">제출 후 평균 24~48시간 내 카톡 또는 메일로 회신드립니다.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (below form) -->
+<section class="faq-section">
+  <div class="container-narrow">
+    <div class="section-num">No. 08 — FAQ</div>
+    <h2>자주 묻는 질문</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">결국 광고 대신 세팅해주는 거잖아요. 외주랑 뭐가 다른가요?</summary>
+        <div class="faq-a">외주는 보통 1회 세팅하고 끝납니다. GP는 그게 시작이에요. 매주 데이터 보고 → 변형안 제안 → 카톡으로 결정 → 다음 주 적용. 이걸 4주 사이클로 반복합니다. 또 외주는 보통 광고만 다루는데, GP는 광고로 들어온 DM이 새지 않게 자동응답·댓글 트리거까지 묶어서 운영합니다. 사장님이 시술 중이어도 응답 누락 0건이 목표예요.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">시작은 어떻게 하나요?</summary>
+        <div class="faq-a">페이지 하단의 폼에 이름·연락처·간단 정보를 남겨주시면, 24~48시간 내 카톡 또는 메일로 연락드립니다. 그 다음 사업 브리핑 시트를 보내드리고, 시술 끝난 저녁에 채워서 보내주시면 첫 화상 미팅(30~40분)으로 방향을 잡습니다. 후기 사례에서도 이 화상 미팅에서 "잘못 알고 있던 부분"이 잡혔어요.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">광고비는 패키지 가격에 포함되나요?</summary>
+        <div class="faq-a">아니요. 패키지 가격은 운영 대행료(VAT 포함)이고, Meta에 직접 결제하시는 광고비는 별도입니다. 광고비는 보통 일 ₩7,000~₩20,000부터 시작하시는 분들이 많고, 사업 단계와 목표에 맞춰 함께 정합니다. 광고비는 사장님 카드로 Meta에 직접 결제하시며, GP는 대납하지 않습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">세금계산서 발행 가능한가요?</summary>
+        <div class="faq-a">네, 사업자등록증을 보내주시면 세금계산서 발행해드립니다. 매월 운영 시작 전 결제 → 세금계산서 발행 순서로 진행됩니다. 패키지 가격은 VAT 포함이라 별도 부가세 부담 없습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">의무 약정이 있나요?</summary>
+        <div class="faq-a">없습니다. 월 단위 운영 기준이며, 4주 사이클로 진행합니다. 업장 사정으로 중단이 필요한 경우 일주일 전 알려주시면 됩니다. 다만 최초 1개월은 알고리즘 학습 기간이라 가능하면 유지하시는 걸 권장드립니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">결과(매출·문의 수)를 보장하나요?</summary>
+        <div class="faq-a">결과는 보장하지 않습니다. 매출은 광고만이 아니라 가격·입지·시술 퀄리티·응대 등 수많은 변수가 결정합니다. GP는 그중 통제 가능한 부분(광고 송출·DM 자동화·매주 운영)에 책임집니다. 결과가 나올 가능성이 높은 구조를 만든다고 이해해주세요.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">사진이 별로 없는데 가능한가요?</summary>
+        <div class="faq-a">사진관·메이크업샵이라면 보통 보유 자료(작업 결과물·고객 후기 컷)가 있으셔서 그 안에서 광고용 소재를 같이 찾습니다. 자료가 적으면 텍스트 중심 카피·후기 인용·가격 임팩트로 풀어내는 방식도 있어요. 폼에 남겨주신 정보 기반으로 어떤 방식이 맞을지 첫 미팅에서 같이 정합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">DM 자동화는 어떻게 작동하나요?</summary>
+        <div class="faq-a">Meta Business Suite의 자동응답 기능을 사용합니다. ① 광고 클릭 → 자동 인사말 발송, ② 자주 묻는 질문(가격·시간·위치 등) 자동응답 8개 세팅, ③ 게시물 댓글에 특정 키워드("정보", "가격" 등) 달리면 자동으로 DM 발송. 이 세 가지를 사장님 업장에 맞게 설계합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">광고 계정·데이터는 누구 소유인가요?</summary>
+        <div class="faq-a">사장님 소유입니다. GP는 운영 권한만 받으며, 계약 종료 시 권한을 반납하고 모든 데이터(자동화 세팅·광고 히스토리·운영 기록)는 사장님께 인계합니다. 데이터를 인질로 잡는 일은 없습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">우리 업종에도 맞을까요?</summary>
+        <div class="faq-a">메인은 사진관·메이크업샵이고, 케이스도 이쪽에 가장 많이 쌓였습니다. 헤어·네일·에스테틱·PT·한의원·1인 전문가처럼 인스타·DM 기반으로 예약·문의가 일어나는 업종이라면 동일하게 운영 가능합니다. 맞지 않다고 판단되면 검토 후 솔직히 말씀드립니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">GrowthPilot</div>
+      <div class="footer-tag">외주가 아니라, 매주 함께 일하는 마케팅 동료.</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://instagram.com/growthpilot.kr" target="_blank" rel="noopener">@growthpilot.kr</a>
+      <span class="sep">·</span>
+      <a href="mailto:growthpilot.kr@gmail.com">growthpilot.kr@gmail.com</a>
+    </div>
+  </div>
+  <div class="footer-copy" style="max-width:1100px;margin:32px auto 0;padding:24px 0 0;border-top:1px solid rgba(255,255,255,0.1)">© 2026 GROWTHPILOT — VOL. 03 EDITION</div>
+</footer>
+
+<!-- Sticky CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="#start">문의하기 →</a>
+</div>
+
+<script>
+  // UTM params → hidden form fields
+  const urlParams = new URLSearchParams(window.location.search);
+  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(param => {
+    const el = document.getElementById(param);
+    if (el && urlParams.get(param)) el.value = urlParams.get(param);
+  });
+
+  // Form submit → AJAX + tracking + thanks.html redirect
+  const contactForm = document.querySelector('form[action*="formspree"]');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '제출 중...'; }
+      if (typeof fbq === 'function') fbq('track', 'Lead');
+      if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'contact', event_label: 'v2_editorial' });
+      try {
+        const formData = new FormData(contactForm);
+        const res = await fetch(contactForm.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+        if (res.ok) {
+          window.location.href = 'https://growthpilot.co.kr/thanks.html';
+        } else {
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+          alert('제출에 문제가 발생했어요. 잠시 후 다시 시도해주세요.');
+        }
+      } catch (err) {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        alert('네트워크 문제로 제출이 실패했어요. 잠시 후 다시 시도해주세요.');
+      }
+    });
+  }
+
+  // Phone format
+  const phoneInput = document.getElementById('phoneInput');
+  if (phoneInput) {
+    phoneInput.addEventListener('input', function(e) {
+      let v = e.target.value.replace(/[^0-9]/g, '');
+      if (v.length > 11) v = v.slice(0, 11);
+      if (v.length <= 3) e.target.value = v;
+      else if (v.length <= 7) e.target.value = v.slice(0,3)+'-'+v.slice(3);
+      else e.target.value = v.slice(0,3)+'-'+v.slice(3,7)+'-'+v.slice(7);
+    });
+  }
+
+  // Instagram @ prefix lock
+  const igInput = document.getElementById('instagramInput');
+  if (igInput) {
+    igInput.addEventListener('input', function(e) {
+      if (!e.target.value.startsWith('@')) e.target.value = '@' + e.target.value.replace(/^@+/, '');
+    });
+    igInput.addEventListener('keydown', function(e) {
+      const pos = e.target.selectionStart;
+      if ((e.key === 'Backspace' && pos <= 1) || (e.key === 'Delete' && pos === 0)) e.preventDefault();
+      if ((e.key === 'ArrowLeft' || e.key === 'Home') && pos <= 1) { e.preventDefault(); e.target.setSelectionRange(1, 1); }
+    });
+    igInput.addEventListener('focus', function(e) { if (e.target.value === '@') setTimeout(() => e.target.setSelectionRange(1, 1), 0); });
+    igInput.addEventListener('click', function(e) { if (e.target.selectionStart === 0) e.target.setSelectionRange(1, 1); });
+  }
+
+  // Sticky CTA visibility
+  const stickyCta = document.getElementById('stickyCta');
+  const heroSection = document.querySelector('.hero');
+  const closingSection = document.getElementById('start');
+  function updateStickyCta() {
+    if (!heroSection || !closingSection) return;
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+    const closingTop = closingSection.getBoundingClientRect().top;
+    stickyCta.classList.toggle('visible', heroBottom < 0 && closingTop > window.innerHeight);
+  }
+  window.addEventListener('scroll', updateStickyCta);
+  updateStickyCta();
+</script>
+</body>
+</html>

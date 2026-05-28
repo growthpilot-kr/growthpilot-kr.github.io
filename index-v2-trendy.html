@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrowthPilot — 사진관·메이크업샵 인스타 마케팅 파트너</title>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3CFM88CR0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L3CFM88CR0');
+</script>
+<!-- Meta Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2643044576081819');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2643044576081819&ev=PageView&noscript=1"
+/></noscript>
+
+<meta name="description" content="사진관·메이크업샵을 위한 인스타 광고 + DM 자동화 통합 운영. 잘못 알고 있던 광고 세팅부터 잡아드립니다.">
+<meta property="og:title" content="GrowthPilot — 사진관·메이크업샵 인스타 마케팅 파트너">
+<meta property="og:description" content="혼자 인스타 광고 돌려도 효과 없으셨다면. 매주 카톡으로 같이 결정합니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://growthpilot.co.kr/">
+<meta property="og:image" content="https://growthpilot.co.kr/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231C1A17'/><text x='50%25' y='55%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle' font-family='system-ui'>G</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..900;1,300..900&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --paper:#F5F1E8; --paper-deep:#EEE8DA; --ink:#1C1A17; --ink-soft:#4A4640; --ink-muted:#8A8578;
+    --accent:#8B2E1C; --accent-soft:#FBE8D8; --accent-deep:#6B1F12;
+    --border:#D4CCB6;
+    --black:#000000; --white:#FFFFFF; --white-soft:rgba(255,255,255,0.7); --white-mute:rgba(255,255,255,0.5);
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter','Noto Sans KR',-apple-system,sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+  .serif{font-family:'Fraunces','Noto Sans KR',serif}
+  .mono{font-family:'JetBrains Mono',monospace;letter-spacing:-0.02em}
+  .container{max-width:1040px;margin:0 auto;padding:0 32px}
+  img,video{max-width:100%;display:block}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,241,232,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+  .nav-inner{max-width:1040px;margin:0 auto;padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-logo{font-family:'Fraunces',serif;font-size:19px;font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:-0.01em;transition:color 0.2s}
+  .nav-logo:hover{color:var(--accent)}
+  .nav-cta{font-size:13px;font-weight:600;color:var(--paper);background:var(--ink);padding:9px 18px;border-radius:100px;text-decoration:none}
+  .nav-cta:hover{background:var(--accent)}
+
+  /* Hero */
+  .hero{padding:140px 0 60px;text-align:center}
+  .hero-mascot{margin:0 auto 28px;max-width:180px}
+  .hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ink-muted);letter-spacing:0.16em;text-transform:uppercase;margin-bottom:24px}
+  .hero h1{font-family:'Fraunces','Noto Sans KR',serif;font-style:italic;font-weight:300;font-size:clamp(40px,7vw,76px);line-height:1.05;letter-spacing:-0.04em;margin-bottom:28px;word-break:keep-all}
+  .hero h1 strong{font-family:'Noto Sans KR',sans-serif;font-style:normal;font-weight:800;color:var(--accent);display:block;letter-spacing:-0.02em;word-break:keep-all}
+  .hero p{font-size:18px;color:var(--ink-soft);max-width:600px;margin:0 auto 32px;word-break:keep-all}
+  .hero-cta-group{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn-primary{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:var(--paper);background:var(--ink);padding:15px 32px;border-radius:100px;text-decoration:none;transition:all 0.2s}
+  .btn-primary:hover{background:var(--accent);transform:translateY(-1px);box-shadow:0 6px 20px rgba(139,46,28,0.18)}
+  .btn-secondary{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:500;color:var(--ink-soft);background:transparent;padding:15px 32px;border-radius:100px;text-decoration:none;border:1px solid var(--border);transition:all 0.2s}
+  .btn-secondary:hover{border-color:var(--ink);color:var(--ink)}
+  .hero-note{margin-top:18px;font-size:13px;color:var(--ink-muted);font-weight:400;word-break:keep-all}
+
+  /* Section common */
+  .section-head{text-align:center;margin-bottom:48px}
+  .section-head .mono{font-size:12px;color:var(--ink-muted);letter-spacing:0.16em;text-transform:uppercase;margin-bottom:14px}
+  .section-head h2{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:clamp(28px,4.2vw,42px);letter-spacing:-0.03em;line-height:1.25;word-break:keep-all}
+  .section-head h2 em{font-family:'Fraunces',serif;font-style:italic;font-weight:300;color:var(--accent)}
+  .section-head .lead{margin-top:14px;font-size:16px;color:var(--ink-soft);max-width:600px;margin-left:auto;margin-right:auto;word-break:keep-all}
+
+  /* Pain points */
+  .pain{padding:60px 0;background:var(--paper)}
+  .pain-list{max-width:720px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .pain-item{background:var(--paper-deep);border:1px solid var(--border);border-radius:10px;padding:18px 22px;font-size:15px;color:var(--ink);word-break:keep-all;line-height:1.55}
+  .pain-item::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:10px;vertical-align:middle;transform:translateY(-2px)}
+
+  /* Review — 메인 사회증명 */
+  .review{padding:100px 0;background:var(--paper-deep);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .review-card{max-width:900px;margin:0 auto;background:var(--paper);border:1px solid var(--border);border-radius:16px;padding:48px;box-shadow:0 8px 28px rgba(28,26,23,0.06)}
+  .review-stars{font-size:18px;color:var(--accent);letter-spacing:2px;margin-bottom:20px;text-align:center}
+  .review-quote{font-family:'Fraunces','Noto Sans KR',serif;font-style:italic;font-weight:400;font-size:clamp(22px,3vw,30px);line-height:1.5;color:var(--ink);text-align:center;margin-bottom:28px;word-break:keep-all;letter-spacing:-0.01em}
+  .review-quote .hl{background:linear-gradient(transparent 60%,var(--accent-soft) 60%);font-style:normal;font-weight:600;color:var(--accent-deep);padding:0 2px}
+  .review-meta{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid var(--border)}
+  .review-avatar{width:44px;height:44px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-style:italic}
+  .review-attr{font-size:14px;color:var(--ink-soft);line-height:1.5;text-align:left}
+  .review-attr strong{display:block;color:var(--ink);font-weight:700;font-size:15px}
+  .review-screenshot{margin:0 auto;max-width:760px}
+  .review-screenshot img{width:100%;border-radius:12px;border:1px solid var(--border);box-shadow:0 4px 20px rgba(28,26,23,0.08)}
+  .review-screenshot-cap{margin-top:14px;text-align:center;font-size:12px;color:var(--ink-muted);font-family:'JetBrains Mono',monospace;letter-spacing:0.06em}
+  .review-pull{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .review-pull-card{background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center}
+  .review-pull-num{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:28px;color:var(--accent);line-height:1;margin-bottom:8px;letter-spacing:-0.02em}
+  .review-pull-label{font-size:13px;color:var(--ink-soft);line-height:1.45;word-break:keep-all}
+
+  /* How it works */
+  .how{padding:100px 0;background:var(--paper);border-bottom:1px solid var(--border)}
+  .how-steps{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+  .how-step{display:grid;grid-template-columns:60px 1fr;gap:24px;background:var(--paper-deep);border:1px solid var(--border);border-radius:12px;padding:24px 28px;align-items:flex-start;transition:all 0.2s}
+  .how-step:hover{border-color:var(--ink);transform:translateX(4px)}
+  .how-step-num{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:44px;color:var(--accent);line-height:1;letter-spacing:-0.04em}
+  .how-step-title{font-weight:700;font-size:17px;letter-spacing:-0.01em;margin-bottom:6px}
+  .how-step-desc{font-size:14.5px;color:var(--ink-soft);line-height:1.65;word-break:keep-all}
+
+  /* Why */
+  .why{padding:100px 0;background:var(--paper-deep);border-bottom:1px solid var(--border)}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:900px;margin:0 auto}
+  .why-card{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:28px 24px}
+  .why-card-mono{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;color:var(--accent);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:14px}
+  .why-card h3{font-weight:700;font-size:17px;letter-spacing:-0.01em;margin-bottom:10px;line-height:1.4;word-break:keep-all}
+  .why-card p{font-size:13.5px;color:var(--ink-soft);line-height:1.65;word-break:keep-all}
+
+  /* Industry pivot */
+  .industry{padding:80px 0;background:var(--paper);border-bottom:1px solid var(--border)}
+  .industry-inner{max-width:880px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr;gap:48px;align-items:center}
+  .industry-mascot img{max-width:200px;margin:0 auto}
+  .industry h2{font-family:'Noto Sans KR',sans-serif;font-weight:800;font-size:clamp(24px,3.4vw,32px);letter-spacing:-0.02em;margin-bottom:14px;word-break:keep-all;line-height:1.3}
+  .industry h2 em{font-family:'Fraunces',serif;font-style:italic;font-weight:300;color:var(--accent)}
+  .industry p{font-size:15px;color:var(--ink-soft);margin-bottom:20px;word-break:keep-all}
+  .industry-tags{display:flex;flex-wrap:wrap;gap:8px}
+  .industry-tag{font-size:13px;background:var(--paper-deep);border:1px solid var(--border);padding:7px 14px;border-radius:100px;color:var(--ink)}
+  .industry-tag.main{background:var(--accent);color:var(--paper);border-color:var(--accent);font-weight:600}
+  .industry-tag.main::before{content:"★ ";color:var(--accent-soft);font-size:11px;letter-spacing:0}
+
+  /* Pricing */
+  .pricing{padding:100px 0;background:var(--paper-deep);border-bottom:1px solid var(--border)}
+  .price-card{max-width:680px;margin:0 auto;background:var(--ink);color:var(--paper);border-radius:16px;padding:48px;position:relative;overflow:hidden}
+  .price-card::before{content:"";position:absolute;top:-40%;right:-10%;width:300px;height:300px;background:var(--accent);border-radius:50%;opacity:0.4;filter:blur(80px)}
+  .price-card-inner{position:relative;z-index:1}
+  .price-tag{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;color:var(--accent-soft);letter-spacing:0.16em;text-transform:uppercase;margin-bottom:16px}
+  .price-name{font-family:'Fraunces',serif;font-size:34px;font-weight:600;letter-spacing:-0.02em;margin-bottom:8px;color:var(--paper)}
+  .price-sub{font-size:15px;color:var(--white-soft);margin-bottom:32px;word-break:keep-all}
+  .price-amount{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+  .price-amount .num{font-family:'Fraunces',serif;font-weight:600;font-size:56px;letter-spacing:-0.03em;line-height:1;color:var(--paper)}
+  .price-amount .unit{font-size:15px;color:var(--white-mute)}
+  .price-extra{font-size:13px;color:var(--white-mute);margin-bottom:32px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.15)}
+  .price-list{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:32px}
+  .price-list li{font-size:15px;color:var(--paper);padding-left:24px;position:relative;line-height:1.5;word-break:keep-all}
+  .price-list li::before{content:"✓";position:absolute;left:0;color:var(--accent-soft);font-weight:700}
+  .price-cta{display:block;text-align:center;font-size:15px;font-weight:600;padding:16px 32px;border-radius:100px;text-decoration:none;background:var(--paper);color:var(--ink);transition:all 0.2s}
+  .price-cta:hover{background:var(--accent);color:var(--paper)}
+  .price-foot-note{max-width:680px;margin:20px auto 0;text-align:center;font-size:13px;color:var(--ink-muted);word-break:keep-all}
+
+  /* Closing — 폼 */
+  .closing{padding:120px 0;text-align:center;background:var(--black);color:var(--paper);position:relative;overflow:hidden}
+  .closing-video-wrap{display:flex;justify-content:center;margin-bottom:32px}
+  .closing-video-wrap video,.closing-video-wrap img{max-width:240px;width:100%;background:var(--black)}
+  .closing h2{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(36px,5.5vw,52px);line-height:1.2;letter-spacing:-0.02em;margin-bottom:20px;color:var(--paper)}
+  .closing h2 strong{font-family:'Noto Sans KR',sans-serif;font-style:normal;font-weight:800;color:var(--paper)}
+  .closing p{font-size:16px;color:var(--white-soft);max-width:560px;margin:0 auto 32px;word-break:keep-all}
+
+  .lead-form{max-width:640px;margin:24px auto 0;text-align:left;position:relative;z-index:1}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+  .form-field{display:flex;flex-direction:column;gap:8px}
+  .form-field-full{margin-bottom:20px}
+  .form-label{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;color:var(--white-mute);letter-spacing:0.1em;text-transform:uppercase;padding-left:2px}
+  .form-field input,.form-field select,.form-field textarea{width:100%;padding:14px 18px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:10px;color:var(--paper);font-family:inherit;font-size:15px;outline:none;transition:border-color 0.2s,background 0.2s}
+  .form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--paper);background:rgba(255,255,255,0.1)}
+  .form-field input::placeholder,.form-field textarea::placeholder{color:rgba(255,255,255,0.35)}
+  .form-field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23F5F1E8' d='M6 8L0 0h12z' opacity='.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 18px center;padding-right:42px}
+  .form-field select option{background:var(--ink);color:var(--paper)}
+  .form-field textarea{resize:vertical;min-height:90px}
+  .form-submit{display:block;width:100%;padding:18px 32px;font-size:15px;font-weight:600;background:var(--paper);color:var(--ink);border:0;border-radius:100px;cursor:pointer;transition:all 0.2s;font-family:inherit}
+  .form-submit:hover{background:var(--accent);color:var(--paper)}
+  .form-note{margin-top:16px;font-size:12px;color:var(--white-mute);text-align:center}
+
+  /* FAQ (below form) */
+  .faq{padding:100px 0;background:var(--paper-deep);border-top:1px solid var(--border)}
+  .faq-list{max-width:760px;margin:32px auto 0;display:flex;flex-direction:column;gap:8px}
+  .faq-item{background:var(--paper);border:1px solid var(--border);border-radius:10px}
+  .faq-item:hover{border-color:var(--ink)}
+  .faq-q{padding:22px 26px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;list-style:none;font-weight:600;font-size:15.5px;color:var(--ink);word-break:keep-all}
+  .faq-q::-webkit-details-marker{display:none}
+  .faq-q::after{content:"+";font-family:'Fraunces',serif;font-size:24px;font-weight:300;color:var(--ink-muted);transition:transform 0.2s,color 0.2s;flex-shrink:0}
+  details[open] .faq-q::after{transform:rotate(45deg);color:var(--accent)}
+  .faq-a{padding:0 26px 22px;font-size:14.5px;color:var(--ink-soft);line-height:1.7;word-break:keep-all}
+
+  footer{padding:48px 32px 56px;text-align:center;background:var(--paper)}
+  .footer-inner{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:12px;opacity:0.7}
+  .footer-tag{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:14px;color:var(--ink-muted)}
+  .footer-links{display:flex;gap:18px;align-items:center;font-family:'Inter',sans-serif;font-size:12.5px;flex-wrap:wrap;justify-content:center}
+  .footer-links a{color:var(--ink-muted);text-decoration:none;transition:color 0.2s}
+  .footer-links a:hover{color:var(--accent)}
+  .footer-links .sep{color:var(--ink-muted);opacity:0.5}
+  .footer-copy{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink-muted);letter-spacing:0.1em;margin-top:6px;opacity:0.7}
+
+  /* Floating CTA */
+  .floating-cta{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:99;opacity:0;pointer-events:none;transition:opacity 0.3s}
+  .floating-cta.visible{opacity:1;pointer-events:auto}
+  .floating-cta a{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--paper);background:var(--accent);padding:13px 24px;border-radius:100px;text-decoration:none;box-shadow:0 6px 24px rgba(139,46,28,0.3)}
+
+  @media (max-width:768px){
+    .container{padding:0 20px}
+    .nav-inner{height:56px;padding:0 20px}
+    .nav-logo{font-size:17px}
+    .nav-cta{font-size:12px;padding:8px 14px}
+
+    .section-head{margin-bottom:32px}
+    .section-head h2{font-size:24px;line-height:1.25}
+    .section-head .lead{font-size:14px}
+
+    .hero{padding:100px 0 40px}
+    .hero-mascot{max-width:140px;margin-bottom:20px}
+    .hero h1{font-size:clamp(28px,8vw,40px);line-height:1.2;margin-bottom:18px}
+    .hero p{font-size:14.5px;margin-bottom:24px}
+    .hero-cta-group{flex-direction:column}
+    .hero-cta-group a{justify-content:center;width:100%}
+
+    .pain-list{grid-template-columns:1fr;gap:10px}
+    .pain-item{font-size:14px;padding:14px 18px}
+
+    .review{padding:64px 0}
+    .review-card{padding:28px 22px;border-radius:14px}
+    .review-quote{font-size:18px;line-height:1.55}
+    .review-pull{grid-template-columns:1fr;gap:10px;margin-top:24px}
+    .review-pull-card{padding:16px}
+    .review-pull-num{font-size:22px}
+    .review-pull-label{font-size:12px}
+
+    .how{padding:64px 0}
+    .how-step{grid-template-columns:40px 1fr;gap:14px;padding:18px 18px}
+    .how-step-num{font-size:32px}
+    .how-step-title{font-size:15px}
+    .how-step-desc{font-size:13px}
+
+    .why{padding:64px 0}
+    .why-grid{grid-template-columns:1fr;gap:12px}
+    .why-card{padding:22px 20px}
+    .why-card h3{font-size:15.5px}
+    .why-card p{font-size:13px}
+
+    .industry{padding:56px 0}
+    .industry-inner{grid-template-columns:0.7fr 1.3fr;gap:20px}
+    .industry-mascot img{max-width:120px}
+    .industry h2{font-size:20px}
+    .industry p{font-size:13.5px}
+    .industry-tag{font-size:12px;padding:6px 11px}
+
+    .pricing{padding:64px 0}
+    .price-card{padding:32px 24px;border-radius:14px}
+    .price-name{font-size:24px}
+    .price-sub{font-size:13.5px;margin-bottom:24px}
+    .price-amount .num{font-size:42px}
+    .price-list li{font-size:13.5px}
+
+    .closing{padding:80px 0}
+    .closing h2{font-size:28px}
+    .closing p{font-size:14px}
+    .closing-video-wrap video,.closing-video-wrap img{max-width:180px}
+
+    .form-grid{grid-template-columns:1fr;gap:10px}
+    .form-field input,.form-field select,.form-field textarea{font-size:14px;padding:11px 14px;border-radius:8px}
+    .form-submit{font-size:14px;padding:15px 28px}
+
+    .faq{padding:64px 0}
+    .faq-q{font-size:13.5px;padding:18px 20px}
+    .faq-a{font-size:13px;padding:0 20px 18px}
+
+    footer{padding:36px 18px 48px}
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">GrowthPilot</a>
+    <a href="#start" class="nav-cta">문의하기</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <img src="./assets/mascot/pointing.png" alt="GP 마스코트" class="hero-mascot">
+    <div class="hero-eyebrow">사진관 · 메이크업샵 인스타 마케팅</div>
+    <h1>인스타 광고만 돌리면<strong>예약이 올 줄 알았다면.</strong></h1>
+    <p>혼자 인스타 광고 돌려도 효과 없으셨다면, 잘못 알고 있던 부분이 분명히 있습니다. 광고 + DM 자동화를 매주 같이 살피는 GP가 그걸 잡아드립니다.</p>
+    <div class="hero-cta-group">
+      <a href="#start" class="btn-primary">문의하기 →</a>
+      <a href="#review" class="btn-secondary">실제 후기 보기</a>
+    </div>
+    <p class="hero-note">강남역 프로필 스튜디오 대표님의 실제 후기 — 두 달 만에 결과가 더 좋아졌습니다.</p>
+  </div>
+</section>
+
+<!-- Pain points -->
+<section class="pain">
+  <div class="container">
+    <div class="pain-list">
+      <div class="pain-item">인스타 광고 돌려도 별 효과 없고 돈만 나간다</div>
+      <div class="pain-item">네이버 플레이스 1년 계약했는데 헛돈 쓴 느낌</div>
+      <div class="pain-item">광고가 잘 되는지 부진한지 봐줄 사람이 없다</div>
+      <div class="pain-item">DM 와도 시술 중이라 답장 못 하고 놓친다</div>
+    </div>
+  </div>
+</section>
+
+<!-- ★ Review section -->
+<section class="review" id="review">
+  <div class="container">
+    <div class="section-head">
+      <div class="mono">REAL REVIEW</div>
+      <h2>두 달 만에, <em>결과가 더 좋아졌어요.</em></h2>
+      <p class="lead">강남역에서 프로필 스튜디오를 운영하시는 대표님이 직접 남겨주신 후기입니다.</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">
+        "제가 <span class="hl">잘못 알고 있던 여러 문제점을 잡아주셔서</span> 그런 걸까요!?
+        문의가 정말 마구마구 들어오기 시작했어요. 결론은 <span class="hl">첫 달보다 두 번째 달 결과가 더 좋았어요.</span>"
+      </p>
+      <div class="review-meta">
+        <div class="review-avatar">A</div>
+        <div class="review-attr">
+          <strong>강남역 프로필 스튜디오 대표</strong>
+          작가 10년차 · 1인 스튜디오 운영 · GP 3개월차
+        </div>
+      </div>
+
+      <div class="review-screenshot">
+        <img src="./assets/review/customer-review.png" alt="강남역 프로필 스튜디오 대표님 카카오톡 후기 전문">
+        <div class="review-screenshot-cap">— 실제 카카오톡 메시지 캡처 (상호명 비공개 요청)</div>
+      </div>
+
+      <div class="review-pull">
+        <div class="review-pull-card">
+          <div class="review-pull-num">"마구마구"</div>
+          <div class="review-pull-label">광고 시작 후 문의 유입량 자체가 늘었다고 평가</div>
+        </div>
+        <div class="review-pull-card">
+          <div class="review-pull-num">M2 &gt; M1</div>
+          <div class="review-pull-label">첫 달보다 둘째 달 결과가 더 좋게 나왔다고 평가</div>
+        </div>
+        <div class="review-pull-card">
+          <div class="review-pull-num">"든든"</div>
+          <div class="review-pull-label">고민도 같이 해주고 방향도 함께 찾아준 점에 만족</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="how">
+  <div class="container">
+    <div class="section-head">
+      <div class="mono">HOW IT WORKS</div>
+      <h2>시작은 <em>화상 미팅 한 번,</em><br>그 다음은 비동기로.</h2>
+      <p class="lead">시술 중에는 어렵잖아요. 첫 방향만 같이 잡고, 그 다음은 카톡으로 진행됩니다.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <div>
+          <div class="how-step-title">문의 폼 작성 (1분)</div>
+          <div class="how-step-desc">하단 폼에 이름·연락처·간단한 업장 정보 남겨주시면, 24~48시간 안에 카톡으로 회신드립니다.</div>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <div>
+          <div class="how-step-title">화상 미팅으로 방향 잡기 (1회)</div>
+          <div class="how-step-desc">시술 끝난 저녁에 30~40분. 현재 광고 상태·예약 흐름·잘못 세팅된 부분까지 같이 봅니다. 후기에 나오는 "잘못 알고 있던 문제점"이 보통 여기서 잡혀요.</div>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <div>
+          <div class="how-step-title">광고 + DM 자동화 세팅</div>
+          <div class="how-step-desc">광고 캠페인 3종 동시 세팅, DM 자동 인사말 + FAQ 자동응답 8개, 댓글 키워드 트리거. 사장님이 시술 중에도 응답 누락이 안 나도록 묶어드립니다.</div>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">4</div>
+        <div>
+          <div class="how-step-title">매주 카톡으로 같이 결정</div>
+          <div class="how-step-desc">잘 된 광고 / 부진한 광고를 한 페이지로 정리해서 카톡으로 보내드리고, 다음 주 변형안을 같이 정합니다. 의무 약정 없음 · 일주일 전 통보로 종료.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why GP -->
+<section class="why">
+  <div class="container">
+    <div class="section-head">
+      <div class="mono">WHY GP</div>
+      <h2>외주랑은 <em>분명히 다릅니다.</em></h2>
+      <p class="lead">"광고 대신 세팅해주는 거면 외주랑 뭐가 달라요?" 자주 듣는 질문이에요.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card-mono">01 · 통합 운영</div>
+        <h3>광고만이 아니라 DM·댓글까지 함께</h3>
+        <p>외주는 보통 광고만 송출하고 끝. GP는 광고로 들어온 DM이 새지 않게 자동 응답·댓글 키워드까지 묶어서 운영합니다. 시술 중이어도 응답 누락 0건이 목표예요.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-mono">02 · 매주 변형</div>
+        <h3>한 달 세팅 후 방치하지 않아요</h3>
+        <p>같은 사진·같은 카피로 한 달 돌리면 효과가 떨어집니다. 1주 단위로 데이터 보고 → 변형안 제안 → 카톡 컨펌 → 적용. 4주 사이클로 반복합니다.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card-mono">03 · 사장님 명의</div>
+        <h3>광고 계정·데이터는 사장님 소유</h3>
+        <p>GP는 운영 권한만 받고, 계약 종료 시 모든 데이터·자동화 세팅을 인계합니다. 데이터를 인질 삼는 일은 없습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Industry pivot -->
+<section class="industry">
+  <div class="container">
+    <div class="industry-inner">
+      <div class="industry-mascot">
+        <img src="./assets/mascot/basic.png" alt="GP 마스코트">
+      </div>
+      <div>
+        <h2>이번엔 <em>사진관·메이크업샵</em>이 메인입니다.</h2>
+        <p>이 두 업종에 케이스가 가장 많이 쌓였습니다. 인스타·DM 기반으로 예약·문의가 일어나는 구조라면 다른 업종도 받습니다.</p>
+        <div class="industry-tags">
+          <span class="industry-tag main">사진관 · 프로필 스튜디오</span>
+          <span class="industry-tag main">메이크업샵</span>
+          <span class="industry-tag">헤어</span>
+          <span class="industry-tag">네일</span>
+          <span class="industry-tag">에스테틱 · 피부관리</span>
+          <span class="industry-tag">PT · 필라테스</span>
+          <span class="industry-tag">한의원 · 클리닉</span>
+          <span class="industry-tag">1인 전문가</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing" id="packages">
+  <div class="container">
+    <div class="section-head">
+      <div class="mono">PRICING</div>
+      <h2>한 가지로 <em>충분합니다.</em></h2>
+      <p class="lead">후기에 나오는 "전체적으로 관리해주는 상품"입니다.</p>
+    </div>
+    <div class="price-card">
+      <div class="price-card-inner">
+        <div class="price-tag">CORE PACKAGE</div>
+        <div class="price-name">광고 + DM 자동화 통합 운영</div>
+        <p class="price-sub">사장님이 시술 중에도 멈추지 않는 마케팅. 광고는 매주 변형하고, DM은 자동으로 답하고, 데이터는 매주 카톡으로 함께 봅니다.</p>
+        <div class="price-amount"><span class="num">₩49만</span><span class="unit">/ 월 · 광고비 별도</span></div>
+        <div class="price-extra">VAT 포함 · 4주 사이클 · 의무 약정 없음 · 일주일 전 통보로 종료</div>
+        <ul class="price-list">
+          <li>Meta(인스타·페이스북) 광고 캠페인 운영 (소재 3종 동시)</li>
+          <li>1주 단위 데이터 점검 + 변형 적용</li>
+          <li>DM 자동 인사말 + FAQ 자동응답 8개 세팅</li>
+          <li>댓글 자동화 (키워드 트리거)</li>
+          <li>매주 카톡 리포트 + 변형안 제안</li>
+          <li>첫 세팅 화상 미팅 1회 + 월간 전략 미팅 1회</li>
+          <li>광고 계정 사장님 명의 보장</li>
+        </ul>
+        <a href="#start" class="price-cta">이 패키지로 문의하기 →</a>
+      </div>
+    </div>
+    <p class="price-foot-note">광고비는 사장님 카드로 Meta에 직접 결제하시며, GP는 대납하지 않습니다(자금 투명성 정책).</p>
+  </div>
+</section>
+
+<!-- Closing — 폼 -->
+<section class="closing" id="start">
+  <div class="container">
+    <div class="closing-video-wrap">
+      <video autoplay loop muted playsinline poster="./assets/mascot/sayhi.png">
+        <source src="./assets/mascot/vid_coming_to_say_hi1.webp" type="image/webp">
+        <source src="./assets/mascot/vid_coming_to_say_hi1.mp4" type="video/mp4">
+        <img src="./assets/mascot/sayhi.png" alt="GP 마스코트">
+      </video>
+    </div>
+    <h2>외주가 아니라,<br><strong>매주 함께 일할 동료를 찾으셨다면.</strong></h2>
+    <p>이름과 간단한 정보 남겨주시면, 평균 24~48시간 내 카톡 또는 메일로 연락드릴게요.</p>
+    <form class="lead-form" id="contact-form" action="https://formspree.io/f/xqenyyzk" method="POST">
+      <input type="hidden" name="_next" value="https://growthpilot.co.kr/thanks.html">
+      <input type="hidden" name="_subject" value="[GP Landing v2-Trendy] 신규 문의">
+      <input type="hidden" name="utm_source" id="utm_source">
+      <input type="hidden" name="utm_medium" id="utm_medium">
+      <input type="hidden" name="utm_campaign" id="utm_campaign">
+      <input type="hidden" name="utm_content" id="utm_content">
+      <input type="hidden" name="utm_term" id="utm_term">
+      <input type="hidden" name="lp_variant" value="v2-trendy">
+      <div class="form-grid">
+        <label class="form-field">
+          <span class="form-label">이름</span>
+          <input type="text" name="이름" required placeholder="홍길동">
+        </label>
+        <label class="form-field">
+          <span class="form-label">휴대폰</span>
+          <input type="tel" name="휴대폰" id="phoneInput" required placeholder="010-0000-0000" maxlength="13">
+        </label>
+        <label class="form-field">
+          <span class="form-label">이메일 (선택)</span>
+          <input type="email" name="이메일" placeholder="example@email.com">
+        </label>
+        <label class="form-field">
+          <span class="form-label">인스타 (선택)</span>
+          <input type="text" name="인스타" id="instagramInput" value="@" placeholder="@계정명">
+        </label>
+        <label class="form-field">
+          <span class="form-label">업종 (선택)</span>
+          <select name="업종">
+            <option value="">선택</option>
+            <option>사진관 · 프로필 스튜디오</option>
+            <option>메이크업샵</option>
+            <option>헤어</option>
+            <option>네일</option>
+            <option>에스테틱·피부관리</option>
+            <option>PT·필라테스</option>
+            <option>한의원·클리닉</option>
+            <option>1인 전문가</option>
+            <option>기타</option>
+          </select>
+        </label>
+        <label class="form-field">
+          <span class="form-label">지역 (선택)</span>
+          <select name="지역">
+            <option value="">선택</option>
+            <option>서울</option>
+            <option>경기·인천</option>
+            <option>그 외 지역</option>
+          </select>
+        </label>
+      </div>
+      <label class="form-field form-field-full">
+        <span class="form-label">간단히 알려주세요 (선택)</span>
+        <textarea name="문의 내용" rows="3" placeholder="현재 상황 / 막혀있는 부분 / 궁금한 점"></textarea>
+      </label>
+      <button type="submit" class="form-submit">제출하고 연락받기 →</button>
+      <div class="form-note">제출 후 평균 24~48시간 내 카톡 또는 메일로 회신드립니다.</div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ (now BELOW the form) -->
+<section class="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="mono">FAQ</div>
+      <h2>자주 묻는 질문</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">결국 광고 대신 세팅해주는 거잖아요. 외주랑 뭐가 다른가요?</summary>
+        <div class="faq-a">외주는 보통 1회 세팅하고 끝납니다. GP는 그게 시작이에요. 매주 데이터 보고 → 변형안 제안 → 카톡으로 결정 → 다음 주 적용. 이걸 4주 사이클로 반복합니다. 또 외주는 보통 광고만 다루는데, GP는 광고로 들어온 DM이 새지 않게 자동응답·댓글 트리거까지 묶어서 운영합니다. 사장님이 시술 중이어도 응답 누락 0건이 목표예요.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">시작은 어떻게 하나요?</summary>
+        <div class="faq-a">페이지 하단의 폼에 이름·연락처·간단 정보를 남겨주시면, 24~48시간 내 카톡 또는 메일로 연락드립니다. 그 다음 사업 브리핑 시트를 보내드리고, 시술 끝난 저녁에 채워서 보내주시면 첫 화상 미팅(30~40분)으로 방향을 잡습니다. 후기 사례에서도 이 화상 미팅에서 "잘못 알고 있던 부분"이 잡혔어요.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">광고비는 패키지 가격에 포함되나요?</summary>
+        <div class="faq-a">아니요. 패키지 가격은 운영 대행료(VAT 포함)이고, Meta에 직접 결제하시는 광고비는 별도입니다. 광고비는 보통 일 ₩7,000~₩20,000부터 시작하시는 분들이 많고, 사업 단계와 목표에 맞춰 함께 정합니다. 광고비는 사장님 카드로 Meta에 직접 결제하시며, GP는 대납하지 않습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">세금계산서 발행 가능한가요?</summary>
+        <div class="faq-a">네, 사업자등록증을 보내주시면 세금계산서 발행해드립니다. 매월 운영 시작 전 결제 → 세금계산서 발행 순서로 진행됩니다. 패키지 가격은 VAT 포함이라 별도 부가세 부담 없습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">의무 약정이 있나요?</summary>
+        <div class="faq-a">없습니다. 월 단위 운영 기준이며, 4주 사이클로 진행합니다. 업장 사정으로 중단이 필요한 경우 일주일 전 알려주시면 됩니다. 다만 최초 1개월은 알고리즘 학습 기간이라 가능하면 유지하시는 걸 권장드립니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">결과(매출·문의 수)를 보장하나요?</summary>
+        <div class="faq-a">결과는 보장하지 않습니다. 매출은 광고만이 아니라 가격·입지·시술 퀄리티·응대 등 수많은 변수가 결정합니다. GP는 그중 통제 가능한 부분(광고 송출·DM 자동화·매주 운영)에 책임집니다. 결과가 나올 가능성이 높은 구조를 만든다고 이해해주세요.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">사진이 별로 없는데 가능한가요?</summary>
+        <div class="faq-a">사진관·메이크업샵이라면 보통 보유 자료(작업 결과물·고객 후기 컷)가 있으셔서 그 안에서 광고용 소재를 같이 찾습니다. 자료가 적으면 텍스트 중심 카피·후기 인용·가격 임팩트로 풀어내는 방식도 있어요. 폼에 남겨주신 정보 기반으로 어떤 방식이 맞을지 첫 미팅에서 같이 정합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">DM 자동화는 어떻게 작동하나요?</summary>
+        <div class="faq-a">Meta Business Suite의 자동응답 기능을 사용합니다. ① 광고 클릭 → 자동 인사말 발송, ② 자주 묻는 질문(가격·시간·위치 등) 자동응답 8개 세팅, ③ 게시물 댓글에 특정 키워드("정보", "가격" 등) 달리면 자동으로 DM 발송. 이 세 가지를 사장님 업장에 맞게 설계합니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">광고 계정·데이터는 누구 소유인가요?</summary>
+        <div class="faq-a">사장님 소유입니다. GP는 운영 권한만 받으며, 계약 종료 시 권한을 반납하고 모든 데이터(자동화 세팅·광고 히스토리·운영 기록)는 사장님께 인계합니다. 데이터를 인질로 잡는 일은 없습니다.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">우리 업종에도 맞을까요?</summary>
+        <div class="faq-a">메인은 사진관·메이크업샵이고, 케이스도 이쪽에 가장 많이 쌓였습니다. 헤어·네일·에스테틱·PT·한의원·1인 전문가처럼 인스타·DM 기반으로 예약·문의가 일어나는 업종이라면 동일하게 운영 가능합니다. 맞지 않다고 판단되면 검토 후 솔직히 말씀드립니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-tag">외주가 아니라, 매주 함께 일하는 마케팅 동료.</div>
+    <div class="footer-links">
+      <a href="https://instagram.com/growthpilot.kr" target="_blank" rel="noopener">@growthpilot.kr</a>
+      <span class="sep">·</span>
+      <a href="mailto:growthpilot.kr@gmail.com">growthpilot.kr@gmail.com</a>
+    </div>
+    <div class="footer-copy">© 2026 GROWTHPILOT</div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<div class="floating-cta" id="floatingCta">
+  <a href="#start">문의하기 →</a>
+</div>
+
+<script>
+  // UTM params → hidden form fields
+  const urlParams = new URLSearchParams(window.location.search);
+  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(param => {
+    const el = document.getElementById(param);
+    if (el && urlParams.get(param)) el.value = urlParams.get(param);
+  });
+
+  // Form submit → AJAX + tracking + thanks.html redirect
+  const contactForm = document.querySelector('form[action*="formspree"]');
+  if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = '제출 중...'; }
+      if (typeof fbq === 'function') fbq('track', 'Lead');
+      if (typeof gtag === 'function') gtag('event', 'generate_lead', { event_category: 'contact', event_label: 'v2_trendy' });
+      try {
+        const formData = new FormData(contactForm);
+        const res = await fetch(contactForm.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+        if (res.ok) {
+          window.location.href = 'https://growthpilot.co.kr/thanks.html';
+        } else {
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+          alert('제출에 문제가 발생했어요. 잠시 후 다시 시도해주세요.');
+        }
+      } catch (err) {
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        alert('네트워크 문제로 제출이 실패했어요. 잠시 후 다시 시도해주세요.');
+      }
+    });
+  }
+
+  // Phone format
+  const phoneInput = document.getElementById('phoneInput');
+  if (phoneInput) {
+    phoneInput.addEventListener('input', function(e) {
+      let v = e.target.value.replace(/[^0-9]/g, '');
+      if (v.length > 11) v = v.slice(0, 11);
+      if (v.length <= 3) e.target.value = v;
+      else if (v.length <= 7) e.target.value = v.slice(0,3)+'-'+v.slice(3);
+      else e.target.value = v.slice(0,3)+'-'+v.slice(3,7)+'-'+v.slice(7);
+    });
+  }
+
+  // Instagram @ prefix lock
+  const igInput = document.getElementById('instagramInput');
+  if (igInput) {
+    igInput.addEventListener('input', function(e) {
+      if (!e.target.value.startsWith('@')) e.target.value = '@' + e.target.value.replace(/^@+/, '');
+    });
+    igInput.addEventListener('keydown', function(e) {
+      const pos = e.target.selectionStart;
+      if ((e.key === 'Backspace' && pos <= 1) || (e.key === 'Delete' && pos === 0)) e.preventDefault();
+      if ((e.key === 'ArrowLeft' || e.key === 'Home') && pos <= 1) { e.preventDefault(); e.target.setSelectionRange(1, 1); }
+    });
+    igInput.addEventListener('focus', function(e) { if (e.target.value === '@') setTimeout(() => e.target.setSelectionRange(1, 1), 0); });
+    igInput.addEventListener('click', function(e) { if (e.target.selectionStart === 0) e.target.setSelectionRange(1, 1); });
+  }
+
+  // Floating CTA visibility
+  const floatingCta = document.getElementById('floatingCta');
+  const heroSection = document.querySelector('.hero');
+  const closingSection = document.getElementById('start');
+  function updateFloatingCta() {
+    if (!heroSection || !closingSection) return;
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+    const closingTop = closingSection.getBoundingClientRect().top;
+    floatingCta.classList.toggle('visible', heroBottom < 0 && closingTop > window.innerHeight);
+  }
+  window.addEventListener('scroll', updateFloatingCta);
+  updateFloatingCta();
+</script>
+</body>
+</html>
